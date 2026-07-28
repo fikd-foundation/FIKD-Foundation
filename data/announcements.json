@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "totalAnnouncements": 8,
+    "lastUpdated": "2026-07-28",
+    "version": "2.0"
+  },
+  "announcements": [
+    {
+      "id": 1,
+      "title": "FIKD Foundation Launches New Qurʾān Programme",
+      "slug": "fikd-foundation-launches-new-quran-programme",
+      "category": "announcement",
+      "categoryLabel": "Announcement",
+      "date": "2026-03-15",
+      "author": "Academic Team",
+      "excerpt": "We are excited to announce the launch of our enhanced Qurʾān programme, featuring advanced tajwīd, Tafsīr, and a dedicated Ijāzah pathway for students seeking mastery in Qurʾānic recitation.",
+      "featured": true,
+      "image": "assets/images/announcements/new-programme.jpg"
+    },
+    {
+      "id": 2,
+      "title": "New Term Enrolment Now Open",
+      "slug": "new-term-enrolment-now-open",
+      "category": "announcement",
+      "categoryLabel": "Announcement",
+      "date": "2026-03-10",
+      "author": "Admissions Team",
+      "excerpt": "Enrolment for the upcoming term is now open. Secure your place in our Qāʿidah, Qurʾān, and curriculum programmes. Early bird discounts available for a limited time.",
+      "featured": false,
+      "image": "assets/images/announcements/enrolment.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Annual Iftar Gathering 2026",
+      "slug": "annual-iftar-gathering-2026",
+      "category": "events",
+      "categoryLabel": "Events",
+      "date": "2026-03-05",
+      "author": "Community Team",
+      "excerpt": "Join us for our annual Iftar gathering during Ramaḍān. An evening of community, reflection, and spiritual connection. All students, families, and alumni are welcome.",
+      "featured": false,
+      "image": "assets/images/announcements/iftar.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Student Completes Full Qurʾān Memorisation",
+      "slug": "student-completes-full-quran-memorisation",
+      "category": "students",
+      "categoryLabel": "Student News",
+      "date": "2026-02-28",
+      "author": "Academic Team",
+      "excerpt": "Congratulations to our student Ahmed Hassan who completed the memorisation of the entire Qurʾān with the support of our dedicated teachers. A remarkable achievement!",
+      "featured": false,
+      "image": "assets/images/announcements/student-achievement.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Community Outreach Programme Launched",
+      "slug": "community-outreach-programme-launched",
+      "category": "community",
+      "categoryLabel": "Community",
+      "date": "2026-02-20",
+      "author": "Outreach Team",
+      "excerpt": "FIKD Foundation launches a new community outreach initiative to provide Islamic education to underserved communities. Our goal is to make Islamic knowledge accessible to all.",
+      "featured": false,
+      "image": "assets/images/announcements/outreach.jpg"
+    },
+    {
+      "id": 6,
+      "title": "New Teachers Join FIKD Faculty",
+      "slug": "new-teachers-join-fikd-faculty",
+      "category": "announcement",
+      "categoryLabel": "Announcement",
+      "date": "2026-02-15",
+      "author": "Admin Team",
+      "excerpt": "We are pleased to welcome three new qualified teachers to our faculty, expanding our capacity to serve more students. Meet our new team members!",
+      "featured": false,
+      "image": "assets/images/announcements/new-teachers.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Ramadan Qurʾān Challenge",
+      "slug": "ramadan-quran-challenge",
+      "category": "events",
+      "categoryLabel": "Events",
+      "date": "2026-02-10",
+      "author": "Academic Team",
+      "excerpt": "Join our Ramadan Qurʾān Challenge! Set a personal goal for Qurʾān recitation or memorisation during the blessed month and earn rewards for your progress.",
+      "featured": false,
+      "image": "assets/images/announcements/ramadan-challenge.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Student Spotlight: Aisha's Journey",
+      "slug": "student-spotlight-aishas-journey",
+      "category": "students",
+      "categoryLabel": "Student News",
+      "date": "2026-02-01",
+      "author": "Academic Team",
+      "excerpt": "Read about Aisha's inspiring journey from beginner to advanced Qurʾān student, and how FIKD supported her every step of the way. A story of dedication and growth.",
+      "featured": false,
+      "image": "assets/images/announcements/student-spotlight.jpg"
+    }
+  ]
+}
