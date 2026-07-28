@@ -1,0 +1,112 @@
+/* ========================================
+   File: css/variables.css
+   Description: Global design tokens
+   ======================================== */
+
+:root {
+    /* ----- Color Palette ----- */
+    --color-primary: #1a4d2e;
+    --color-primary-light: #2a6d3e;
+    --color-primary-dark: #0f3320;
+    --color-secondary: #c8a96e;
+    --color-secondary-light: #e0c99a;
+    --color-secondary-dark: #a8894a;
+    --color-accent: #8b1a1a;
+    --color-accent-light: #b33a3a;
+
+    --color-bg: #faf8f5;
+    --color-bg-light: #f5f1eb;
+    --color-bg-dark: #e8e0d6;
+    --color-text: #1c1c1c;
+    --color-text-light: #4a4a4a;
+    --color-text-muted: #7a7a7a;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #1a4d2e 0%, #0f3320 100%);
+    --gradient-secondary: linear-gradient(135deg, #c8a96e 0%, #a8894a 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(15, 51, 32, 0.88) 0%, rgba(26, 77, 46, 0.75) 100%);
+
+    /* ----- Typography ----- */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-secondary: 'Amiri', 'Times New Roman', serif;
+    --font-size-base: 16px;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+    --font-size-5xl: 3rem;
+    --font-size-6xl: 3.5rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.6;
+    --line-height-loose: 2;
+
+    /* ----- Spacing ----- */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    --spacing-4xl: 6rem;
+    --spacing-5xl: 8rem;
+
+    /* ----- Layout ----- */
+    --container-max-width: 1200px;
+    --container-padding: 1.5rem;
+    --header-height: 80px;
+
+    /* ----- Border Radius ----- */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+
+    /* ----- Shadows ----- */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+    --shadow-glow: 0 0 40px rgba(200, 169, 110, 0.3);
+
+    /* ----- Transitions ----- */
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+    --transition-slow: 500ms ease;
+    --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* ----- Z-index ----- */
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-header: 300;
+    --z-modal: 400;
+    --z-overlay: 500;
+    --z-toast: 600;
+}
+
+[data-theme="dark"] {
+    --color-bg: #1a1a1a;
+    --color-bg-light: #2a2a2a;
+    --color-bg-dark: #0f0f0f;
+    --color-text: #e8e8e8;
+    --color-text-light: #c0c0c0;
+    --color-text-muted: #888888;
+    --color-white: #1a1a1a;
+    --shadow-sm: 0 1px 3px rgba(255, 255, 255, 0.05);
+    --shadow-md: 0 4px 12px rgba(255, 255, 255, 0.06);
+    --shadow-lg: 0 8px 30px rgba(255, 255, 255, 0.08);
+    --shadow-xl: 0 20px 60px rgba(255, 255, 255, 0.1);
+}

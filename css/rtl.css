@@ -1,0 +1,99 @@
+/* ========================================
+   File: css/rtl.css
+   Description: Right-to-Left (RTL) support for Arabic
+   ======================================== */
+
+[dir="rtl"] {
+    /* Text alignment */
+    text-align: right;
+}
+
+[dir="rtl"] .text-center {
+    text-align: center !important;
+}
+
+[dir="rtl"] .text-left {
+    text-align: right !important;
+}
+
+[dir="rtl"] .text-right {
+    text-align: left !important;
+}
+
+/* ----- Navigation ----- */
+[dir="rtl"] .nav-list {
+    direction: rtl;
+}
+
+[dir="rtl"] .dropdown-arrow {
+    margin-left: 0;
+    margin-right: var(--spacing-xs);
+}
+
+/* ----- Breadcrumb ----- */
+[dir="rtl"] .breadcrumb li:not(:last-child)::after {
+    content: '\\';
+    margin-left: 0;
+    margin-right: var(--spacing-xs);
+}
+
+/* ----- Lists ----- */
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+    padding-left: 0;
+    padding-right: var(--spacing-lg);
+}
+
+[dir="rtl"] .curriculum-module ul li,
+[dir="rtl"] .topic-card ul li {
+    padding-left: 0;
+    padding-right: var(--spacing-lg);
+}
+
+[dir="rtl"] .curriculum-module ul li::before,
+[dir="rtl"] .topic-card ul li::before {
+    left: auto;
+    right: 0;
+}
+
+/* ----- Quotes ----- */
+[dir="rtl"] blockquote {
+    border-left: none;
+    border-right: 4px solid var(--color-secondary);
+}
+
+/* ----- Cards with borders ----- */
+[dir="rtl"] .curriculum-module {
+    border-left: none;
+    border-right: 4px solid var(--color-secondary);
+}
+
+[dir="rtl"] .topic-card {
+    border-top: none;
+    border-right: 4px solid var(--color-secondary);
+}
+
+/* ----- Flex & Grid ----- */
+[dir="rtl"] .flex {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .flex-column {
+    flex-direction: column-reverse;
+}
+
+[dir="rtl"] .flex-between {
+    flex-direction: row-reverse;
+}
+
+/* ----- Testimonials ----- */
+[dir="rtl"] .testimonial-card {
+    text-align: right;
+}
+
+/* ----- Forms (if any) ----- */
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+    text-align: right;
+}

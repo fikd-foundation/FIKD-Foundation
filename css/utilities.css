@@ -1,0 +1,206 @@
+/* ========================================
+   File: css/utilities.css
+   Description: Utility classes
+   ======================================== */
+
+/* ----- Display ----- */
+.d-none {
+    display: none !important;
+}
+.d-block {
+    display: block !important;
+}
+.d-inline-block {
+    display: inline-block !important;
+}
+.d-flex {
+    display: flex !important;
+}
+.d-grid {
+    display: grid !important;
+}
+
+/* ----- Position ----- */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.sticky {
+    position: sticky;
+}
+
+/* ----- Width & Height ----- */
+.w-full {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
+}
+.h-full {
+    height: 100%;
+}
+.h-auto {
+    height: auto;
+}
+
+/* ----- Overflow ----- */
+.overflow-hidden {
+    overflow: hidden;
+}
+.overflow-auto {
+    overflow: auto;
+}
+.overflow-scroll {
+    overflow: scroll;
+}
+
+/* ----- Border Radius ----- */
+.rounded-none {
+    border-radius: 0;
+}
+.rounded-sm {
+    border-radius: var(--radius-sm);
+}
+.rounded-md {
+    border-radius: var(--radius-md);
+}
+.rounded-lg {
+    border-radius: var(--radius-lg);
+}
+.rounded-full {
+    border-radius: var(--radius-full);
+}
+
+/* ----- Shadow ----- */
+.shadow-none {
+    box-shadow: none;
+}
+.shadow-sm {
+    box-shadow: var(--shadow-sm);
+}
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+.shadow-lg {
+    box-shadow: var(--shadow-lg);
+}
+
+/* ----- Gap ----- */
+.gap-1 {
+    gap: var(--spacing-xs);
+}
+.gap-2 {
+    gap: var(--spacing-sm);
+}
+.gap-3 {
+    gap: var(--spacing-md);
+}
+.gap-4 {
+    gap: var(--spacing-lg);
+}
+.gap-5 {
+    gap: var(--spacing-xl);
+}
+
+/* ----- Padding ----- */
+.p-0 {
+    padding: 0;
+}
+.p-1 {
+    padding: var(--spacing-xs);
+}
+.p-2 {
+    padding: var(--spacing-sm);
+}
+.p-3 {
+    padding: var(--spacing-md);
+}
+.p-4 {
+    padding: var(--spacing-lg);
+}
+.p-5 {
+    padding: var(--spacing-xl);
+}
+
+/* ----- Margin ----- */
+.m-0 {
+    margin: 0;
+}
+.m-auto {
+    margin: auto;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* ----- Text Utilities ----- */
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+.text-lowercase {
+    text-transform: lowercase;
+}
+.text-decoration-none {
+    text-decoration: none;
+}
+.text-underline {
+    text-decoration: underline;
+}
+
+/* ----- Font Weight ----- */
+.fw-normal {
+    font-weight: var(--font-weight-normal);
+}
+.fw-medium {
+    font-weight: var(--font-weight-medium);
+}
+.fw-semibold {
+    font-weight: var(--font-weight-semibold);
+}
+.fw-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+/* ----- Screen Reader Only ----- */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* ----- Skip Link ----- */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: var(--radius-md);
+    z-index: var(--z-toast);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+}
+
+.skip-link:focus {
+    top: var(--spacing-md);
+}
