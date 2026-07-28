@@ -1,0 +1,199 @@
+fikd-foundation/
+│
+├── index.html  
+├── prospectus.html
+# Home
+├── about/
+│   └── index.html
+├── philosophy/
+│   └── index.html
+├── programmes/
+│   ├── index.html
+│   ├── qaida-beginner.html
+│   ├── qaida-upper.html
+│   ├── quran-beginner.html
+│   └── quran-upper.html
+│
+├── curriculum/
+│   ├── index.html
+│   ├── aqeedah.html
+│   ├── hadith.html
+│   ├── seerah.html
+│   ├── duas.html
+│   ├── worship.html
+│   ├── manners.html
+│   └── islamic-identity.html
+│
+├── teachers/
+│   ├── index.html
+│   └── mufti-profile.html
+│
+├── admissions/
+│   ├── index.html
+│   ├── apply.html
+│   └── fees.html
+│
+├── resources/
+│   ├── index.html
+│   ├── downloads.html
+│   ├── articles.html
+│   └── videos.html
+│
+├── news/
+│   └── index.html
+│
+├── gallery/
+│   └── index.html
+│
+├── contact/
+│   └── index.html
+│
+├── faq/
+│   └── index.html
+│
+├── privacy/
+│   └── index.html
+│
+├── terms/
+│   └── index.html
+│
+├── 404.html
+│
+├── assets/
+│   ├── branding/
+│   ├── images/
+│   │   ├── hero/
+│   │   ├── programmes/
+│   │   ├── curriculum/
+│   │   ├── teachers/
+│   │   ├── gallery/
+│   │   ├── backgrounds/
+│   │   └── patterns/
+│   │
+│   ├── illustrations/
+│   ├── icons/
+│   ├── documents/
+│   ├── videos/
+│   ├── audio/
+│   └── fonts/
+│
+├── css/
+│   ├── variables.css
+│   ├── reset.css
+│   ├── typography.css
+│   ├── layout.css
+│   ├── components.css
+│   ├── pages.css
+│   ├── rtl.css
+│   ├── utilities.css
+│   ├── animations.css
+│   ├── responsive.css
+│   ├── print.css
+│   └── main.css
+│
+├── js/
+│   ├── main.js
+│   ├── navigation.js
+│   ├── theme.js
+│   ├── language.js
+│   ├── accessibility.js
+│   ├── animations.js
+│   ├── counters.js
+│   ├── accordion.js
+│   ├── tabs.js
+│   ├── timeline.js
+│   ├── slider.js
+│   ├── gallery.js
+│   ├── forms.js
+│   ├── search.js
+│   └── utils.js
+│
+├── data/
+│   ├── programmes.json
+│   ├── curriculum.json
+│   ├── teachers.json
+│   ├── testimonials.json
+│   ├── faq.json
+│   ├── articles.json
+│   └── announcements.json
+│
+├── seo/
+│   ├── sitemap.xml
+│   ├── robots.txt
+│   ├── manifest.webmanifest
+│   ├── browserconfig.xml
+│   └── llms.txt
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
+├── .gitignore
+├── LICENSE
+├── CHANGELOG.md
+└── README.md
+
+
+
+fikd-foundation/
+│
+├── index.html              ✅ (Homepage - Complete)
+├── prospectus.html         ✅ (Academic Prospectus)
+│
+├── about/
+│   └── index.html          ✅ (About Us)
+│
+├── philosophy/
+│   └── index.html          ✅ (Educational Philosophy)
+│
+├── programmes/
+│   ├── index.html          ✅ (Programmes Overview)
+│   ├── qaida-beginner.html ✅ (Qāʿidah – Beginner)
+│   ├── qaida-upper.html    ✅ (Qāʿidah – Upper)
+│   ├── quran-beginner.html ✅ (Qurʾān – Beginner)
+│   └── quran-upper.html    ✅ (Qurʾān – Upper)
+│
+├── curriculum/
+│   ├── index.html          ✅ (Curriculum Overview)
+│   ├── aqeedah.html        ✅ (ʿAqīdah)
+│   ├── hadith.html         ✅ (Ḥadīth)
+│   ├── seerah.html         ✅ (Sīrah)
+│   ├── duas.html           ✅ (Duʿāʾ)
+│   ├── worship.html        ✅ (Worship)
+│   ├── manners.html        ✅ (Manners)
+│   └── islamic-identity.html ✅ (Islamic Identity)
+│
+├── teachers/
+│   ├── index.html          ✅ (Teachers Overview)
+│   └── mufti-profile.html  ✅ (Mufti Abdullah Profile)
+│
+├── admissions/
+│   ├── index.html          ✅ (Admissions Overview)
+│   ├── apply.html          ✅ (Application Form)
+│   └── fees.html           ✅ (Fees & Payment)
+│
+├── resources/
+│   ├── index.html          ✅ (Resources Overview)
+│   ├── downloads.html      ✅ (Downloads)
+│   ├── articles.html       ✅ (Articles)
+│   └── videos.html         ✅ (Videos)
+│
+├── news/
+│   └── index.html          ✅ (News & Updates)
+│
+├── gallery/
+│   └── index.html          ✅ (Gallery)
+│
+├── contact/
+│   └── index.html          ✅ (Contact Us)
+│
+├── faq/
+│   └── index.html          ✅ (FAQ)
+│
+├── privacy/
+│   └── index.html          ✅ (Privacy Policy)
+│
+├── terms/
+│   └── index.html          ✅ (Terms & Conditions)
+│
+└── 404.html                ✅ (404 Error Page)

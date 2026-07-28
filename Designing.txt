@@ -1,0 +1,35 @@
+Colors
+──────────────
+Primary      Emerald Green
+Secondary    Gold
+Accent        Sky Blue
+Success      Green
+Warning      Amber
+Danger       Red
+Neutral      Gray Scale
+
+Typography
+──────────────
+English      Poppins
+Urdu         Noto Nastaliq Urdu
+Arabic       Noto Naskh Arabic
+
+Spacing
+──────────────
+8px Grid System
+
+Border Radius
+──────────────
+8 / 12 / 20 / 32 px
+
+Shadows
+──────────────
+Soft
+Medium
+Large
+
+Animation
+──────────────
+200ms
+300ms
+500ms

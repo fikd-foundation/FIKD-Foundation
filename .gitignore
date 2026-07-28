@@ -1,0 +1,333 @@
+# ============================================
+# .gitignore for FIKD Foundation Website
+# Description: Specifies files and directories
+# to be ignored by Git version control
+# ============================================
+
+# ============================================
+# Operating System Files
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+*.temp
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.exe
+
+# Linux
+.directory
+*.swp
+*.swo
+*~
+.nfs*
+
+# ============================================
+# IDE / Editor Files
+# ============================================
+# VS Code
+.vscode/
+*.code-workspace
+.vscode-test/
+
+# IntelliJ / WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+*.atom
+
+# Vim
+*.swp
+*.swo
+*~
+._*
+
+# Emacs
+*~
+\#*
+.\#*
+
+# ============================================
+# Dependency Directories
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# Build / Output Directories
+# ============================================
+# Build output
+dist/
+build/
+out/
+*.min.css
+*.min.js
+
+# Compiled files
+*.css.map
+*.js.map
+*.min.css.map
+*.min.js.map
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# ============================================
+# Environment Files
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ============================================
+# Logs and Databases
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.sqlite
+*.db
+*.sqlite3
+*.sqlite-journal
+
+# ============================================
+# Cache Directories
+# ============================================
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+.eslintcache
+*.tsbuildinfo
+
+# ============================================
+# Testing Files
+# ============================================
+test/
+__tests__/
+*.test.js
+*.spec.js
+*.test.ts
+*.spec.ts
+jest.config.js
+coverage/
+
+# ============================================
+# Documentation and Temporary Files
+# ============================================
+*.md.tmp
+*.html.tmp
+*.bak
+*.orig
+*.old
+*.rej
+*.patch
+*.diff
+*.tmp
+*.temp
+
+# ============================================
+# Deployment and Hosting Files
+# ============================================
+# Netlify
+.netlify/
+*.netlify
+
+# Vercel
+.vercel/
+*.vercel
+
+# Cloudflare
+.cloudflare/
+
+# GitHub Pages
+_gh_pages/
+gh-pages/
+
+# ============================================
+# Security Sensitive Files
+# ============================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.p8
+*.env
+*.secret
+*.secrets
+*.password
+*.credentials
+*.cert
+*.p7b
+*.cer
+*.der
+
+# ============================================
+# Project Specific
+# ============================================
+# Asset optimization output
+assets/images/optimized/
+assets/images/*-optimized.*
+assets/images/*-compressed.*
+assets/images/*-min.*
+
+# Temporary uploads
+tmp/
+temp/
+uploads/
+*.upload
+
+# Local configuration
+.config.local
+*.config.local
+*.local
+
+# Search indexes
+search-index/
+lunr-index/
+
+# ============================================
+# Backup Files
+# ============================================
+*.backup
+*.backup.*
+*-backup
+*-backup.*
+*.orig
+*.save
+*.saved
+*.old
+
+# ============================================
+# Archive Files
+# ============================================
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.bz2
+*.gz
+*.xz
+*.tar
+
+# ============================================
+# Docker
+# ============================================
+docker-compose.override.yml
+docker-compose.*.yml
+.docker/
+Dockerfile.local
+
+# ============================================
+# Miscellaneous
+# ============================================
+# GPG keys
+*.gpg
+*.asc
+*.sig
+
+# SSH keys
+*.pem
+*.ppk
+
+# AWS
+*.aws
+.aws/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# ============================================
+# Custom rules - Add project-specific files here
+# ============================================
+# Example:
+# my-custom-config.json
+# private-scripts/
+
+# ============================================
+# Exclude generated SEO files from version control
+# ============================================
+seo/notifications.xml
+seo/badge.xml
+
+# ============================================
+# Exclude large media files
+# ============================================
+# Uncomment if you want to exclude large files
+# *.mp4
+# *.avi
+# *.mov
+# *.mkv
+# *.mp3
+# *.wav
+# *.flac
+# *.aac
+# *.ogg
+# *.wma
+# *.webm
+# *.m4a
+# *.m4v
+
+# Large images
+# *.psd
+# *.ai
+# *.eps
+# *.tif
+# *.tiff
+# *.raw
+# *.cr2
+# *.nef
+# *.arw
+# *.dng
+
+# ============================================
+# Finally, ensure the .gitignore itself is tracked
+# ============================================
+!.gitignore
+!.env.example
+
+# ============================================
+# Note: The .gitignore file should be committed
+# to the repository to ensure all contributors
+# use the same ignore rules.
+# ============================================
