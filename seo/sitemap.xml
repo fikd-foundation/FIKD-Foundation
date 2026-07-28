@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: seo/sitemap.xml
+  Description: Advanced sitemap with image and video sitemap extensions
+  Last Updated: 2026
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd
+        http://www.google.com/schemas/sitemap-video/1.1
+        http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd">
+
+    <!-- ============================================
+         HOMEPAGE
+         ============================================ -->
+    <url>
+        <loc>https://fikd-foundation.org/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://fikd-foundation.org/assets/images/hero/hero-bg.jpg</image:loc>
+            <image:title>FIKD Foundation - Empowering Hearts and Minds</image:title>
+            <image:caption>Islamic education for all ages</image:caption>
+        </image:image>
+    </url>
+
+    <!-- ============================================
+         MAIN PAGES
+         ============================================ -->
+    <url>
+        <loc>https://fikd-foundation.org/about/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/philosophy/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/prospectus.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ============================================
+         PROGRAMMES
+         ============================================ -->
+    <url>
+        <loc>https://fikd-foundation.org/programmes/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/programmes/qaida-beginner.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fikd-foundation.org/assets/images/programmes/qaida-beginner-hero.jpg</image:loc>
+            <image:title>Qāʿidah Beginner Programme</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/programmes/qaida-upper.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fikd-foundation.org/assets/images/programmes/qaida-upper-hero.jpg</image:loc>
+            <image:title>Qāʿidah Upper Programme</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/programmes/quran-beginner.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fikd-foundation.org/assets/images/programmes/quran-beginner-hero.jpg</image:loc>
+            <image:title>Qurʾān Beginner Programme</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/programmes/quran-upper.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fikd-foundation.org/assets/images/programmes/quran-upper-hero.jpg</image:loc>
+            <image:title>Qurʾān Upper Programme</image:title>
+        </image:image>
+    </url>
+
+    <!-- ============================================
+         CURRICULUM
+         ============================================ -->
+    <url>
+        <loc>https://fikd-foundation.org/curriculum/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/curriculum/aqeedah.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/curriculum/hadith.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/curriculum/seerah.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/curriculum/duas.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/curriculum/worship.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/curriculum/manners.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/curriculum/islamic-identity.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ============================================
+         TEACHERS
+         ============================================ -->
+    <url>
+        <loc>https://fikd-foundation.org/teachers/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/teachers/mufti-profile.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fikd-foundation.org/assets/images/teachers/mufti-profile.jpg</image:loc>
+            <image:title>Mufti Abdullah - Founder</image:title>
+        </image:image>
+    </url>
+
+    <!-- ============================================
+         ADMISSIONS
+         ============================================ -->
+    <url>
+        <loc>https://fikd-foundation.org/admissions/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/admissions/apply.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/admissions/fees.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ============================================
+         RESOURCES
+         ============================================ -->
+    <url>
+        <loc>https://fikd-foundation.org/resources/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/resources/downloads.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/resources/articles.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/resources/videos.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <video:video>
+            <video:thumbnail_loc>https://fikd-foundation.org/assets/images/videos/thumbnails/hadith-intro.jpg</video:thumbnail_loc>
+            <video:title>Introduction to Ḥadīth Sciences</video:title>
+            <video:description>Comprehensive lecture on Ḥadīth sciences by Mufti Abdullah</video:description>
+            <video:content_loc>https://fikd-foundation.org/assets/videos/intro-to-hadith.mp4</video:content_loc>
+            <video:player_loc>https://fikd-foundation.org/resources/videos.html</video:player_loc>
+            <video:duration>3120</video:duration>
+            <video:publication_date>2026-03-15</video:publication_date>
+        </video:video>
+    </url>
+
+    <!-- ============================================
+         OTHER PAGES
+         ============================================ -->
+    <url>
+        <loc>https://fikd-foundation.org/news/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/gallery/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/contact/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/faq/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- ============================================
+         LEGAL PAGES
+         ============================================ -->
+    <url>
+        <loc>https://fikd-foundation.org/privacy/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>https://fikd-foundation.org/terms/</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <!-- ============================================
+         404 PAGE
+         ============================================ -->
+    <url>
+        <loc>https://fikd-foundation.org/404.html</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+
+</urlset>

@@ -1,0 +1,150 @@
+# ============================================
+# File: seo/llms.txt
+# Description: LLM-friendly site documentation
+# Last Updated: 2026
+# ============================================
+
+# FIKD Foundation
+## Official Academic Prospectus & Documentation
+
+---
+
+### About
+FIKD (Fateh Institute of Knowledge & Development) Foundation is a dedicated Islamic educational institution offering structured programmes in Qurʾānic studies, Qāʿidah, and a comprehensive Islamic curriculum. We are committed to providing authentic, accessible Islamic education to students worldwide.
+
+### Mission
+To provide authentic, accessible, and transformative Islamic education that nurtures faith, knowledge, and character — empowering individuals to live Islam with confidence and contribute positively to their communities.
+
+### Vision
+To be a global beacon of Islamic learning, where every student finds a pathway to connect with the Qurʾān and Sunnah, and where traditional scholarship meets contemporary relevance.
+
+### Core Values
+1. **Authenticity** - Adherence to the Qurʾān and Sunnah as understood by the righteous predecessors (Salaf)
+2. **Excellence** - Striving for the highest quality in teaching, materials, and student support
+3. **Community** - Fostering a supportive, inclusive environment
+4. **Character Development** - Emphasising adab (manners) and tazkiyah (purification)
+
+---
+
+### Educational Programmes
+
+#### 1. Qāʿidah – Beginner (Level 1 · Foundational)
+- Duration: 12 weeks
+- Fee: $149/term
+- **What You Learn:**
+  - Arabic alphabet and letter recognition
+  - Basic vowel marks (fatḥa, kasra, ḍamma)
+  - Simple word formation and reading
+  - Introduction to tajwīd basics
+
+#### 2. Qāʿidah – Upper (Level 2 · Intermediate)
+- Duration: 14 weeks
+- Fee: $199/term
+- **What You Learn:**
+  - Advanced tajwīd rules (idghām, iqlāb, ikhfāʾ)
+  - Fluent reading with proper rhythm
+  - Introduction to waqf (stopping) rules
+  - Practice with selected sūrahs
+
+#### 3. Qurʾān – Beginner (Level 3 · Intermediate)
+- Duration: 16 weeks
+- Fee: $249/term
+- **What You Learn:**
+  - Complete tajwīd application in recitation
+  - Memorisation of short sūrahs (Juz 30)
+  - Basic Tafsīr and word-for-word meanings
+  - Introduction to Qurʾānic Arabic
+
+#### 4. Qurʾān – Upper (Level 4 · Advanced)
+- Duration: 24 weeks (2 terms)
+- Fee: $349/term
+- **What You Learn:**
+  - Mastery of all tajwīd rules
+  - Advanced memorisation (selected portions or full Qurʾān)
+  - In-depth Tafsīr and thematic studies
+  - Grammatical analysis (Iʿrāb) of verses
+
+---
+
+### Curriculum Subjects (Seven Pillars)
+
+| # | Subject | Icon | Description |
+|---|---------|------|-------------|
+| 1 | ʿAqīdah | ⭐ | Core beliefs of Ahl al-Sunnah wal-Jamāʿah |
+| 2 | Ḥadīth | 📜 | Sayings, actions, and approvals of the Prophet ﷺ |
+| 3 | Sīrah | 📖 | The prophetic biography |
+| 4 | Duʿāʾ | 🤲 | Supplications from the Qurʾān and Sunnah |
+| 5 | Worship | 🕌 | ṣalāh, fasting, zakāh, ḥajj |
+| 6 | Manners | 🌿 | Islamic adab and character refinement |
+| 7 | Islamic Identity | 🌍 | Living Islam confidently in a modern world |
+
+---
+
+### Key Pages
+- Home: https://fikd-foundation.org/
+- About: https://fikd-foundation.org/about/
+- Philosophy: https://fikd-foundation.org/philosophy/
+- Prospectus: https://fikd-foundation.org/prospectus.html
+- Programmes: https://fikd-foundation.org/programmes/
+- Admissions: https://fikd-foundation.org/admissions/
+- Teachers: https://fikd-foundation.org/teachers/
+- Resources: https://fikd-foundation.org/resources/
+- Gallery: https://fikd-foundation.org/gallery/
+- Contact: https://fikd-foundation.org/contact/
+- FAQ: https://fikd-foundation.org/faq/
+- Privacy: https://fikd-foundation.org/privacy/
+- Terms: https://fikd-foundation.org/terms/
+
+---
+
+### Teacher Profiles
+#### Mufti Abdullah (Founder & Director)
+- **Specialisation:** Ḥadīth, Fiqh, Qirāʾāt
+- **Experience:** 20+ years
+- **Ijāzah:** 10 Qirāʾāt
+- **Languages:** English, Arabic, Urdu
+- **Biography:** Mufti Abdullah is the founder of FIKD Foundation with over 20 years of teaching experience. He holds Ijāzah in the ten canonical recitations and specialises in Ḥadīth, Fiqh, and Qurʾānic studies.
+
+#### Ustadha Fatima (Head of Qurʾān Programme)
+- **Specialisation:** Tajwīd, Ḥifẓ, Tafsīr
+- **Experience:** 10+ years
+- **Ijāzah:** Tajwīd
+- **Biography:** Ḥāfiẓah with deep expertise in Qurʾānic recitation and memorisation.
+
+#### Shaykh Ibrahim (Curriculum Lead)
+- **Specialisation:** ʿAqīdah, Sīrah, History
+- **Experience:** 15+ years
+- **Qualification:** PhD in Islamic History
+- **Biography:** Expert in ʿAqīdah, Sīrah, and Islamic history. Author of several textbooks.
+
+---
+
+### Contact Information
+- 📧 Email: fikd-foundation@gmail.com
+- 📞 Phone: +92 315 9993 378
+- 📍 Address: Chargulli, Mardan, KPK, Pakistan
+
+### Social Media
+- Facebook: https://facebook.com/fikd.official
+- Instagram: https://instagram.com/muftiubaidullah.official
+- YouTube: https://youtube.com/@fikdfoundation
+
+---
+
+### Legal
+- Privacy Policy: https://fikd-foundation.org/privacy/
+- Terms & Conditions: https://fikd-foundation.org/terms/
+- FAQ: https://fikd-foundation.org/faq/
+
+---
+
+### Site Statistics
+- Total Pages: 26+
+- Programmes: 4
+- Curriculum Subjects: 7
+- Teachers: 6+
+- Students: 1200+
+- Countries: 30+
+
+---
+Last Updated: 2026-07-28
