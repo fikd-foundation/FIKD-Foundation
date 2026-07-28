@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Islamic Identity – FIKD Foundation Curriculum</title>
+    <meta name="description" content="Build a confident Islamic identity at FIKD Foundation. Learn to navigate contemporary challenges, engage with society, and contribute positively as a Muslim." />
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="../seo/manifest.webmanifest" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Complete stylesheet */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0d2e1a;
+            --primary-light: #1a4d2e;
+            --primary-dark: #081f12;
+            --gold: #c8a96e;
+            --gold-light: #e8d5a3;
+            --gold-dark: #a8894a;
+            --white: #ffffff;
+            --off-white: #f8f6f2;
+            --light-bg: #f0ede7;
+            --text-dark: #1a1a1a;
+            --text-muted: #6b6b6b;
+            --shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+            --radius: 16px;
+            --radius-lg: 24px;
+            --transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            color: var(--text-dark);
+            background: var(--off-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            transition: all var(--transition);
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            line-height: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 24px rgba(13, 46, 26, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(13, 46, 26, 0.4);
+        }
+        .btn-gold {
+            background: var(--gold);
+            color: var(--white);
+            box-shadow: 0 4px 24px rgba(200, 169, 110, 0.3);
+        }
+        .btn-gold:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(200, 169, 110, 0.4);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--white);
+            transform: translateY(-4px);
+        }
+        .btn-white {
+            background: var(--white);
+            color: var(--primary);
+        }
+        .btn-white:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(255, 255, 255, 0.3);
+        }
+        .btn-sm {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+        .btn-lg {
+            padding: 18px 44px;
+            font-size: 18px;
+        }
+
+        /* ----- HEADER ----- */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0 24px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(200, 169, 110, 0.12);
+            transition: all 0.3s ease;
+        }
+        .site-header.scrolled {
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .logo a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            height: 44px;
+            width: auto;
+        }
+        .logo-text {
+            font-family: 'Amiri', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .logo-text span {
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .nav-list>li>a {
+            display: block;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        .nav-list>li>a:hover {
+            color: var(--primary);
+            background: rgba(13, 46, 26, 0.06);
+        }
+        .nav-list>li>a.active {
+            color: var(--primary);
+            background: rgba(13, 46, 26, 0.08);
+            font-weight: 600;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-arrow {
+            font-size: 10px;
+            margin-left: 4px;
+            transition: transform 0.2s;
+        }
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            min-width: 220px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+            padding: 8px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: all 0.3s ease;
+        }
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-menu li a {
+            display: block;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: var(--text-muted);
+            transition: all 0.2s ease;
+        }
+        .dropdown-menu li a:hover {
+            background: rgba(13, 46, 26, 0.05);
+            color: var(--primary);
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 8px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .nav-toggle .bar {
+            width: 28px;
+            height: 3px;
+            background: var(--text-dark);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-toggle.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .nav-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .nav-toggle.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* ----- PAGE HERO ----- */
+        .page-hero {
+            position: relative;
+            padding: 140px 0 80px;
+            background: var(--primary);
+            overflow: hidden;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(13, 46, 26, 0.92) 0%, rgba(13, 46, 26, 0.75) 100%);
+            z-index: 1;
+        }
+        .page-hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        .page-hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        .page-hero .breadcrumb {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 16px;
+        }
+        .page-hero .breadcrumb a {
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 0.3s ease;
+        }
+        .page-hero .breadcrumb a:hover {
+            color: var(--gold-light);
+        }
+        .page-hero .breadcrumb span {
+            color: var(--white);
+        }
+        .page-hero h1 {
+            font-family: 'Amiri', serif;
+            font-size: 48px;
+            color: var(--white);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        .page-hero p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            max-width: 600px;
+        }
+        .page-hero .sub-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .page-hero .sub-meta span {
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* ----- SECTION ----- */
+        .section {
+            padding: 80px 0;
+        }
+        .section-light {
+            background: var(--off-white);
+        }
+        .section-alt {
+            background: var(--light-bg);
+        }
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 56px;
+        }
+        .section-tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            padding: 4px 16px;
+            border: 1px solid var(--gold);
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+        .section-header h2 {
+            font-family: 'Amiri', serif;
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+        .section-header p {
+            font-size: 18px;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* ----- SUBJECT DETAIL ----- */
+        .subject-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+
+        .subject-text .subject-icon-large {
+            font-size: 64px;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .subject-text h2 {
+            font-family: 'Amiri', serif;
+            font-size: 32px;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .subject-text p {
+            font-size: 16px;
+            color: var(--text-muted);
+            line-height: 1.9;
+            margin-bottom: 16px;
+        }
+
+        .subject-text .highlight-list {
+            margin: 16px 0 24px;
+        }
+
+        .subject-text .highlight-list li {
+            padding: 8px 0 8px 28px;
+            position: relative;
+            font-size: 15px;
+            color: var(--text-dark);
+            line-height: 1.7;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .subject-text .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        .subject-text .highlight-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .subject-image img {
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            width: 100%;
+            height: auto;
+        }
+
+        /* ----- TOPICS ----- */
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .topic-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 24px 20px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--gold);
+            transition: all var(--transition);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .topic-card h4 {
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .topic-card ul li {
+            font-size: 14px;
+            color: var(--text-muted);
+            padding: 4px 0 4px 20px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .topic-card ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+        }
+
+        /* ----- OUTCOMES ----- */
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .outcome-item {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            box-shadow: var(--shadow);
+            transition: all var(--transition);
+        }
+
+        .outcome-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .outcome-item .outcome-icon {
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+
+        .outcome-item p {
+            font-size: 14px;
+            color: var(--text-dark);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* ----- RELATED ----- */
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .related-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 20px 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all var(--transition);
+            border: 1px solid rgba(200, 169, 110, 0.08);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .related-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--gold-light);
+        }
+
+        .related-card .rel-icon {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .related-card h4 {
+            font-size: 15px;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .related-card p {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* ----- CTA ----- */
+        .cta-section {
+            background: var(--primary);
+            border-radius: var(--radius-lg);
+            padding: 64px 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(135deg, rgba(200, 169, 110, 0.05), rgba(200, 169, 110, 0.02));
+            transform: rotate(30deg);
+        }
+        .cta-section h2 {
+            font-family: 'Amiri', serif;
+            font-size: 36px;
+            color: var(--white);
+            position: relative;
+            z-index: 1;
+        }
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 560px;
+            margin: 16px auto 32px;
+            font-size: 18px;
+            position: relative;
+            z-index: 1;
+        }
+        .cta-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ----- FOOTER ----- */
+        .site-footer {
+            background: var(--primary-dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 60px 0 32px;
+            margin-top: 80px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 48px;
+        }
+        .footer-brand h3 {
+            font-family: 'Amiri', serif;
+            font-size: 22px;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+        .footer-brand p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            max-width: 280px;
+            line-height: 1.8;
+        }
+        .footer-social {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+        }
+        .footer-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--white);
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+        .footer-social a:hover {
+            background: var(--gold);
+            transform: translateY(-3px);
+        }
+        .footer-links h4 {
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+        .footer-links ul li a {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            transition: color 0.3s ease;
+        }
+        .footer-links ul li a:hover {
+            color: var(--gold);
+        }
+        .footer-contact address {
+            font-style: normal;
+        }
+        .footer-contact p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 6px;
+        }
+        .footer-contact a {
+            color: rgba(255, 255, 255, 0.5);
+            transition: color 0.3s ease;
+        }
+        .footer-contact a:hover {
+            color: var(--gold);
+        }
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 48px auto 0;
+            padding: 20px 24px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .footer-bottom p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+        .footer-legal {
+            display: flex;
+            gap: 20px;
+        }
+        .footer-legal a {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.3);
+            transition: color 0.3s ease;
+        }
+        .footer-legal a:hover {
+            color: var(--gold);
+        }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+
+        @media (max-width: 1024px) {
+            .subject-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .topics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .outcomes-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .related-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+            .main-nav {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                padding: 24px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 16px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+                transform: translateY(-120%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                max-height: calc(100vh - 80px);
+                overflow-y: auto;
+            }
+            .main-nav.open {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav-list {
+                flex-direction: column;
+                gap: 4px;
+                width: 100%;
+            }
+            .nav-list>li {
+                width: 100%;
+            }
+            .nav-list>li>a {
+                width: 100%;
+                padding: 12px 16px;
+            }
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                padding-left: 20px;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                background: var(--light-bg);
+                border-radius: 8px;
+                display: none;
+            }
+            .dropdown.open .dropdown-menu {
+                display: block;
+            }
+            .dropdown-arrow {
+                float: right;
+            }
+            .nav-actions {
+                width: 100%;
+                justify-content: center;
+                padding-top: 16px;
+                border-top: 1px solid rgba(0, 0, 0, 0.06);
+                flex-wrap: wrap;
+            }
+
+            .page-hero {
+                padding: 120px 0 60px;
+            }
+            .page-hero h1 {
+                font-size: 32px;
+            }
+            .page-hero p {
+                font-size: 16px;
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+            .outcomes-grid {
+                grid-template-columns: 1fr;
+            }
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h2 {
+                font-size: 30px;
+            }
+
+            .subject-text h2 {
+                font-size: 26px;
+            }
+
+            .cta-section {
+                padding: 40px 24px;
+            }
+            .cta-section h2 {
+                font-size: 28px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-legal {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 {
+                font-size: 26px;
+            }
+            .section-header h2 {
+                font-size: 24px;
+            }
+            .subject-text h2 {
+                font-size: 22px;
+            }
+            .topic-card {
+                padding: 16px;
+            }
+            .cta-section h2 {
+                font-size: 24px;
+            }
+            .cta-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cta-actions .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/branding/logo.svg" alt="FIKD Foundation" />
+                    <span class="logo-text">FIKD <span>Foundation</span></span>
+                </a>
+            </div>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/">About</a></li>
+                    <li><a href="../philosophy/">Philosophy</a></li>
+                    <li><a href="../prospectus.html">Prospectus</a></li>
+                    <li class="dropdown">
+                        <a href="../programmes/">Programmes <span class="dropdown-arrow">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../programmes/qaida-beginner.html">Qāʿidah – Beginner</a></li>
+                            <li><a href="../programmes/qaida-upper.html">Qāʿidah – Upper</a></li>
+                            <li><a href="../programmes/quran-beginner.html">Qurʾān – Beginner</a></li>
+                            <li><a href="../programmes/quran-upper.html">Qurʾān – Upper</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="index.html" class="active">Curriculum <span class="dropdown-arrow">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aqeedah.html">ʿAqīdah</a></li>
+                            <li><a href="hadith.html">Ḥadīth</a></li>
+                            <li><a href="seerah.html">Sīrah</a></li>
+                            <li><a href="duas.html">Duʿāʾ</a></li>
+                            <li><a href="worship.html">Worship</a></li>
+                            <li><a href="manners.html">Manners</a></li>
+                            <li><a href="islamic-identity.html" class="active">Islamic Identity</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../teachers/">Teachers</a></li>
+                    <li><a href="../admissions/">Admissions</a></li>
+                    <li><a href="../resources/">Resources</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="../admissions/apply.html" class="btn btn-primary btn-sm">Apply Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== MAIN ====== -->
+    <main>
+
+        <!-- ===== PAGE HERO ===== -->
+        <section class="page-hero" aria-labelledby="hero-title">
+            <div class="page-hero-bg">
+                <img src="../assets/images/curriculum/islamic-identity-hero.jpg" alt="" aria-hidden="true" />
+            </div>
+            <div class="container page-hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="index.html">Curriculum</a> / <span>Islamic Identity</span>
+                </nav>
+                <h1 id="hero-title">Islamic Identity</h1>
+                <p>Living Islam with confidence in a modern, pluralistic world. Understanding challenges, building resilience, and contributing positively as a Muslim in society.</p>
+                <div class="sub-meta">
+                    <span>🌍 Advanced</span>
+                    <span>📖 Integrated across programmes</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OVERVIEW ===== -->
+        <section class="section section-light" aria-labelledby="overview-title">
+            <div class="container">
+                <div class="subject-grid reveal">
+                    <div class="subject-text">
+                        <span class="subject-icon-large">🌍</span>
+                        <h2 id="overview-title">Navigating Faith in the Modern World</h2>
+                        <p>Islamic Identity is a vital subject that addresses the critical question: "What does it mean to be a Muslim today?" In a rapidly changing world, Muslims face unique challenges — from Islamophobia and secular pressures to the complexities of social media and modern ethical dilemmas. This subject equips students with the knowledge, spiritual strength, and practical skills to maintain a strong, authentic Islamic identity.</p>
+                        <p>At FIKD Foundation, we explore the rich heritage of Islamic civilization and how Muslims can actively contribute to the well-being of their communities. Drawing on the Qurʾān, Sunnah, and the legacy of Muslim scholars, we prepare students to engage confidently with the world around them, uphold justice, and embody Islamic values in all spheres of life.</p>
+                        <ul class="highlight-list">
+                            <li>Engaging with modernity and pluralism</li>
+                            <li>Building resilience against challenges</li>
+                            <li>Contributing positively to society</li>
+                            <li>Critical thinking in contemporary issues</li>
+                        </ul>
+                        <a href="../admissions/apply.html" class="btn btn-gold">Enrol Now →</a>
+                    </div>
+                    <div class="subject-image">
+                        <img src="../assets/images/curriculum/islamic-identity-sample.jpg" alt="Islamic Identity illustration" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TOPICS ===== -->
+        <section class="section section-alt" aria-labelledby="topics-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">What You'll Study</span>
+                    <h2 id="topics-title">Key Topics in Islamic Identity</h2>
+                </div>
+
+                <div class="topics-grid reveal">
+                    <div class="topic-card">
+                        <h4>Defining Islamic Identity</h4>
+                        <ul>
+                            <li>Sources of Islamic identity: Qurʾān, Sunnah, and scholarly tradition</li>
+                            <li>Components: Faith, practice, character, and belonging</li>
+                            <li>Historical development of Muslim identity</li>
+                            <li>The concept of Ummah in a globalised world</li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Challenges to Identity</h4>
+                        <ul>
+                            <li>Modernity, secularism, and post-modernism</li>
+                            <li>Islamophobia and discrimination: causes and responses</li>
+                            <li>Extremism and radicalisation – understanding and countering</li>
+                            <li>Social media, digital ethics, and information overload</li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Building Resilience</h4>
+                        <ul>
+                            <li>Strengthening faith through knowledge and worship</li>
+                            <li>Critical thinking and media literacy</li>
+                            <li>Seeking supportive community and mentorship</li>
+                            <li>Prophetic model of patience and perseverance</li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Living Islam in the West</h4>
+                        <ul>
+                            <li>Minority contexts: challenges and opportunities</li>
+                            <li>Engaging with non‑Muslims: dialogue and mutual understanding</li>
+                            <li>Navigating education, work, and social spaces</li>
+                            <li>Maintaining religious practices in a diverse environment</li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Muslim Contribution to Society</h4>
+                        <ul>
+                            <li>Islamic civilization: science, art, and ethics</li>
+                            <li>Contemporary Muslim contributions in various fields</li>
+                            <li>Social justice, environmental stewardship, and community service</li>
+                            <li>The Prophetic model of community engagement</li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Contemporary Ethical Issues</h4>
+                        <ul>
+                            <li>Navigating modern moral dilemmas (biotech, finance, family)</li>
+                            <li>Applying Islamic principles to new challenges</li>
+                            <li>Balancing religious values with societal expectations</li>
+                            <li>Developing a personal framework for ethical decision‑making</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OUTCOMES ===== -->
+        <section class="section section-light" aria-labelledby="outcomes-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">By Studying Islamic Identity</span>
+                    <h2 id="outcomes-title">What You Will Achieve</h2>
+                </div>
+
+                <div class="outcomes-grid reveal">
+                    <div class="outcome-item">
+                        <span class="outcome-icon">✅</span>
+                        <p>Develop a confident, coherent, and authentic Islamic identity.</p>
+                    </div>
+                    <div class="outcome-item">
+                        <span class="outcome-icon">✅</span>
+                        <p>Understand and effectively respond to internal and external challenges.</p>
+                    </div>
+                    <div class="outcome-item">
+                        <span class="outcome-icon">✅</span>
+                        <p>Engage positively and constructively with diverse communities and cultures.</p>
+                    </div>
+                    <div class="outcome-item">
+                        <span class="outcome-icon">✅</span>
+                        <p>Contribute to societal well-being based on Islamic principles of justice and compassion.</p>
+                    </div>
+                    <div class="outcome-item">
+                        <span class="outcome-icon">✅</span>
+                        <p>Utilize critical thinking to navigate contemporary ethical dilemmas.</p>
+                    </div>
+                    <div class="outcome-item">
+                        <span class="outcome-icon">✅</span>
+                        <p>Build resilience against discrimination, extremism, and societal pressures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RELATED ===== -->
+        <section class="section section-alt" aria-labelledby="related-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Connected Learning</span>
+                    <h2 id="related-title">Related Subjects</h2>
+                    <p>Islamic Identity builds upon and complements other Islamic disciplines.</p>
+                </div>
+
+                <div class="related-grid reveal">
+                    <a href="aqeedah.html" class="related-card">
+                        <span class="rel-icon">⭐</span>
+                        <h4>ʿAqīdah</h4>
+                        <p>A sound creed is the bedrock of a confident Islamic identity.</p>
+                    </a>
+                    <a href="seerah.html" class="related-card">
+                        <span class="rel-icon">📖</span>
+                        <h4>Sīrah</h4>
+                        <p>The Prophet's ﷺ life provides the ultimate model for navigating challenges.</p>
+                    </a>
+                    <a href="manners.html" class="related-card">
+                        <span class="rel-icon">🌿</span>
+                        <h4>Manners</h4>
+                        <p>Good character is essential for representing Islam and contributing to society.</p>
+                    </a>
+                    <a href="worship.html" class="related-card">
+                        <span class="rel-icon">🕌</span>
+                        <h4>Worship</h4>
+                        <p>Worship strengthens the spiritual foundation for a resilient identity.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-section reveal">
+                    <h2 id="cta-title">Build Your Confident Islamic Identity</h2>
+                    <p>Navigate the complexities of the modern world with faith, knowledge, and confidence. Enrol at FIKD Foundation and begin your journey in Islamic Identity today.</p>
+                    <div class="cta-actions">
+                        <a href="../admissions/apply.html" class="btn btn-gold btn-lg">Apply Now →</a>
+                        <a href="../contact/" class="btn btn-white btn-lg">Ask a Question</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../assets/branding/logo-white.svg" alt="FIKD Foundation" height="48" style="margin-bottom:12px;" />
+                    <h3>FIKD Foundation</h3>
+                    <p>Empowering hearts and minds through authentic Islamic education.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/fikd.official" aria-label="Facebook">📘</a>
+                        <a href="https://www.instagram.com/muftiubaidullah.official" aria-label="Instagram">📸</a>
+                        <a href="https://www.youtube.com/@ubaidullahalfateh2874" aria-label="YouTube">▶️</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../about/">About</a></li>
+                        <li><a href="../programmes/">Programmes</a></li>
+                        <li><a href="../teachers/">Teachers</a></li>
+                        <li><a href="../admissions/">Admissions</a></li>
+                        <li><a href="../resources/">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Curriculum</h4>
+                    <ul>
+                        <li><a href="aqeedah.html">ʿAqīdah</a></li>
+                        <li><a href="hadith.html">Ḥadīth</a></li>
+                        <li><a href="seerah.html">Sīrah</a></li>
+                        <li><a href="duas.html">Duʿāʾ</a></li>
+                        <li><a href="worship.html">Worship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>📧 <a href="mailto: fikd-foundation@gmail.com">fikd-foundation@gmail.com</a></p>
+                        <p>📞 <a href="tel:+923159993378">+92 315 9993 378</a></p>
+                        <p>📍 FIKD Foundation, Chargulli, Mardan, KPK, Pakistan</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FIKD Foundation. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="../privacy/">Privacy</a></li>
+                    <li><a href="../terms/">Terms</a></li>
+                    <li><a href="../faq/">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== SCRIPTS ====== -->
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        navToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('open');
+            this.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!mainNav.contains(e.target) && !navToggle.contains(e.target)) {
+                mainNav.classList.remove('open');
+                navToggle.classList.remove('active');
+            }
+        });
+
+        document.querySelectorAll('.dropdown > a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        });
+
+        const header = document.querySelector('.site-header');
+        window.addEventListener('scroll', function() {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        console.log('🚀 FIKD Foundation - Islamic Identity page loaded successfully!');
+    </script>
+
+</body>
+</html>
