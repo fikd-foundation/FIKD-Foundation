@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: seo/browserconfig.xml
+  Description: Browser configuration for Windows 8/10/11 tiles
+  Last Updated: 2026
+-->
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="/assets/icons/tile-70x70.png"/>
+            <square150x150logo src="/assets/icons/tile-150x150.png"/>
+            <wide310x150logo src="/assets/icons/tile-310x150.png"/>
+            <square310x310logo src="/assets/icons/tile-310x310.png"/>
+            <TileColor>#0d2e1a</TileColor>
+            <TileImage src="/assets/icons/tile-310x310.png"/>
+        </tile>
+        <notification>
+            <polling-uri2>https://fikd-foundation.org/seo/notifications.xml</polling-uri2>
+            <polling-interval2>43200</polling-interval2>
+            <delivery-method2>polling</delivery-method2>
+        </notification>
+        <badge>
+            <polling-uri2>https://fikd-foundation.org/seo/badge.xml</polling-uri2>
+            <polling-interval2>3600</polling-interval2>
+            <delivery-method2>polling</delivery-method2>
+        </badge>
+        <custom>
+            <TileBackground>#0d2e1a</TileBackground>
+            <TileForeground>#ffffff</TileForeground>
+            <TileDisplay>true</TileDisplay>
+            <TileUrl>https://fikd-foundation.org/</TileUrl>
+        </custom>
+    </msapplication>
+    <mobile>
+        <mobileUrl>https://fikd-foundation.org/</mobileUrl>
+        <mobileTitle>FIKD Foundation</mobileTitle>
+    </mobile>
+</browserconfig>
