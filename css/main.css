@@ -1,0 +1,67 @@
+/* ========================================
+   File: css/main.css
+   Description: Main entry point
+   ======================================== */
+
+@import 'variables.css';
+@import 'reset.css';
+@import 'typography.css';
+@import 'layout.css';
+@import 'components.css';
+@import 'pages.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'utilities.css';
+@import 'animations.css';
+@import 'responsive.css';
+@import 'print.css';
+
+/* ----- Global Styles ----- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    background: var(--color-bg);
+}
+
+main {
+    flex: 1;
+}
+
+/* ----- Container ----- */
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    width: 100%;
+}
+
+/* ----- Skip Link ----- */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: var(--radius-md);
+    z-index: var(--z-toast);
+    font-weight: var(--font-weight-semibold);
+}
+
+.skip-link:focus {
+    top: var(--spacing-md);
+}
+
+/* ----- Selection ----- */
+::selection {
+    background: var(--color-secondary);
+    color: var(--color-white);
+}
