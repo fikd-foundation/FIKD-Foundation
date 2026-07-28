@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "totalProgrammes": 4,
+    "lastUpdated": "2026-07-28",
+    "version": "2.0"
+  },
+  "programmes": [
+    {
+      "id": "qaida-beginner",
+      "title": "Qāʿidah – Beginner",
+      "slug": "qaida-beginner",
+      "level": "Level 1",
+      "levelLabel": "Foundational",
+      "icon": "📘",
+      "duration": "12 weeks",
+      "durationWeeks": 12,
+      "fee": 149,
+      "feeMonthly": 50,
+      "sessionsPerWeek": 2,
+      "sessionDuration": 45,
+      "maxStudents": 8,
+      "description": "Perfect for absolute beginners. Learn the Arabic alphabet, proper pronunciation (makhārij), and basic reading skills. Build a solid foundation for Qurʾānic recitation.",
+      "longDescription": "The Qāʿidah – Beginner programme is the first step in your Qurʾānic journey. Using the classical Qāʿidah method, students learn the Arabic alphabet, recognise letters in different positions, and master basic vowel marks (fatḥa, kasra, ḍamma) and their combinations. By the end, you will be able to read simple words and short phrases with correct pronunciation.",
+      "learningOutcomes": [
+        "Recognise and pronounce all Arabic letters with correct makhārij",
+        "Read simple words and short sentences with proper vowel marks",
+        "Apply basic rules of sukūn, shaddah, and tanwīn",
+        "Build a strong foundation for Qāʿidah – Upper or direct Qurʾān reading"
+      ],
+      "modules": [
+        {
+          "title": "The Arabic Alphabet",
+          "topics": [
+            "Recognition of all 28 letters in isolated forms",
+            "Pronunciation from correct articulation points",
+            "Identifying letters in initial, medial, and final positions"
+          ]
+        },
+        {
+          "title": "Short Vowels (Harakāt)",
+          "topics": [
+            "Fatḥa ( َ ), Kasra ( ِ ), Ḍamma ( ُ ) – pronunciation and usage",
+            "Reading simple three-letter words",
+            "Combining consonants and vowels fluently"
+          ]
+        },
+        {
+          "title": "Sukūn and Shaddah",
+          "topics": [
+            "Understanding the absence of a vowel (sukūn)",
+            "Doubled consonants (shaddah) and their pronunciation",
+            "Reading words with sukūn and shaddah"
+          ]
+        },
+        {
+          "title": "Basic Reading Practice",
+          "topics": [
+            "Reading short phrases and sentences from the Qurʾān",
+            "Application of all rules learned",
+            "Introduction to simple tajwīd rules"
+          ]
+        }
+      ],
+      "prerequisites": "No prior knowledge required. Open to all ages.",
+      "featured": true,
+      "order": 1,
+      "url": "programmes/qaida-beginner.html",
+      "image": "assets/images/programmes/qaida-beginner-hero.jpg",
+      "sampleImage": "assets/images/programmes/qaida-beginner-sample.jpg",
+      "metaTitle": "Qāʿidah – Beginner Programme | FIKD Foundation",
+      "metaDescription": "Learn the Arabic alphabet and basic reading skills with our beginner Qāʿidah programme. Build a solid foundation for Qurʾānic recitation."
+    },
+    {
+      "id": "qaida-upper",
+      "title": "Qāʿidah – Upper",
+      "slug": "qaida-upper",
+      "level": "Level 2",
+      "levelLabel": "Intermediate",
+      "icon": "📗",
+      "duration": "14 weeks",
+      "durationWeeks": 14,
+      "fee": 199,
+      "feeMonthly": 57,
+      "sessionsPerWeek": 2,
+      "sessionDuration": 45,
+      "maxStudents": 8,
+      "description": "Build on foundational skills to achieve fluency in reading. Master advanced rules of tajwīd and develop confidence in reading any part of the Qurʾān.",
+      "longDescription": "The Qāʿidah – Upper programme is designed for students who have completed the beginner Qāʿidah or have basic reading skills. This course focuses on achieving fluency in reading the Qurʾān by mastering advanced tajwīd rules, proper rhythm, and stopping (waqf) techniques.",
+      "learningOutcomes": [
+        "Read any part of the Qurʾān with fluency and proper tajwīd",
+        "Master advanced rules including idghām, iqlāb, and ikhfāʾ",
+        "Apply correct makhārij and ṣifāt in all letters",
+        "Understand and apply waqf (stopping) rules appropriately"
+      ],
+      "modules": [
+        {
+          "title": "Advanced Tajwīd Rules",
+          "topics": [
+            "Detailed study of idghām (merging) – types and applications",
+            "Iqlāb (conversion) and ikhfāʾ (hiding) rules",
+            "Rules of mīm sākinah and nūn sākinah/tanwīn"
+          ]
+        },
+        {
+          "title": "Fluency and Rhythm",
+          "topics": [
+            "Understanding and applying proper reading rhythm (tartīl)",
+            "Extended vowel lengths (madd) – natural and required",
+            "Connecting and stopping (waqf) – rules and etiquette"
+          ]
+        },
+        {
+          "title": "Makhārij and Ṣifāt",
+          "topics": [
+            "Deep dive into articulation points (makhārij)",
+            "Characteristics of letters (ṣifāt) – heavy, light, etc.",
+            "Correcting common pronunciation errors"
+          ]
+        },
+        {
+          "title": "Selected Sūrah Reading",
+          "topics": [
+            "Reading and reciting selected portions from Juz 29 and 30",
+            "Application of all tajwīd rules in context",
+            "Gradual increase in reading speed and accuracy"
+          ]
+        }
+      ],
+      "prerequisites": "Completion of Qāʿidah – Beginner or equivalent knowledge.",
+      "featured": true,
+      "order": 2,
+      "url": "programmes/qaida-upper.html",
+      "image": "assets/images/programmes/qaida-upper-hero.jpg",
+      "sampleImage": "assets/images/programmes/qaida-upper-sample.jpg",
+      "metaTitle": "Qāʿidah – Upper Programme | FIKD Foundation",
+      "metaDescription": "Advance your Qurʾānic reading with our upper Qāʿidah programme. Master advanced tajwīd rules and fluency."
+    },
+    {
+      "id": "quran-beginner",
+      "title": "Qurʾān – Beginner",
+      "slug": "quran-beginner",
+      "level": "Level 3",
+      "levelLabel": "Intermediate",
+      "icon": "🕌",
+      "duration": "16 weeks",
+      "durationWeeks": 16,
+      "fee": 249,
+      "feeMonthly": 62,
+      "sessionsPerWeek": 2,
+      "sessionDuration": 60,
+      "maxStudents": 8,
+      "description": "Move beyond reading to recitation with proper tajwīd. Begin memorisation of Juz ʿAmma (Juz 30) with understanding of basic meanings and Tafsīr.",
+      "longDescription": "The Qurʾān – Beginner programme is designed for students who have completed the Qāʿidah – Upper or have equivalent reading fluency. This course shifts the focus from merely reading to reciting the Qurʾān with proper tajwīd, understanding of basic meanings, and beginning the blessed journey of memorisation.",
+      "learningOutcomes": [
+        "Recite the Qurʾān with proper tajwīd and fluency",
+        "Memorise Juz ʿAmma (or a significant portion) with confidence",
+        "Understand the basic meanings and themes of short sūrahs",
+        "Build a strong foundation for advanced Qurʾānic studies"
+      ],
+      "modules": [
+        {
+          "title": "Perfecting Tajwīd",
+          "topics": [
+            "Comprehensive review and application of all tajwīd rules",
+            "Focus on makhārij and ṣifāt for fluent recitation",
+            "Rules of madd (extension) – types and lengths"
+          ]
+        },
+        {
+          "title": "Juz ʿAmma – Recitation & Memorisation",
+          "topics": [
+            "Systematic memorisation of short sūrahs (from An‑Nās to Ad‑Ḍuḥā)",
+            "Daily memorisation targets with review techniques",
+            "Individualised pacing based on student ability"
+          ]
+        },
+        {
+          "title": "Basic Tafsīr & Vocabulary",
+          "topics": [
+            "Word‑for‑word meaning of key verses in Juz ʿAmma",
+            "Understanding the context and themes of each sūrah",
+            "Introduction to Qurʾānic Arabic – common vocabulary"
+          ]
+        },
+        {
+          "title": "Revision & Application",
+          "topics": [
+            "Weekly revision of memorised portions",
+            "Practice reciting from the mushaf with proper tajwīd",
+            "Preparation for the Qurʾān – Upper programme"
+          ]
+        }
+      ],
+      "prerequisites": "Completion of Qāʿidah – Upper or equivalent reading fluency.",
+      "featured": true,
+      "order": 3,
+      "url": "programmes/quran-beginner.html",
+      "image": "assets/images/programmes/quran-beginner-hero.jpg",
+      "sampleImage": "assets/images/programmes/quran-beginner-sample.jpg",
+      "metaTitle": "Qurʾān – Beginner Programme | FIKD Foundation",
+      "metaDescription": "Begin your Qurʾānic journey with recitation, tajwīd, and memorisation of Juz ʿAmma."
+    },
+    {
+      "id": "quran-upper",
+      "title": "Qurʾān – Upper",
+      "slug": "quran-upper",
+      "level": "Level 4",
+      "levelLabel": "Advanced",
+      "icon": "🕋",
+      "duration": "24 weeks (2 terms)",
+      "durationWeeks": 24,
+      "fee": 349,
+      "feeMonthly": 58,
+      "sessionsPerWeek": 3,
+      "sessionDuration": 60,
+      "maxStudents": 6,
+      "description": "For advanced students aiming for mastery. Deepen your recitation, memorisation, and understanding of the Qurʾān through detailed Tafsīr and linguistic analysis.",
+      "longDescription": "The Qurʾān – Upper programme is the culmination of our Qurʾānic track, designed for students who have completed the Qurʾān – Beginner programme or have equivalent proficiency. This course focuses on achieving mastery in all aspects of Qurʾānic study: flawless recitation with advanced tajwīd, comprehensive memorisation, and deep understanding through Tafsīr and linguistic analysis.",
+      "learningOutcomes": [
+        "Recite the entire Qurʾān with flawless tajwīd and mastery of qirāʾāt",
+        "Memorise the full Qurʾān (or a substantial portion) with confidence",
+        "Understand the Qurʾān through in-depth Tafsīr and thematic analysis",
+        "Analyse Qurʾānic Arabic grammatically and connect it to meaning"
+      ],
+      "modules": [
+        {
+          "title": "Advanced Tajwīd & Qirāʾāt",
+          "topics": [
+            "Complete mastery of all tajwīd rules with practical application",
+            "Study of the ten qirāʾāt (canonical recitations)",
+            "Advanced madd rules, waqf, and ibtidāʾ"
+          ]
+        },
+        {
+          "title": "Ḥifẓ (Memorisation)",
+          "topics": [
+            "Systematic memorisation of the entire Qurʾān (or customised portions)",
+            "Advanced memorisation techniques and revision strategies",
+            "Pathway to obtaining Ijāzah in ḥifẓ"
+          ]
+        },
+        {
+          "title": "Tafsīr & Qurʾānic Sciences",
+          "topics": [
+            "In-depth study of selected sūrahs and their Tafsīr",
+            "Thematic analysis of Qurʾānic concepts",
+            "Study of Asbāb al-Nuzūl (reasons for revelation)"
+          ]
+        },
+        {
+          "title": "Iʿrāb & Linguistic Analysis",
+          "topics": [
+            "Grammatical analysis (Iʿrāb) of selected verses",
+            "Understanding Arabic syntax and morphology in Qurʾānic context",
+            "Connecting linguistic structure to meaning"
+          ]
+        }
+      ],
+      "prerequisites": "Completion of Qurʾān – Beginner or equivalent proficiency.",
+      "featured": true,
+      "order": 4,
+      "url": "programmes/quran-upper.html",
+      "image": "assets/images/programmes/quran-upper-hero.jpg",
+      "sampleImage": "assets/images/programmes/quran-upper-sample.jpg",
+      "metaTitle": "Qurʾān – Upper Programme | FIKD Foundation",
+      "metaDescription": "Master the Qurʾān with advanced recitation, complete tajwīd, in-depth Tafsīr, and full memorisation."
+    }
+  ]
+}

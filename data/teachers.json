@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "totalTeachers": 6,
+    "lastUpdated": "2026-07-28",
+    "version": "2.0"
+  },
+  "teachers": [
+    {
+      "id": "mufti-abdullah",
+      "name": "Mufti Abdullah",
+      "title": "Founder & Director",
+      "slug": "mufti-profile",
+      "image": "assets/images/teachers/mufti-profile.jpg",
+      "largeImage": "assets/images/teachers/mufti-profile-large.jpg",
+      "badge": "Founder",
+      "credentials": [
+        "Ijāzah in 10 Qirāʾāt",
+        "20+ years experience"
+      ],
+      "specialties": ["Ḥadīth", "Qirāʾāt", "Fiqh"],
+      "bio": "Mufti Abdullah is the founder of FIKD Foundation with over 20 years of teaching experience. He holds Ijāzah in the ten canonical recitations and specialises in Ḥadīth, Fiqh, and Qurʾānic studies. His teaching methodology combines classical scholarship with a modern, accessible approach.",
+      "fullBio": "Mufti Abdullah is the founder and director of FIKD Foundation. He is a distinguished scholar with a deep commitment to preserving and transmitting authentic Islamic knowledge. With over two decades of teaching experience, he has trained hundreds of students in the traditional Islamic sciences. Mufti Abdullah's academic journey took him across the Muslim world, where he studied under some of the most renowned scholars of our time. He holds Ijāzah (chains of transmission) in the ten canonical recitations (Qirāʾāt) of the Qurʾān, Ḥadīth, and Fiqh.",
+      "publications": [
+        "An Introduction to Ḥadīth Sciences (2020)",
+        "Fiqh for Daily Life (2018)",
+        "The Prophetic Model of Character (2019)"
+      ],
+      "languages": ["English", "Arabic", "Urdu"],
+      "profileUrl": "teachers/mufti-profile.html",
+      "featured": true,
+      "order": 1,
+      "metaTitle": "Mufti Abdullah – Founder & Director | FIKD Foundation",
+      "metaDescription": "Profile of Mufti Abdullah, Founder and Director of FIKD Foundation. Learn about his qualifications and teaching experience."
+    },
+    {
+      "id": "ustadha-fatima",
+      "name": "Ustadha Fatima",
+      "title": "Head of Qurʾān Programme",
+      "slug": "ustadha-fatima",
+      "image": "assets/images/teachers/teacher-2.jpg",
+      "largeImage": "assets/images/teachers/teacher-2-large.jpg",
+      "badge": "Senior Teacher",
+      "credentials": [
+        "Ijāzah in Tajwīd",
+        "10+ years experience"
+      ],
+      "specialties": ["Tajwīd", "Ḥifẓ", "Tafsīr"],
+      "bio": "Ḥāfiẓah with deep expertise in Qurʾānic recitation and memorisation. Ustadha Fatima has helped hundreds of students begin their ḥifẓ journey.",
+      "fullBio": "Ustadha Fatima is the Head of the Qurʾān Programme at FIKD Foundation. She is a Ḥāfiẓah with Ijāzah in Tajwīd and has over 10 years of teaching experience. She specialises in helping students develop beautiful and accurate recitation, and has guided many students through their memorisation journey.",
+      "publications": [],
+      "languages": ["English", "Arabic", "Urdu"],
+      "profileUrl": "teachers/",
+      "featured": true,
+      "order": 2,
+      "metaTitle": "Ustadha Fatima – Head of Qurʾān Programme | FIKD Foundation",
+      "metaDescription": "Profile of Ustadha Fatima, Head of Qurʾān Programme at FIKD Foundation. Learn about her qualifications in Tajwīd and Ḥifẓ."
+    },
+    {
+      "id": "shaykh-ibrahim",
+      "name": "Shaykh Ibrahim",
+      "title": "Curriculum Lead",
+      "slug": "shaykh-ibrahim",
+      "image": "assets/images/teachers/teacher-3.jpg",
+      "largeImage": "assets/images/teachers/teacher-3-large.jpg",
+      "badge": "Senior Scholar",
+      "credentials": [
+        "PhD in Islamic History",
+        "15+ years experience"
+      ],
+      "specialties": ["ʿAqīdah", "Sīrah", "History"],
+      "bio": "Expert in ʿAqīdah, Sīrah, and Islamic history. Shaykh Ibrahim has authored several textbooks and is passionate about making Islamic knowledge accessible.",
+      "fullBio": "Shaykh Ibrahim is the Curriculum Lead at FIKD Foundation. He holds a PhD in Islamic History and has over 15 years of teaching experience. He is an expert in ʿAqīdah, Sīrah, and Islamic history, and has authored several textbooks on these subjects.",
+      "publications": [
+        "Foundations of ʿAqīdah (2021)",
+        "The Life of the Prophet (2020)"
+      ],
+      "languages": ["English", "Arabic"],
+      "profileUrl": "teachers/",
+      "featured": true,
+      "order": 3,
+      "metaTitle": "Shaykh Ibrahim – Curriculum Lead | FIKD Foundation",
+      "metaDescription": "Profile of Shaykh Ibrahim, Curriculum Lead at FIKD Foundation. Learn about his expertise in ʿAqīdah and Sīrah."
+    },
+    {
+      "id": "ustadh-muhammad",
+      "name": "Ustadh Muhammad",
+      "title": "Qāʿidah Specialist",
+      "slug": "ustadh-muhammad",
+      "image": "assets/images/teachers/teacher-4.jpg",
+      "largeImage": "assets/images/teachers/teacher-4-large.jpg",
+      "badge": "Senior Teacher",
+      "credentials": [
+        "Ijāzah in Tajwīd",
+        "8+ years experience"
+      ],
+      "specialties": ["Qāʿidah", "Tajwīd", "Arabic"],
+      "bio": "Patient and encouraging teacher specialising in Qāʿidah and beginner Qurʾānic reading. Ustadh Muhammad ensures every student builds a strong foundation.",
+      "fullBio": "Ustadh Muhammad is a Qāʿidah Specialist at FIKD Foundation. He holds Ijāzah in Tajwīd and has over 8 years of teaching experience. He is known for his patient and encouraging approach, ensuring every student builds a strong foundation in Qurʾānic reading.",
+      "publications": [],
+      "languages": ["English", "Urdu"],
+      "profileUrl": "teachers/",
+      "featured": false,
+      "order": 4,
+      "metaTitle": "Ustadh Muhammad – Qāʿidah Specialist | FIKD Foundation",
+      "metaDescription": "Profile of Ustadh Muhammad, Qāʿidah Specialist at FIKD Foundation. Learn about his expertise in beginner Qurʾānic reading."
+    },
+    {
+      "id": "dr-amina",
+      "name": "Dr. Amina El-Sayed",
+      "title": "Islamic Identity & Ethics",
+      "slug": "dr-amina",
+      "image": "assets/images/teachers/teacher-5.jpg",
+      "largeImage": "assets/images/teachers/teacher-5-large.jpg",
+      "badge": "Senior Scholar",
+      "credentials": [
+        "PhD in Islamic Thought",
+        "12+ years experience"
+      ],
+      "specialties": ["Islamic Identity", "Ethics", "Interfaith"],
+      "bio": "Specialist in Islamic identity, contemporary ethics, and interfaith dialogue. Dr. Amina helps students navigate modern challenges with faith and confidence.",
+      "fullBio": "Dr. Amina El-Sayed is a specialist in Islamic Identity and Ethics at FIKD Foundation. She holds a PhD in Islamic Thought and has over 12 years of teaching experience. She helps students navigate modern challenges with faith and confidence.",
+      "publications": [
+        "Muslim Identity in the Modern World (2022)"
+      ],
+      "languages": ["English", "Arabic"],
+      "profileUrl": "teachers/",
+      "featured": false,
+      "order": 5,
+      "metaTitle": "Dr. Amina El-Sayed – Islamic Identity & Ethics | FIKD Foundation",
+      "metaDescription": "Profile of Dr. Amina El-Sayed, specialist in Islamic Identity and Ethics at FIKD Foundation."
+    },
+    {
+      "id": "ustadha-maryam",
+      "name": "Ustadha Maryam",
+      "title": "Duʿāʾ & Spirituality",
+      "slug": "ustadha-maryam",
+      "image": "assets/images/teachers/teacher-6.jpg",
+      "largeImage": "assets/images/teachers/teacher-6-large.jpg",
+      "badge": "Senior Teacher",
+      "credentials": [
+        "Ijāzah in Adʿiyyah",
+        "10+ years experience"
+      ],
+      "specialties": ["Duʿāʾ", "Dhikr", "Tazkiyah"],
+      "bio": "Expert in supplications, dhikr, and spiritual development. Ustadha Maryam inspires students to develop a deep, personal connection with Allah through duʿāʾ.",
+      "fullBio": "Ustadha Maryam is a specialist in Duʿāʾ and Spirituality at FIKD Foundation. She holds Ijāzah in Adʿiyyah and has over 10 years of teaching experience. She inspires students to develop a deep, personal connection with Allah through supplication.",
+      "publications": [],
+      "languages": ["English", "Urdu"],
+      "profileUrl": "teachers/",
+      "featured": false,
+      "order": 6,
+      "metaTitle": "Ustadha Maryam – Duʿāʾ & Spirituality | FIKD Foundation",
+      "metaDescription": "Profile of Ustadha Maryam, specialist in Duʿāʾ and Spirituality at FIKD Foundation."
+    }
+  ]
+}

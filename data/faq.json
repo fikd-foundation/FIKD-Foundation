@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "totalFAQs": 20,
+    "lastUpdated": "2026-07-28",
+    "version": "2.0"
+  },
+  "faqs": [
+    {
+      "id": 1,
+      "category": "general",
+      "question": "What is FIKD Foundation?",
+      "answer": "FIKD Foundation is a dedicated Islamic educational institution offering structured programmes in Qurʾānic studies, Qāʿidah, and a comprehensive Islamic curriculum. We are committed to providing authentic, accessible Islamic education to students worldwide. Our programmes combine traditional scholarship with modern pedagogy.",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "category": "general",
+      "question": "Who can study at FIKD Foundation?",
+      "answer": "FIKD Foundation welcomes students of all ages, backgrounds, and nationalities. Our programmes are designed to accommodate beginners as well as those with some prior knowledge. We have students ranging from children to adults, from all over the world. No prior Arabic knowledge is required for beginner programmes.",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "category": "general",
+      "question": "Is FIKD Foundation a registered organisation?",
+      "answer": "Yes, FIKD Foundation is a registered educational organisation operating in accordance with UK regulations. We are committed to transparency and academic excellence in all our programmes. We operate with full compliance with educational standards.",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "category": "admissions",
+      "question": "How do I apply to FIKD Foundation?",
+      "answer": "You can apply by visiting our Apply Now page and completing the online application form. Our admissions team will review your application and contact you within 2-3 business days. The application process is simple and straightforward.",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "category": "admissions",
+      "question": "Is there an application deadline?",
+      "answer": "We operate on rolling admissions, meaning you can apply at any time. However, we recommend applying at least two weeks before the start of a new term to secure your place. Our terms typically begin in January, April, September, and October.",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "category": "admissions",
+      "question": "Do I need a placement test?",
+      "answer": "For Qurʾān programmes, we conduct a brief placement assessment to determine your current level and place you in the appropriate class. This ensures you receive the right instruction for your skill level. Qāʿidah programmes do not require a placement test.",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "category": "programmes",
+      "question": "What programmes do you offer?",
+      "answer": "We offer four main programmes: Qāʿidah – Beginner, Qāʿidah – Upper, Qurʾān – Beginner, and Qurʾān – Upper. Each programme is designed to build on the previous one, providing a structured learning path from foundational Arabic reading to advanced Qurʾānic recitation, memorisation, and understanding.",
+      "featured": true
+    },
+    {
+      "id": 8,
+      "category": "programmes",
+      "question": "How long is each programme?",
+      "answer": "Programme durations vary: Qāʿidah – Beginner is 12 weeks, Qāʿidah – Upper is 14 weeks, Qurʾān – Beginner is 16 weeks, and Qurʾān – Upper is 24 weeks (2 terms). Each programme includes live classes, recorded sessions, and regular assessments.",
+      "featured": false
+    },
+    {
+      "id": 9,
+      "category": "programmes",
+      "question": "Can I study multiple programmes simultaneously?",
+      "answer": "We generally recommend focusing on one programme at a time to ensure you get the most out of your learning experience. However, advanced students may be able to combine certain programmes. Please contact our admissions team to discuss your specific situation.",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "category": "fees",
+      "question": "How much do programmes cost?",
+      "answer": "Our fees are as follows: Qāʿidah – Beginner: $149/term, Qāʿidah – Upper: $199/term, Qurʾān – Beginner: $249/term, Qurʾān – Upper: $349/term (2 terms). Visit our Fees page for full details and payment options. All fees are in USD.",
+      "featured": true
+    },
+    {
+      "id": 11,
+      "category": "fees",
+      "question": "Do you offer payment plans?",
+      "answer": "Yes, we offer flexible payment options including full payment with a 5% discount and interest-free monthly installments. We also offer scholarships for eligible students. Contact our admissions team for more information about payment arrangements.",
+      "featured": false
+    },
+    {
+      "id": 12,
+      "category": "fees",
+      "question": "Do you offer scholarships?",
+      "answer": "Yes, we offer both need-based and merit-based scholarships. You can indicate your interest in scholarships on the application form. Contact our admissions team for more details about eligibility and the application process.",
+      "featured": true
+    },
+    {
+      "id": 13,
+      "category": "fees",
+      "question": "What is the refund policy?",
+      "answer": "We offer a full refund if you cancel before the first day of classes. During the first week, a 75% refund is available. After the first week, no refund is offered, but you may transfer to a future term. Please refer to our Terms & Conditions for full details.",
+      "featured": false
+    },
+    {
+      "id": 14,
+      "category": "technical",
+      "question": "What technology do I need for classes?",
+      "answer": "You will need a stable internet connection, a computer or tablet with a camera and microphone, and the Zoom application (free) installed. We also recommend using headphones for better audio quality. Classes are conducted live online.",
+      "featured": true
+    },
+    {
+      "id": 15,
+      "category": "technical",
+      "question": "What if I miss a class?",
+      "answer": "All classes are recorded and made available for students to review at their convenience. You can catch up on missed content and reach out to your teacher for additional support if needed. Recordings are accessible through our student portal.",
+      "featured": false
+    },
+    {
+      "id": 16,
+      "category": "technical",
+      "question": "How do I access course materials?",
+      "answer": "All course materials are available through our student portal. You will receive login details upon enrolment. Materials include PDFs, recorded sessions, practice exercises, and supplementary resources. Everything you need is in one place.",
+      "featured": false
+    },
+    {
+      "id": 17,
+      "category": "general",
+      "question": "Do you offer certificates upon completion?",
+      "answer": "Yes, we offer certificates of completion for all our programmes. Upon successful completion of a programme, students receive a certificate recognising their achievement. Advanced programmes may also offer Ijāzah pathways.",
+      "featured": false
+    },
+    {
+      "id": 18,
+      "category": "general",
+      "question": "What is the class size?",
+      "answer": "We maintain small class sizes to ensure personalised attention. Qāʿidah programmes have a maximum of 8 students per class, while Qurʾān programmes have a maximum of 6-8 students. This allows for individual feedback and support.",
+      "featured": false
+    },
+    {
+      "id": 19,
+      "category": "general",
+      "question": "Are classes recorded?",
+      "answer": "Yes, all live classes are recorded and made available to students through our portal. You can review lessons at any time to reinforce your learning or catch up on missed content.",
+      "featured": false
+    },
+    {
+      "id": 20,
+      "category": "programmes",
+      "question": "Do you offer an Ijāzah pathway?",
+      "answer": "Yes, our Qurʾān – Upper programme offers an Ijāzah pathway for students who complete the full memorisation and recitation requirements. This is a significant achievement that allows students to transmit the Qurʾān with an unbroken chain of transmission.",
+      "featured": true
+    }
+  ]
+}

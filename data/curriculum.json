@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "totalSubjects": 7,
+    "lastUpdated": "2026-07-28",
+    "version": "2.0"
+  },
+  "subjects": [
+    {
+      "id": "aqeedah",
+      "title": "ʿAqīdah",
+      "slug": "aqeedah",
+      "icon": "⭐",
+      "description": "Core beliefs of Ahl al-Sunnah wal-Jamāʿah — Tawḥīd, Prophethood, Angels, Divine Decree, and the Hereafter. The foundation of all Islamic practice.",
+      "longDescription": "ʿAqīdah (Islamic creed) is the foundation upon which all Islamic practice and ethics are built. It encompasses the core beliefs that every Muslim must hold — belief in Allah, His angels, His revealed books, His messengers, the Day of Judgement, and divine decree (qadar). At FIKD Foundation, we teach ʿAqīdah according to the understanding of Ahl al-Sunnah wal-Jamāʿah.",
+      "topics": [
+        "Tawḥīd (Oneness of Allah)",
+        "Belief in Angels",
+        "Belief in the Books",
+        "Belief in the Messengers",
+        "Belief in the Hereafter",
+        "Divine Decree (Qadar)"
+      ],
+      "level": "All Levels",
+      "url": "curriculum/aqeedah.html",
+      "image": "assets/images/curriculum/aqeedah-hero.jpg",
+      "sampleImage": "assets/images/curriculum/aqeedah-sample.jpg",
+      "featured": true,
+      "order": 1,
+      "metaTitle": "ʿAqīdah – FIKD Foundation Curriculum",
+      "metaDescription": "Study ʿAqīdah (Islamic creed) at FIKD Foundation. Learn the core beliefs of Ahl al-Sunnah wal-Jamāʿah."
+    },
+    {
+      "id": "hadith",
+      "title": "Ḥadīth",
+      "slug": "hadith",
+      "icon": "📜",
+      "description": "The sayings, actions, and approvals of the Prophet ﷺ. Study of ḥadīth methodology (Muṣṭalaḥ), major collections, and practical application in daily life.",
+      "longDescription": "Ḥadīth encompasses the sayings, actions, and tacit approvals of the Prophet Muḥammad ﷺ. Alongside the Qurʾān, it forms the foundation of Islamic law, theology, and ethics. The science of Ḥadīth (ʿUlūm al-Ḥadīth) is a rigorous discipline that ensures the authenticity and preservation of the Prophetic tradition.",
+      "topics": [
+        "Definition & Significance",
+        "Ḥadīth Classification",
+        "Major Collections",
+        "Mustalaḥ al-Ḥadīth",
+        "Selected Prophetic Sayings",
+        "Application in Daily Life"
+      ],
+      "level": "Intermediate & Advanced",
+      "url": "curriculum/hadith.html",
+      "image": "assets/images/curriculum/hadith-hero.jpg",
+      "sampleImage": "assets/images/curriculum/hadith-sample.jpg",
+      "featured": true,
+      "order": 2,
+      "metaTitle": "Ḥadīth – FIKD Foundation Curriculum",
+      "metaDescription": "Study Ḥadīth at FIKD Foundation. Learn the sayings, actions, and approvals of the Prophet ﷺ."
+    },
+    {
+      "id": "seerah",
+      "title": "Sīrah",
+      "slug": "seerah",
+      "icon": "📖",
+      "description": "The prophetic biography — from Makkah to Madīnah. Understanding the life of the Prophet ﷺ as a model for personal, social, and spiritual development.",
+      "longDescription": "Sīrah, the biography of the Prophet Muhammad ﷺ, is not merely a historical narrative — it is a living guide for every Muslim. From his noble character to his leadership, from his patience to his compassion, the Prophet ﷺ is the perfect example for all of humanity.",
+      "topics": [
+        "Pre-Islamic Arabia & Context",
+        "The Makkan Period",
+        "The Madīnan Period",
+        "Prophetic Character & Ethics",
+        "Lessons & Applications",
+        "Sources & Methodology"
+      ],
+      "level": "All Levels",
+      "url": "curriculum/seerah.html",
+      "image": "assets/images/curriculum/seerah-hero.jpg",
+      "sampleImage": "assets/images/curriculum/seerah-sample.jpg",
+      "featured": true,
+      "order": 3,
+      "metaTitle": "Sīrah – FIKD Foundation Curriculum",
+      "metaDescription": "Study the life of the Prophet Muhammad ﷺ at FIKD Foundation. Learn from his biography, character, and example."
+    },
+    {
+      "id": "duas",
+      "title": "Duʿāʾ",
+      "slug": "duas",
+      "icon": "🤲",
+      "description": "Supplications from the Qurʾān and Sunnah. Learning the meanings, etiquettes, and times of duʿāʾ, and developing a personal connection with Allah through prayer.",
+      "longDescription": "Duʿāʾ (supplication) is the essence of worship — it is the believer's direct line of communication with Allah. The Prophet ﷺ said, 'Duʿāʾ is worship' (Tirmidhī). Through duʿāʾ, we express our dependence on Allah, seek His forgiveness, ask for His guidance, and pour out our hearts to Him.",
+      "topics": [
+        "Definition & Significance",
+        "Etiquettes & Conditions",
+        "Times & Places of Acceptance",
+        "Selected Duʿāʾ from the Qurʾān",
+        "Prophetic Duʿāʾ (Adʿiyyah)",
+        "Living with Duʿāʾ"
+      ],
+      "level": "All Levels",
+      "url": "curriculum/duas.html",
+      "image": "assets/images/curriculum/duas-hero.jpg",
+      "sampleImage": "assets/images/curriculum/duas-sample.jpg",
+      "featured": true,
+      "order": 4,
+      "metaTitle": "Duʿāʾ – FIKD Foundation Curriculum",
+      "metaDescription": "Study Duʿāʾ (supplication) at FIKD Foundation. Learn the etiquettes, timings, and key du'as from the Qurʾān and Sunnah."
+    },
+    {
+      "id": "worship",
+      "title": "Worship",
+      "slug": "worship",
+      "icon": "🕌",
+      "description": "Comprehensive study of ṣalāh, fasting, zakāh, ḥajj, and other acts of worship. Focus on Fiqh (rulings), spirituality, and practical implementation.",
+      "longDescription": "Worship (ʿIbādāt) is the cornerstone of Islamic practice. It is the means by which believers express their love, devotion, and submission to Allah. From the five daily prayers to the annual fast of Ramaḍān, from the purification of wealth through zakāh to the once‑in‑a‑lifetime pilgrimage of ḥajj, each act of worship carries profound spiritual, social, and personal meaning.",
+      "topics": [
+        "Ṣalāh (Prayer)",
+        "Fasting (Ṣawm)",
+        "Zakāh (Alms-giving)",
+        "Ḥajj & ʿUmrah",
+        "Purification (Ṭahārah)",
+        "Other Acts of Worship"
+      ],
+      "level": "All Levels",
+      "url": "curriculum/worship.html",
+      "image": "assets/images/curriculum/worship-hero.jpg",
+      "sampleImage": "assets/images/curriculum/worship-sample.jpg",
+      "featured": true,
+      "order": 5,
+      "metaTitle": "Worship – FIKD Foundation Curriculum",
+      "metaDescription": "Study Islamic worship (ʿIbādāt) at FIKD Foundation. Learn the fiqh, spirituality, and practical implementation."
+    },
+    {
+      "id": "manners",
+      "title": "Manners",
+      "slug": "manners",
+      "icon": "🌿",
+      "description": "Islamic adab (etiquette) in all aspects of life — with Allah, with parents, with neighbours, in speech, and in business. Character refinement (tazkiyah).",
+      "longDescription": "Manners (adab) and character (khuluq) are the essence of Islam. The Prophet ﷺ said, 'I have been sent to perfect noble character.' (Bukhārī). True Islamic education is incomplete without the cultivation of beautiful manners — towards Allah, towards the Prophet ﷺ, towards family, neighbours, and all of creation.",
+      "topics": [
+        "Adab towards Allah",
+        "Adab towards the Prophet ﷺ",
+        "Adab towards Parents & Family",
+        "Adab in Daily Life",
+        "Adab in Social Interactions",
+        "Character Traits of the Prophet"
+      ],
+      "level": "All Levels",
+      "url": "curriculum/manners.html",
+      "image": "assets/images/curriculum/manners-hero.jpg",
+      "sampleImage": "assets/images/curriculum/manners-sample.jpg",
+      "featured": true,
+      "order": 6,
+      "metaTitle": "Manners – FIKD Foundation Curriculum",
+      "metaDescription": "Study Islamic manners (Adab) at FIKD Foundation. Learn the etiquettes of daily life and character development."
+    },
+    {
+      "id": "islamic-identity",
+      "title": "Islamic Identity",
+      "slug": "islamic-identity",
+      "icon": "🌍",
+      "description": "Living Islam confidently in a modern, pluralistic world. Understanding challenges, building resilience, and contributing positively as a Muslim in society.",
+      "longDescription": "Islamic Identity is a vital subject that addresses the critical question: 'What does it mean to be a Muslim today?' In a rapidly changing world, Muslims face unique challenges — from Islamophobia and secular pressures to the complexities of social media and modern ethical dilemmas.",
+      "topics": [
+        "Defining Islamic Identity",
+        "Challenges to Identity",
+        "Building Resilience",
+        "Living Islam in the West",
+        "Muslim Contribution to Society",
+        "Contemporary Ethical Issues"
+      ],
+      "level": "Advanced",
+      "url": "curriculum/islamic-identity.html",
+      "image": "assets/images/curriculum/islamic-identity-hero.jpg",
+      "sampleImage": "assets/images/curriculum/islamic-identity-sample.jpg",
+      "featured": true,
+      "order": 7,
+      "metaTitle": "Islamic Identity – FIKD Foundation Curriculum",
+      "metaDescription": "Build a confident Islamic identity at FIKD Foundation. Learn to navigate contemporary challenges and contribute positively."
+    }
+  ]
+}

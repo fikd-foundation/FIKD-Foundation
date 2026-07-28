@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "totalTestimonials": 10,
+    "lastUpdated": "2026-07-28",
+    "version": "2.0"
+  },
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Amina Khan",
+      "role": "Student, Qurʾān Programme",
+      "text": "FIKD has completely transformed my relationship with the Qurʾān. The teachers are patient, knowledgeable, and truly care about each student's progress. I never thought I could memorise the Qurʾān, but now I've completed Juz ʿAmma with confidence.",
+      "rating": 5,
+      "featured": true,
+      "date": "2026-06-15",
+      "programme": "Qurʾān – Beginner",
+      "avatar": "assets/images/testimonials/avatar-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Yusuf Ali",
+      "role": "Parent",
+      "text": "My children have grown so much in their Islamic knowledge and character since joining FIKD. The curriculum is well-structured and engaging. I've seen a real positive change in their behaviour and understanding of Islam.",
+      "rating": 5,
+      "featured": true,
+      "date": "2026-06-10",
+      "programme": "Qāʿidah Programme",
+      "avatar": "assets/images/testimonials/avatar-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Fatima El-Sayed",
+      "role": "Alumna",
+      "text": "I completed the advanced Qurʾān programme and now teach in my community. FIKD gave me the foundation I needed to serve others. The teachers were exceptional and truly invested in my success.",
+      "rating": 5,
+      "featured": true,
+      "date": "2026-05-20",
+      "programme": "Qurʾān – Upper",
+      "avatar": "assets/images/testimonials/avatar-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Omar Hassan",
+      "role": "Student, Qāʿidah Beginner",
+      "text": "I had no prior Arabic knowledge, but Ustadh Muhammad made it so easy. The Qāʿidah programme gave me the confidence to start reading the Qurʾān. I can now recognise all the letters and read simple words.",
+      "rating": 5,
+      "featured": false,
+      "date": "2026-05-05",
+      "programme": "Qāʿidah – Beginner",
+      "avatar": ""
+    },
+    {
+      "id": 5,
+      "name": "Abdullah Rahman",
+      "role": "Student, Qāʿidah Upper",
+      "text": "The upper Qāʿidah transformed my recitation. I can now read with proper tajwīd and confidence. Ustadha Fatima is an incredible teacher who pays attention to every detail.",
+      "rating": 5,
+      "featured": false,
+      "date": "2026-04-25",
+      "programme": "Qāʿidah – Upper",
+      "avatar": ""
+    },
+    {
+      "id": 6,
+      "name": "Zainab Khan",
+      "role": "Student, Qurʾān Beginner",
+      "text": "I never thought I could memorise the Qurʾān, but this programme made it possible. Shaykh Ibrahim is patient and motivating. The Tafsīr component made the memorisation so meaningful.",
+      "rating": 5,
+      "featured": false,
+      "date": "2026-04-10",
+      "programme": "Qurʾān – Beginner",
+      "avatar": ""
+    },
+    {
+      "id": 7,
+      "name": "Muhammad Ali",
+      "role": "Graduate, Qurʾān Upper",
+      "text": "This programme transformed my relationship with the Qurʾān. I completed my ḥifẓ and received Ijāzah through Mufti Abdullah's guidance. An incredible journey that I'll cherish forever.",
+      "rating": 5,
+      "featured": false,
+      "date": "2026-03-15",
+      "programme": "Qurʾān – Upper",
+      "avatar": ""
+    },
+    {
+      "id": 8,
+      "name": "Hassan Malik",
+      "role": "Student, Advanced Ḥadīth Programme",
+      "text": "Mufti Abdullah is a remarkable teacher. His depth of knowledge and ability to connect with students is unparalleled. Every lesson leaves you inspired and eager to learn more.",
+      "rating": 5,
+      "featured": false,
+      "date": "2026-03-01",
+      "programme": "Curriculum",
+      "avatar": ""
+    },
+    {
+      "id": 9,
+      "name": "Sarah Ahmed",
+      "role": "Student, Duʿāʾ & Spirituality",
+      "text": "Ustadha Maryam's duʿāʾ classes have transformed my relationship with Allah. I now have a consistent practice of dhikr and feel closer to my Creator than ever before.",
+      "rating": 5,
+      "featured": false,
+      "date": "2026-02-20",
+      "programme": "Curriculum",
+      "avatar": ""
+    },
+    {
+      "id": 10,
+      "name": "Ibrahim Khalil",
+      "role": "Student, Sīrah Programme",
+      "text": "Studying Sīrah with Shaykh Ibrahim has transformed my love for the Prophet ﷺ. I now see his life as a practical guide for every aspect of my life. Truly life-changing.",
+      "rating": 5,
+      "featured": false,
+      "date": "2026-02-10",
+      "programme": "Curriculum",
+      "avatar": ""
+    }
+  ]
+}
