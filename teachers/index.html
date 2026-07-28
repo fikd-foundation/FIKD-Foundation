@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teachers – FIKD Foundation</title>
+    <meta name="description" content="Meet our qualified teachers at FIKD Foundation. Our educators are ʿulamāʾ with Ijāzah and years of teaching experience in Islamic sciences." />
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="../seo/manifest.webmanifest" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Complete stylesheet - same as previous pages */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0d2e1a;
+            --primary-light: #1a4d2e;
+            --primary-dark: #081f12;
+            --gold: #c8a96e;
+            --gold-light: #e8d5a3;
+            --gold-dark: #a8894a;
+            --white: #ffffff;
+            --off-white: #f8f6f2;
+            --light-bg: #f0ede7;
+            --text-dark: #1a1a1a;
+            --text-muted: #6b6b6b;
+            --shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+            --radius: 16px;
+            --radius-lg: 24px;
+            --transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            color: var(--text-dark);
+            background: var(--off-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ----- BUTTONS ----- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            transition: all var(--transition);
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            line-height: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 24px rgba(13, 46, 26, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(13, 46, 26, 0.4);
+        }
+        .btn-gold {
+            background: var(--gold);
+            color: var(--white);
+            box-shadow: 0 4px 24px rgba(200, 169, 110, 0.3);
+        }
+        .btn-gold:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(200, 169, 110, 0.4);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--white);
+            transform: translateY(-4px);
+        }
+        .btn-white {
+            background: var(--white);
+            color: var(--primary);
+        }
+        .btn-white:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(255, 255, 255, 0.3);
+        }
+        .btn-sm {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+        .btn-lg {
+            padding: 18px 44px;
+            font-size: 18px;
+        }
+
+        /* ----- HEADER ----- */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0 24px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(200, 169, 110, 0.12);
+            transition: all 0.3s ease;
+        }
+        .site-header.scrolled {
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .logo a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            height: 44px;
+            width: auto;
+        }
+        .logo-text {
+            font-family: 'Amiri', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .logo-text span {
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .nav-list>li>a {
+            display: block;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        .nav-list>li>a:hover {
+            color: var(--primary);
+            background: rgba(13, 46, 26, 0.06);
+        }
+        .nav-list>li>a.active {
+            color: var(--primary);
+            background: rgba(13, 46, 26, 0.08);
+            font-weight: 600;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-arrow {
+            font-size: 10px;
+            margin-left: 4px;
+            transition: transform 0.2s;
+        }
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            min-width: 220px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+            padding: 8px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: all 0.3s ease;
+        }
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-menu li a {
+            display: block;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: var(--text-muted);
+            transition: all 0.2s ease;
+        }
+        .dropdown-menu li a:hover {
+            background: rgba(13, 46, 26, 0.05);
+            color: var(--primary);
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 8px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .nav-toggle .bar {
+            width: 28px;
+            height: 3px;
+            background: var(--text-dark);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-toggle.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .nav-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .nav-toggle.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* ----- PAGE HERO ----- */
+        .page-hero {
+            position: relative;
+            padding: 140px 0 80px;
+            background: var(--primary);
+            overflow: hidden;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(13, 46, 26, 0.92) 0%, rgba(13, 46, 26, 0.75) 100%);
+            z-index: 1;
+        }
+        .page-hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        .page-hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        .page-hero .breadcrumb {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 16px;
+        }
+        .page-hero .breadcrumb a {
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 0.3s ease;
+        }
+        .page-hero .breadcrumb a:hover {
+            color: var(--gold-light);
+        }
+        .page-hero .breadcrumb span {
+            color: var(--white);
+        }
+        .page-hero h1 {
+            font-family: 'Amiri', serif;
+            font-size: 48px;
+            color: var(--white);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        .page-hero p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            max-width: 600px;
+        }
+        .page-hero .prog-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .page-hero .prog-meta span {
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* ----- SECTION ----- */
+        .section {
+            padding: 80px 0;
+        }
+        .section-light {
+            background: var(--off-white);
+        }
+        .section-alt {
+            background: var(--light-bg);
+        }
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 56px;
+        }
+        .section-tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            padding: 4px 16px;
+            border: 1px solid var(--gold);
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+        .section-header h2 {
+            font-family: 'Amiri', serif;
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+        .section-header p {
+            font-size: 18px;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* ----- TEACHERS GRID ----- */
+        .teachers-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .teacher-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all var(--transition);
+            border: 1px solid rgba(200, 169, 110, 0.08);
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--gold-light);
+        }
+
+        .teacher-card .teacher-image {
+            position: relative;
+            overflow: hidden;
+            padding-top: 100%;
+            background: var(--light-bg);
+        }
+
+        .teacher-card .teacher-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .teacher-card .teacher-image .teacher-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--gold);
+            color: var(--white);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 14px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .teacher-card .teacher-info {
+            padding: 24px 20px;
+        }
+
+        .teacher-card .teacher-info h3 {
+            font-family: 'Amiri', serif;
+            font-size: 22px;
+            color: var(--primary);
+            margin-bottom: 2px;
+        }
+
+        .teacher-card .teacher-info .teacher-title {
+            font-size: 14px;
+            color: var(--gold);
+            font-weight: 500;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .teacher-card .teacher-info .teacher-creds {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .teacher-card .teacher-info .teacher-creds span {
+            font-size: 12px;
+            color: var(--text-muted);
+            background: var(--light-bg);
+            padding: 2px 12px;
+            border-radius: 50px;
+        }
+
+        .teacher-card .teacher-info p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .teacher-card .teacher-info .specialties {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .teacher-card .teacher-info .specialties span {
+            font-size: 12px;
+            color: var(--primary);
+            background: rgba(13, 46, 26, 0.06);
+            padding: 2px 14px;
+            border-radius: 50px;
+            font-weight: 500;
+        }
+
+        /* ----- CTA ----- */
+        .cta-section {
+            background: var(--primary);
+            border-radius: var(--radius-lg);
+            padding: 64px 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(135deg, rgba(200, 169, 110, 0.05), rgba(200, 169, 110, 0.02));
+            transform: rotate(30deg);
+        }
+        .cta-section h2 {
+            font-family: 'Amiri', serif;
+            font-size: 36px;
+            color: var(--white);
+            position: relative;
+            z-index: 1;
+        }
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 560px;
+            margin: 16px auto 32px;
+            font-size: 18px;
+            position: relative;
+            z-index: 1;
+        }
+        .cta-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ----- FOOTER ----- */
+        .site-footer {
+            background: var(--primary-dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 60px 0 32px;
+            margin-top: 80px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 48px;
+        }
+        .footer-brand h3 {
+            font-family: 'Amiri', serif;
+            font-size: 22px;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+        .footer-brand p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            max-width: 280px;
+            line-height: 1.8;
+        }
+        .footer-social {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+        }
+        .footer-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--white);
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+        .footer-social a:hover {
+            background: var(--gold);
+            transform: translateY(-3px);
+        }
+        .footer-links h4 {
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+        .footer-links ul li a {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            transition: color 0.3s ease;
+        }
+        .footer-links ul li a:hover {
+            color: var(--gold);
+        }
+        .footer-contact address {
+            font-style: normal;
+        }
+        .footer-contact p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 6px;
+        }
+        .footer-contact a {
+            color: rgba(255, 255, 255, 0.5);
+            transition: color 0.3s ease;
+        }
+        .footer-contact a:hover {
+            color: var(--gold);
+        }
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 48px auto 0;
+            padding: 20px 24px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .footer-bottom p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+        .footer-legal {
+            display: flex;
+            gap: 20px;
+        }
+        .footer-legal a {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.3);
+            transition: color 0.3s ease;
+        }
+        .footer-legal a:hover {
+            color: var(--gold);
+        }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+
+        @media (max-width: 1024px) {
+            .teachers-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+            .main-nav {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                padding: 24px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 16px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+                transform: translateY(-120%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                max-height: calc(100vh - 80px);
+                overflow-y: auto;
+            }
+            .main-nav.open {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav-list {
+                flex-direction: column;
+                gap: 4px;
+                width: 100%;
+            }
+            .nav-list>li {
+                width: 100%;
+            }
+            .nav-list>li>a {
+                width: 100%;
+                padding: 12px 16px;
+            }
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                padding-left: 20px;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                background: var(--light-bg);
+                border-radius: 8px;
+                display: none;
+            }
+            .dropdown.open .dropdown-menu {
+                display: block;
+            }
+            .dropdown-arrow {
+                float: right;
+            }
+            .nav-actions {
+                width: 100%;
+                justify-content: center;
+                padding-top: 16px;
+                border-top: 1px solid rgba(0, 0, 0, 0.06);
+                flex-wrap: wrap;
+            }
+
+            .page-hero {
+                padding: 120px 0 60px;
+            }
+            .page-hero h1 {
+                font-size: 32px;
+            }
+            .page-hero p {
+                font-size: 16px;
+            }
+
+            .teachers-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .section-header h2 {
+                font-size: 30px;
+            }
+
+            .cta-section {
+                padding: 40px 24px;
+            }
+            .cta-section h2 {
+                font-size: 28px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-legal {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 {
+                font-size: 26px;
+            }
+            .section-header h2 {
+                font-size: 24px;
+            }
+            .teacher-card .teacher-info {
+                padding: 16px;
+            }
+            .cta-section h2 {
+                font-size: 24px;
+            }
+            .cta-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cta-actions .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+
+        /* ----- SCROLL REVEAL ----- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/branding/logo.svg" alt="FIKD Foundation" />
+                    <span class="logo-text">FIKD <span>Foundation</span></span>
+                </a>
+            </div>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/">About</a></li>
+                    <li><a href="../philosophy/">Philosophy</a></li>
+                    <li><a href="../prospectus.html">Prospectus</a></li>
+                    <li class="dropdown">
+                        <a href="../programmes/">Programmes <span class="dropdown-arrow">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../programmes/qaida-beginner.html">Qāʿidah – Beginner</a></li>
+                            <li><a href="../programmes/qaida-upper.html">Qāʿidah – Upper</a></li>
+                            <li><a href="../programmes/quran-beginner.html">Qurʾān – Beginner</a></li>
+                            <li><a href="../programmes/quran-upper.html">Qurʾān – Upper</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../curriculum/">Curriculum <span class="dropdown-arrow">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../curriculum/aqeedah.html">ʿAqīdah</a></li>
+                            <li><a href="../curriculum/hadith.html">Ḥadīth</a></li>
+                            <li><a href="../curriculum/seerah.html">Sīrah</a></li>
+                            <li><a href="../curriculum/duas.html">Duʿāʾ</a></li>
+                            <li><a href="../curriculum/worship.html">Worship</a></li>
+                            <li><a href="../curriculum/manners.html">Manners</a></li>
+                            <li><a href="../curriculum/islamic-identity.html">Islamic Identity</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html" class="active">Teachers</a></li>
+                    <li><a href="../admissions/">Admissions</a></li>
+                    <li><a href="../resources/">Resources</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="../admissions/apply.html" class="btn btn-primary btn-sm">Apply Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== MAIN ====== -->
+    <main>
+
+        <!-- ===== PAGE HERO ===== -->
+        <section class="page-hero" aria-labelledby="hero-title">
+            <div class="page-hero-bg">
+                <img src="../assets/images/backgrounds/teachers-hero.jpg" alt="" aria-hidden="true" />
+            </div>
+            <div class="container page-hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a> / <span>Teachers</span>
+                </nav>
+                <h1 id="hero-title">Our Teachers</h1>
+                <p>Meet our dedicated team of scholars and educators — each with years of experience and deep expertise in their respective fields.</p>
+                <div class="prog-meta">
+                    <span>🎓 48 Teachers</span>
+                    <span>📜 Ijāzah-qualified</span>
+                    <span>🌍 Teaching Worldwide</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== INTRO ===== -->
+        <section class="section section-light" aria-labelledby="intro-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Our Faculty</span>
+                    <h2 id="intro-title">Qualified, Experienced, &amp; Dedicated</h2>
+                    <p>Every teacher at FIKD Foundation is a qualified scholar with formal training in Islamic sciences. Many hold Ijāzah (chains of transmission) in their respective fields, ensuring that the knowledge passed on to our students is authentic and unbroken.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TEACHER GRID ===== -->
+        <section class="section section-alt" aria-labelledby="grid-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Meet the Team</span>
+                    <h2 id="grid-title">Our Faculty Members</h2>
+                    <p>Click on any teacher's profile to learn more about their background, qualifications, and areas of specialisation.</p>
+                </div>
+
+                <div class="teachers-grid reveal">
+                    <!-- Teacher 1 -->
+                    <div class="teacher-card">
+                        <div class="teacher-image">
+                            <img src="../assets/images/teachers/mufti-profile.jpg" alt="Mufti Abdullah" loading="lazy" />
+                            <span class="teacher-badge">Founder</span>
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Mufti Abdullah</h3>
+                            <span class="teacher-title">Founder &amp; Director</span>
+                            <div class="teacher-creds">
+                                <span>🎓 Ijāzah in 10 Qirāʾāt</span>
+                                <span>📜 20+ years</span>
+                            </div>
+                            <p>Specialist in Ḥadīth, Fiqh, and Qurʾānic studies. Mufti Abdullah established FIKD Foundation with a vision to provide authentic, accessible Islamic education.</p>
+                            <div class="specialties">
+                                <span>Ḥadīth</span>
+                                <span>Qirāʾāt</span>
+                                <span>Fiqh</span>
+                            </div>
+                            <a href="mufti-profile.html" class="btn btn-primary btn-sm">View Profile →</a>
+                        </div>
+                    </div>
+
+                    <!-- Teacher 2 -->
+                    <div class="teacher-card">
+                        <div class="teacher-image">
+                            <img src="../assets/images/teachers/teacher-2.jpg" alt="Ustadha Fatima" loading="lazy" />
+                            <span class="teacher-badge">Senior Teacher</span>
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Ustadha Fatima</h3>
+                            <span class="teacher-title">Head of Qurʾān Programme</span>
+                            <div class="teacher-creds">
+                                <span>🎓 Ijāzah in Tajwīd</span>
+                                <span>📜 10+ years</span>
+                            </div>
+                            <p>Ḥāfiẓah with deep expertise in Qurʾānic recitation and memorisation. Ustadha Fatima has helped hundreds of students begin their ḥifẓ journey.</p>
+                            <div class="specialties">
+                                <span>Tajwīd</span>
+                                <span>Ḥifẓ</span>
+                                <span>Tafsīr</span>
+                            </div>
+                            <a href="mufti-profile.html" class="btn btn-primary btn-sm">View Profile →</a>
+                        </div>
+                    </div>
+
+                    <!-- Teacher 3 -->
+                    <div class="teacher-card">
+                        <div class="teacher-image">
+                            <img src="../assets/images/teachers/teacher-3.jpg" alt="Shaykh Ibrahim" loading="lazy" />
+                            <span class="teacher-badge">Senior Scholar</span>
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Shaykh Ibrahim</h3>
+                            <span class="teacher-title">Curriculum Lead</span>
+                            <div class="teacher-creds">
+                                <span>🎓 PhD in Islamic History</span>
+                                <span>📜 15+ years</span>
+                            </div>
+                            <p>Expert in ʿAqīdah, Sīrah, and Islamic history. Shaykh Ibrahim has authored several textbooks and is passionate about making Islamic knowledge accessible.</p>
+                            <div class="specialties">
+                                <span>ʿAqīdah</span>
+                                <span>Sīrah</span>
+                                <span>History</span>
+                            </div>
+                            <a href="mufti-profile.html" class="btn btn-primary btn-sm">View Profile →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 40px;">
+                    <p style="font-size: 15px; color: var(--text-muted);">And many more qualified teachers across all our programmes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-section reveal">
+                    <h2 id="cta-title">Join Our Teaching Team</h2>
+                    <p>Are you a qualified Islamic scholar with a passion for education? We're always looking for dedicated teachers to join our growing team.</p>
+                    <div class="cta-actions">
+                        <a href="../contact/" class="btn btn-gold btn-lg">Express Interest →</a>
+                        <a href="../about/" class="btn btn-white btn-lg">Learn About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../assets/branding/logo-white.svg" alt="FIKD Foundation" height="48" style="margin-bottom:12px;" />
+                    <h3>FIKD Foundation</h3>
+                    <p>Empowering hearts and minds through authentic Islamic education.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/fikd.official" aria-label="Facebook">📘</a>
+                        <a href="https://www.instagram.com/muftiubaidullah.official" aria-label="Instagram">📸</a>
+                        <a href="https://www.youtube.com/@ubaidullahalfateh2874" aria-label="YouTube">▶️</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../about/">About</a></li>
+                        <li><a href="../programmes/">Programmes</a></li>
+                        <li><a href="index.html">Teachers</a></li>
+                        <li><a href="../admissions/">Admissions</a></li>
+                        <li><a href="../resources/">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Curriculum</h4>
+                    <ul>
+                        <li><a href="../curriculum/aqeedah.html">ʿAqīdah</a></li>
+                        <li><a href="../curriculum/hadith.html">Ḥadīth</a></li>
+                        <li><a href="../curriculum/seerah.html">Sīrah</a></li>
+                        <li><a href="../curriculum/duas.html">Duʿāʾ</a></li>
+                        <li><a href="../curriculum/worship.html">Worship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>📧 <a href="mailto:fikd-foundation@gmail.com">fikd-foundation@gmail.com</a></p>
+                        <p>📞 <a href="tel:+923159993378">+92 315 9993 378</a></p>
+                        <p>📍 FIKD Foundation, Chargulli, Mardan, KPK, Pakistan</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FIKD Foundation. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="../privacy/">Privacy</a></li>
+                    <li><a href="../terms/">Terms</a></li>
+                    <li><a href="../faq/">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== SCRIPTS ====== -->
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        navToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('open');
+            this.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!mainNav.contains(e.target) && !navToggle.contains(e.target)) {
+                mainNav.classList.remove('open');
+                navToggle.classList.remove('active');
+            }
+        });
+
+        document.querySelectorAll('.dropdown > a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        });
+
+        const header = document.querySelector('.site-header');
+        window.addEventListener('scroll', function() {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        console.log('🚀 FIKD Foundation - Teachers page loaded successfully!');
+    </script>
+
+</body>
+</html>
