@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fees – FIKD Foundation</title>
+    <title>Fees – FIKD</title>
     <meta name="description" content="View the fee structure for FIKD Foundation programmes. Learn about tuition costs, payment plans, and financial aid options." />
     <link rel="icon" href="../assets/icons/favicon.ico" />
     <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
@@ -15,7 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
     <style>
-        /* Same base styles as previous pages */
+        /* ========================================
+           COMPLETE STYLESHEET - FIKD FOUNDATION
+           ROYAL NAVY + GOLD DESIGN (matching main index)
+           ======================================== */
+
+        /* ----- RESET & BASE ----- */
         *,
         *::before,
         *::after {
@@ -25,17 +30,28 @@
         }
 
         :root {
-            --primary: #0d2e1a;
-            --primary-light: #1a4d2e;
-            --primary-dark: #081f12;
-            --gold: #c8a96e;
-            --gold-light: #e8d5a3;
-            --gold-dark: #a8894a;
-            --white: #ffffff;
-            --off-white: #f8f6f2;
-            --light-bg: #f0ede7;
-            --text-dark: #1a1a1a;
-            --text-muted: #6b6b6b;
+            /* Royal Navy + Gold Color Palette */
+            --navy-dark: #0A192F;
+            --navy-medium: #112240;
+            --navy-light: #1A2D4A;
+            --navy-lighter: #233B5E;
+            --gold-primary: #D4AF37;
+            --gold-light: #E8D5A3;
+            --gold-dark: #A8894A;
+            --gold-button: #E5B252;
+            --white: #FFFFFF;
+            --cream: #FAF8F5;
+            --light-bg: #F0EDE7;
+            --text-dark: #0A192F;
+            --text-muted: #556070;
+            --text-white: #FFFFFF;
+            --border-gold: rgba(212, 175, 55, 0.3);
+
+            /* Typography */
+            --font-heading: 'Amiri', 'Times New Roman', serif;
+            --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
+
+            /* Spacing */
             --shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
             --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
             --radius: 16px;
@@ -46,31 +62,37 @@
         html {
             scroll-behavior: smooth;
         }
+
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: var(--font-body);
             font-size: 16px;
             color: var(--text-dark);
-            background: var(--off-white);
+            background: var(--cream);
             line-height: 1.6;
             overflow-x: hidden;
         }
+
         a {
             text-decoration: none;
             color: inherit;
         }
+
         ul {
             list-style: none;
         }
+
         img {
             max-width: 100%;
             display: block;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 24px;
         }
 
+        /* ----- BUTTONS (matching main index) ----- */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -88,52 +110,63 @@
             position: relative;
             overflow: hidden;
         }
+
         .btn-primary {
-            background: var(--primary);
+            background: var(--navy-dark);
             color: var(--white);
-            box-shadow: 0 4px 24px rgba(13, 46, 26, 0.3);
+            box-shadow: 0 4px 24px rgba(10, 25, 47, 0.3);
         }
+
         .btn-primary:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(13, 46, 26, 0.4);
+            box-shadow: 0 12px 40px rgba(10, 25, 47, 0.4);
         }
+
         .btn-gold {
-            background: var(--gold);
-            color: var(--white);
-            box-shadow: 0 4px 24px rgba(200, 169, 110, 0.3);
+            background: var(--gold-button);
+            color: var(--navy-dark);
+            box-shadow: 0 4px 24px rgba(229, 178, 82, 0.3);
         }
+
         .btn-gold:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(200, 169, 110, 0.4);
+            box-shadow: 0 12px 40px rgba(229, 178, 82, 0.4);
         }
+
         .btn-outline {
             background: transparent;
-            color: var(--white);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: var(--text-muted);
+            border: 2px solid var(--text-muted);
         }
+
         .btn-outline:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: var(--white);
             transform: translateY(-4px);
+            border-color: var(--navy-dark);
+            color: var(--navy-dark);
+            background: rgba(10, 25, 47, 0.06);
         }
+
         .btn-white {
             background: var(--white);
-            color: var(--primary);
+            color: var(--navy-dark);
         }
+
         .btn-white:hover {
             transform: translateY(-4px);
             box-shadow: 0 12px 40px rgba(255, 255, 255, 0.3);
         }
+
         .btn-sm {
             padding: 10px 20px;
             font-size: 14px;
         }
+
         .btn-lg {
             padding: 18px 44px;
             font-size: 18px;
         }
 
-        /* ----- HEADER (same as before) ----- */
+        /* ----- HEADER (matching main index) ----- */
         .site-header {
             position: fixed;
             top: 0;
@@ -144,12 +177,14 @@
             height: 80px;
             background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(200, 169, 110, 0.12);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.12);
             transition: all 0.3s ease;
         }
+
         .site-header.scrolled {
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
         }
+
         .header-inner {
             max-width: 1200px;
             margin: 0 auto;
@@ -158,35 +193,42 @@
             justify-content: space-between;
             height: 100%;
         }
+
         .logo a {
             display: flex;
             align-items: center;
             gap: 10px;
         }
+
         .logo img {
             height: 44px;
             width: auto;
         }
+
         .logo-text {
-            font-family: 'Amiri', serif;
+            font-family: var(--font-heading);
             font-size: 22px;
             font-weight: 700;
-            color: var(--primary);
+            color: var(--navy-dark);
         }
+
         .logo-text span {
             font-weight: 400;
             color: var(--text-muted);
         }
+
         .main-nav {
             display: flex;
             align-items: center;
             gap: 32px;
         }
+
         .nav-list {
             display: flex;
             align-items: center;
             gap: 4px;
         }
+
         .nav-list>li>a {
             display: block;
             padding: 8px 16px;
@@ -196,26 +238,32 @@
             border-radius: 8px;
             transition: all 0.2s ease;
         }
+
         .nav-list>li>a:hover {
-            color: var(--primary);
-            background: rgba(13, 46, 26, 0.06);
+            color: var(--navy-dark);
+            background: rgba(10, 25, 47, 0.06);
         }
+
         .nav-list>li>a.active {
-            color: var(--primary);
-            background: rgba(13, 46, 26, 0.08);
+            color: var(--navy-dark);
+            background: rgba(10, 25, 47, 0.08);
             font-weight: 600;
         }
+
         .dropdown {
             position: relative;
         }
+
         .dropdown-arrow {
             font-size: 10px;
             margin-left: 4px;
             transition: transform 0.2s;
         }
+
         .dropdown:hover .dropdown-arrow {
             transform: rotate(180deg);
         }
+
         .dropdown-menu {
             position: absolute;
             top: calc(100% + 8px);
@@ -230,11 +278,13 @@
             transform: translateY(-8px);
             transition: all 0.3s ease;
         }
+
         .dropdown:hover .dropdown-menu {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
         }
+
         .dropdown-menu li a {
             display: block;
             padding: 10px 20px;
@@ -242,15 +292,18 @@
             color: var(--text-muted);
             transition: all 0.2s ease;
         }
+
         .dropdown-menu li a:hover {
-            background: rgba(13, 46, 26, 0.05);
-            color: var(--primary);
+            background: rgba(10, 25, 47, 0.05);
+            color: var(--navy-dark);
         }
+
         .nav-actions {
             display: flex;
             align-items: center;
             gap: 8px;
         }
+
         .nav-toggle {
             display: none;
             flex-direction: column;
@@ -260,6 +313,7 @@
             border: none;
             cursor: pointer;
         }
+
         .nav-toggle .bar {
             width: 28px;
             height: 3px;
@@ -267,6 +321,7 @@
             border-radius: 4px;
             transition: all 0.3s ease;
         }
+
         .nav-toggle.active .bar:nth-child(1) {
             transform: translateY(8px) rotate(45deg);
         }
@@ -277,126 +332,186 @@
             transform: translateY(-8px) rotate(-45deg);
         }
 
-        /* ----- PAGE HERO ----- */
+        /* ----- PAGE HERO (matching main index hero) ----- */
         .page-hero {
             position: relative;
             padding: 140px 0 80px;
-            background: var(--primary);
+            background: var(--navy-dark);
             overflow: hidden;
         }
+
         .page-hero::before {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(13, 46, 26, 0.92) 0%, rgba(13, 46, 26, 0.75) 100%);
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.92) 0%, rgba(17, 34, 64, 0.85) 100%);
             z-index: 1;
         }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-light), var(--gold-primary));
+            z-index: 2;
+        }
+
         .page-hero-bg {
             position: absolute;
             inset: 0;
             z-index: 0;
         }
+
         .page-hero-bg img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             opacity: 0.2;
         }
+
         .page-hero-content {
             position: relative;
             z-index: 2;
             max-width: 800px;
         }
+
         .page-hero .breadcrumb {
             font-size: 14px;
             color: rgba(255, 255, 255, 0.5);
             margin-bottom: 16px;
         }
+
         .page-hero .breadcrumb a {
             color: rgba(255, 255, 255, 0.6);
             transition: color 0.3s ease;
         }
+
         .page-hero .breadcrumb a:hover {
             color: var(--gold-light);
         }
+
         .page-hero .breadcrumb span {
             color: var(--white);
         }
+
         .page-hero h1 {
-            font-family: 'Amiri', serif;
+            font-family: var(--font-heading);
             font-size: 48px;
             color: var(--white);
             margin-bottom: 16px;
             line-height: 1.2;
         }
+
+        .page-hero h1 .highlight {
+            color: var(--gold-primary);
+        }
+
         .page-hero p {
             font-size: 18px;
             color: rgba(255, 255, 255, 0.8);
             line-height: 1.8;
             max-width: 600px;
         }
+
         .page-hero .prog-meta {
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
             margin-top: 20px;
         }
+
         .page-hero .prog-meta span {
             display: inline-block;
-            padding: 6px 18px;
+            padding: 8px 22px;
             border-radius: 50px;
-            font-size: 13px;
-            font-weight: 500;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            color: rgba(255, 255, 255, 0.85);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--gold-primary);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            background: rgba(212, 175, 55, 0.08);
+            backdrop-filter: blur(4px);
         }
 
-        /* ----- SECTION ----- */
+        /* ----- SECTION COMMON ----- */
         .section {
             padding: 80px 0;
         }
+
         .section-light {
-            background: var(--off-white);
+            background: var(--cream);
         }
+
         .section-alt {
-            background: var(--light-bg);
+            background: var(--white);
         }
+
         .section-header {
             text-align: center;
             max-width: 700px;
             margin: 0 auto 56px;
         }
+
         .section-tag {
             display: inline-block;
             font-size: 12px;
             font-weight: 600;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: var(--gold);
+            color: var(--gold-primary);
             padding: 4px 16px;
-            border: 1px solid var(--gold);
+            border: 1px solid var(--gold-primary);
             border-radius: 50px;
             margin-bottom: 12px;
         }
+
         .section-header h2 {
-            font-family: 'Amiri', serif;
+            font-family: var(--font-heading);
             font-size: 40px;
-            color: var(--primary);
+            color: var(--navy-dark);
             margin-bottom: 12px;
             line-height: 1.2;
         }
+
+        .gold-divider {
+            color: var(--gold-primary);
+            font-size: 20px;
+            margin: 6px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .gold-divider::before,
+        .gold-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            max-width: 80px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary));
+        }
+
+        .gold-divider::after {
+            background: linear-gradient(90deg, var(--gold-primary), transparent);
+        }
+
         .section-header p {
-            font-size: 18px;
+            font-size: 16px;
             color: var(--text-muted);
             line-height: 1.8;
         }
 
-        /* ----- FEE TABLE ----- */
+        /* ----- FEE TABLE (styled with gold accents) ----- */
         .fee-table-wrapper {
             overflow-x: auto;
             border-radius: var(--radius);
             box-shadow: var(--shadow);
+            border: 1px solid rgba(212, 175, 55, 0.08);
         }
 
         .fee-table {
@@ -406,25 +521,28 @@
         }
 
         .fee-table thead {
-            background: var(--primary);
+            background: var(--navy-dark);
             color: var(--white);
         }
 
         .fee-table th {
-            padding: 16px 20px;
+            padding: 18px 24px;
             text-align: left;
             font-weight: 600;
             font-size: 14px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
         .fee-table td {
-            padding: 16px 20px;
+            padding: 18px 24px;
             border-bottom: 1px solid var(--light-bg);
             font-size: 15px;
+            color: var(--text-dark);
         }
 
         .fee-table tbody tr:hover {
-            background: rgba(200, 169, 110, 0.05);
+            background: rgba(212, 175, 55, 0.04);
         }
 
         .fee-table tbody tr:last-child td {
@@ -433,8 +551,9 @@
 
         .fee-table .fee-amount {
             font-weight: 700;
-            color: var(--primary);
-            font-size: 18px;
+            color: var(--gold-primary);
+            font-size: 20px;
+            font-family: var(--font-heading);
         }
 
         .fee-table .fee-monthly {
@@ -443,45 +562,104 @@
         }
 
         .fee-table .highlight-row {
-            background: rgba(200, 169, 110, 0.08);
+            background: rgba(212, 175, 55, 0.06);
         }
 
         .fee-table .highlight-row td {
             border-bottom-color: var(--gold-light);
         }
 
-        /* ----- PAYMENT OPTIONS ----- */
+        /* ----- PAYMENT OPTIONS CARDS (with arch icons) ----- */
         .payment-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 24px;
         }
 
         .payment-card {
             background: var(--white);
             border-radius: var(--radius);
-            padding: 32px 24px;
+            padding: 28px 20px;
+            text-align: center;
             box-shadow: var(--shadow);
             transition: all var(--transition);
-            border: 1px solid rgba(200, 169, 110, 0.08);
-            border-left: 4px solid var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .payment-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .payment-card:hover::before {
+            opacity: 1;
         }
 
         .payment-card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-8px);
             box-shadow: var(--shadow-lg);
-            border-color: var(--gold-light);
+            border-color: var(--gold-primary);
         }
 
-        .payment-card .pay-icon {
-            font-size: 32px;
-            display: block;
-            margin-bottom: 8px;
+        .payment-arch-wrapper {
+            width: 64px;
+            height: 78px;
+            background: var(--gold-primary);
+            padding: 3px;
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
+            margin: 0 auto 10px auto;
+            transition: all 0.3s ease;
+        }
+
+        .payment-arch-container {
+            width: 100%;
+            height: 100%;
+            background-color: var(--navy-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
+        }
+
+        .payment-arch-container .arch-icon {
+            color: var(--gold-primary);
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            transition: all 0.3s ease;
+        }
+
+        .payment-card:hover .payment-arch-wrapper {
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        .payment-card .payment-number {
+            display: inline-block;
+            background: var(--navy-dark);
+            color: var(--gold-primary);
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 12px;
+            border-radius: 50px;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
         }
 
         .payment-card h4 {
+            font-family: var(--font-heading);
             font-size: 18px;
-            color: var(--primary);
+            color: var(--navy-dark);
             margin-bottom: 8px;
         }
 
@@ -489,80 +667,171 @@
             font-size: 14px;
             color: var(--text-muted);
             line-height: 1.6;
+            margin: 0;
         }
 
-        /* ----- CTA ----- */
-        .cta-section {
-            background: var(--primary);
-            border-radius: var(--radius-lg);
-            padding: 64px 48px;
+        .payment-card .highlight-text {
+            color: var(--gold-primary);
+            font-weight: 700;
+        }
+
+        /* ----- SCHOLARSHIP SECTION (new) ----- */
+        .scholarship-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .scholarship-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 28px 20px;
             text-align: center;
+            box-shadow: var(--shadow);
+            transition: all var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.08);
             position: relative;
             overflow: hidden;
+            border-top: 4px solid var(--gold-primary);
         }
-        .cta-section::before {
+
+        .scholarship-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--gold-primary);
+        }
+
+        .scholarship-card .scholarship-icon {
+            font-size: 36px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .scholarship-card h4 {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            color: var(--navy-dark);
+            margin-bottom: 6px;
+        }
+
+        .scholarship-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ----- CTA (matching main index) ----- */
+        .cta-section-wrapper {
+            padding: 60px 0 80px;
+            background: var(--navy-dark);
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--navy-dark), var(--navy-medium));
+            border-radius: var(--radius-lg);
+            padding: 56px 48px;
+            text-align: center;
+            border: 1px solid var(--gold-primary);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.05);
+        }
+
+        .cta-box::before {
             content: '';
             position: absolute;
             top: -50%;
             right: -20%;
             width: 60%;
             height: 200%;
-            background: linear-gradient(135deg, rgba(200, 169, 110, 0.05), rgba(200, 169, 110, 0.02));
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(212, 175, 55, 0.02));
             transform: rotate(30deg);
         }
-        .cta-section h2 {
-            font-family: 'Amiri', serif;
-            font-size: 36px;
-            color: var(--white);
+
+        .cta-box .cta-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.04), transparent 70%);
+            pointer-events: none;
+            animation: ctaGlow 6s ease-in-out infinite;
+        }
+
+        @keyframes ctaGlow {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+            50% { transform: translate(-50%, -50%) scale(1.3); opacity: 1; }
+        }
+
+        .cta-box .cta-content {
             position: relative;
             z-index: 1;
         }
-        .cta-section p {
+
+        .cta-box h2 {
+            font-family: var(--font-heading);
+            font-size: 38px;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .cta-box h2 .highlight {
+            color: var(--gold-primary);
+        }
+
+        .cta-box p {
             color: rgba(255, 255, 255, 0.8);
             max-width: 560px;
-            margin: 16px auto 32px;
+            margin: 0 auto 32px;
             font-size: 18px;
-            position: relative;
-            z-index: 1;
+            line-height: 1.7;
         }
+
         .cta-actions {
             display: flex;
             gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
-            position: relative;
-            z-index: 1;
         }
 
-        /* ----- FOOTER (same as before) ----- */
+        /* ----- FOOTER (matching main index) ----- */
         .site-footer {
-            background: var(--primary-dark);
+            background: #05101D;
             color: rgba(255, 255, 255, 0.8);
             padding: 60px 0 32px;
-            margin-top: 80px;
+            margin-top: 0;
+            border-top: 3px solid var(--gold-primary);
         }
+
         .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1.5fr;
             gap: 48px;
         }
+
         .footer-brand h3 {
-            font-family: 'Amiri', serif;
+            font-family: var(--font-heading);
             font-size: 22px;
             color: var(--white);
             margin-bottom: 8px;
         }
+
         .footer-brand p {
             font-size: 14px;
             color: rgba(255, 255, 255, 0.5);
             max-width: 280px;
             line-height: 1.8;
         }
+
         .footer-social {
             display: flex;
             gap: 8px;
             margin-top: 16px;
         }
+
         .footer-social a {
             display: flex;
             align-items: center;
@@ -574,43 +843,56 @@
             color: var(--white);
             transition: all 0.3s ease;
             font-size: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
         }
+
         .footer-social a:hover {
-            background: var(--gold);
+            background: var(--gold-primary);
             transform: translateY(-3px);
+            border-color: var(--gold-primary);
+            color: var(--navy-dark);
         }
+
         .footer-links h4 {
             color: var(--white);
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 16px;
         }
+
         .footer-links ul li {
             margin-bottom: 8px;
         }
+
         .footer-links ul li a {
             font-size: 14px;
             color: rgba(255, 255, 255, 0.5);
             transition: color 0.3s ease;
         }
+
         .footer-links ul li a:hover {
-            color: var(--gold);
+            color: var(--gold-primary);
         }
+
         .footer-contact address {
             font-style: normal;
         }
+
         .footer-contact p {
             font-size: 14px;
             color: rgba(255, 255, 255, 0.5);
             margin-bottom: 6px;
         }
+
         .footer-contact a {
             color: rgba(255, 255, 255, 0.5);
             transition: color 0.3s ease;
         }
+
         .footer-contact a:hover {
-            color: var(--gold);
+            color: var(--gold-primary);
         }
+
         .footer-bottom {
             max-width: 1200px;
             margin: 48px auto 0;
@@ -622,21 +904,25 @@
             flex-wrap: wrap;
             gap: 16px;
         }
+
         .footer-bottom p {
             font-size: 13px;
             color: rgba(255, 255, 255, 0.3);
         }
+
         .footer-legal {
             display: flex;
             gap: 20px;
         }
+
         .footer-legal a {
             font-size: 13px;
             color: rgba(255, 255, 255, 0.3);
             transition: color 0.3s ease;
         }
+
         .footer-legal a:hover {
-            color: var(--gold);
+            color: var(--gold-primary);
         }
 
         /* ========================================
@@ -644,12 +930,15 @@
            ======================================== */
 
         @media (max-width: 1024px) {
-            .payment-grid {
-                grid-template-columns: 1fr 1fr;
-            }
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 32px;
+            }
+            .payment-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .scholarship-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -657,6 +946,7 @@
             .nav-toggle {
                 display: flex;
             }
+
             .main-nav {
                 position: fixed;
                 top: 80px;
@@ -675,23 +965,28 @@
                 max-height: calc(100vh - 80px);
                 overflow-y: auto;
             }
+
             .main-nav.open {
                 transform: translateY(0);
                 opacity: 1;
                 visibility: visible;
             }
+
             .nav-list {
                 flex-direction: column;
                 gap: 4px;
                 width: 100%;
             }
+
             .nav-list>li {
                 width: 100%;
             }
+
             .nav-list>li>a {
                 width: 100%;
                 padding: 12px 16px;
             }
+
             .dropdown-menu {
                 position: static;
                 box-shadow: none;
@@ -703,12 +998,15 @@
                 border-radius: 8px;
                 display: none;
             }
+
             .dropdown.open .dropdown-menu {
                 display: block;
             }
+
             .dropdown-arrow {
                 float: right;
             }
+
             .nav-actions {
                 width: 100%;
                 justify-content: center;
@@ -733,18 +1031,34 @@
                 font-size: 13px;
             }
 
+            .fee-table .fee-amount {
+                font-size: 17px;
+            }
+
             .payment-grid {
                 grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .scholarship-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .section {
+                padding: 40px 0;
             }
 
             .section-header h2 {
                 font-size: 30px;
             }
 
-            .cta-section {
-                padding: 40px 24px;
+            .cta-box {
+                padding: 32px 20px;
             }
-            .cta-section h2 {
+            .cta-box h2 {
                 font-size: 28px;
             }
 
@@ -758,6 +1072,11 @@
             }
             .footer-legal {
                 justify-content: center;
+            }
+
+            .gold-divider::before,
+            .gold-divider::after {
+                max-width: 30px;
             }
         }
 
@@ -773,10 +1092,16 @@
                 padding: 8px 10px;
                 font-size: 12px;
             }
+            .fee-table .fee-amount {
+                font-size: 15px;
+            }
             .payment-card {
                 padding: 20px 16px;
             }
-            .cta-section h2 {
+            .scholarship-card {
+                padding: 20px 16px;
+            }
+            .cta-box h2 {
                 font-size: 24px;
             }
             .cta-actions {
@@ -785,16 +1110,25 @@
             }
             .cta-actions .btn {
                 width: 100%;
-                max-width: 300px;
+                max-width: 280px;
                 justify-content: center;
+            }
+            .payment-arch-wrapper {
+                width: 56px;
+                height: 68px;
+            }
+            .payment-arch-container .arch-icon {
+                font-size: 20px;
             }
         }
 
+        /* ----- SCROLL REVEAL ----- */
         .reveal {
             opacity: 0;
             transform: translateY(40px);
             transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
+
         .reveal.visible {
             opacity: 1;
             transform: translateY(0);
@@ -808,8 +1142,8 @@
         <div class="header-inner">
             <div class="logo">
                 <a href="../index.html">
-                    <img src="../assets/branding/logo.svg" alt="FIKD Foundation" />
-                    <span class="logo-text">FIKD <span>Foundation</span></span>
+                    <img src="../assets/branding/logo.svg" alt="FIKD" />
+                    <span class="logo-text">FIKD <span></span></span>
                 </a>
             </div>
 
@@ -830,6 +1164,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="../programmes/qaida-beginner.html">Qāʿidah – Beginner</a></li>
                             <li><a href="../programmes/qaida-upper.html">Qāʿidah – Upper</a></li>
+                            <li><a href="../programmes/quran-nazera.html">Quran Nazera</a></li>
                             <li><a href="../programmes/quran-beginner.html">Qurʾān – Beginner</a></li>
                             <li><a href="../programmes/quran-upper.html">Qurʾān – Upper</a></li>
                         </ul>
@@ -849,11 +1184,13 @@
                     <li><a href="../teachers/">Teachers</a></li>
                     <li><a href="index.html" class="active">Admissions</a></li>
                     <li><a href="../resources/">Resources</a></li>
+                    <li><a href="../donate/">Donate</a></li>
                     <li><a href="../contact/">Contact</a></li>
                 </ul>
 
                 <div class="nav-actions">
                     <a href="apply.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    <a href="../donate/" class="btn btn-gold btn-sm">❤️ Donate</a>
                 </div>
             </nav>
         </div>
@@ -871,12 +1208,13 @@
                 <nav class="breadcrumb" aria-label="Breadcrumb">
                     <a href="../index.html">Home</a> / <a href="index.html">Admissions</a> / <span>Fees</span>
                 </nav>
-                <h1 id="hero-title">Programme Fees</h1>
+                <h1 id="hero-title">Programme <span class="highlight">Fees</span></h1>
                 <p>Affordable, transparent pricing designed to make authentic Islamic education accessible to everyone.</p>
                 <div class="prog-meta">
                     <span>💰 Flexible Payment Plans</span>
                     <span>🎓 Scholarships Available</span>
                     <span>🌍 Worldwide</span>
+                    <span>🏷️ Sibling Discount</span>
                 </div>
             </div>
         </section>
@@ -887,6 +1225,7 @@
                 <div class="section-header reveal">
                     <span class="section-tag">Investment</span>
                     <h2 id="fee-title">Fee Structure</h2>
+                    <div class="gold-divider">❖</div>
                     <p>Our fees are structured to provide excellent value for quality Islamic education. We offer flexible payment options to suit your needs.</p>
                 </div>
 
@@ -907,35 +1246,35 @@
                                 <td>12 weeks</td>
                                 <td>2</td>
                                 <td class="fee-amount">$149</td>
-                                <td class="fee-monthly">$50</td>
+                                <td class="fee-monthly">$49</td>
                             </tr>
                             <tr class="highlight-row">
                                 <td><strong>Qāʿidah – Upper</strong></td>
                                 <td>14 weeks</td>
                                 <td>2</td>
-                                <td class="fee-amount">$199</td>
-                                <td class="fee-monthly">$57</td>
+                                <td class="fee-amount">$499</td>
+                                <td class="fee-monthly">$99</td>
                             </tr>
                             <tr>
                                 <td><strong>Qurʾān – Beginner</strong></td>
                                 <td>16 weeks</td>
                                 <td>2</td>
-                                <td class="fee-amount">$249</td>
-                                <td class="fee-monthly">$62</td>
+                                <td class="fee-amount">$749</td>
+                                <td class="fee-monthly">$149</td>
                             </tr>
                             <tr class="highlight-row">
                                 <td><strong>Qurʾān – Upper</strong></td>
                                 <td>24 weeks (2 terms)</td>
                                 <td>3</td>
-                                <td class="fee-amount">$349</td>
-                                <td class="fee-monthly">$58</td>
+                                <td class="fee-amount">$999</td>
+                                <td class="fee-monthly">$149</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="text-center" style="margin-top:16px;">
-                    <p style="font-size:13px; color:var(--text-muted);">* All fees are in USD. Payment plans available.</p>
+                <div style="text-align:center; margin-top:16px;">
+                    <p style="font-size:13px; color:var(--text-muted);">* All fees are in USD. Payment plans and discounts available.</p>
                 </div>
             </div>
         </section>
@@ -946,42 +1285,106 @@
                 <div class="section-header reveal">
                     <span class="section-tag">Payment</span>
                     <h2 id="payment-title">Payment Options</h2>
+                    <div class="gold-divider">❖</div>
+                    <p>Choose the payment plan that works best for you and your family.</p>
                 </div>
 
                 <div class="payment-grid reveal">
                     <div class="payment-card">
-                        <span class="pay-icon">💳</span>
+                        <div class="payment-arch-wrapper">
+                            <div class="payment-arch-container">
+                                <span class="arch-icon">💳</span>
+                            </div>
+                        </div>
+                        <span class="payment-number">01</span>
                         <h4>Full Payment</h4>
-                        <p>Pay the full term fee upfront and receive a <strong>5% discount</strong> on your total. Ideal for students who prefer a single payment.</p>
+                        <p>Pay the full term fee upfront and receive a <span class="highlight-text">5% discount</span> on your total. Ideal for students who prefer a single payment.</p>
                     </div>
                     <div class="payment-card">
-                        <span class="pay-icon">📅</span>
+                        <div class="payment-arch-wrapper">
+                            <div class="payment-arch-container">
+                                <span class="arch-icon">📅</span>
+                            </div>
+                        </div>
+                        <span class="payment-number">02</span>
                         <h4>Monthly Installments</h4>
-                        <p>Spread your payments over the duration of the term with <strong>interest-free</strong> monthly installments. Flexible options available.</p>
+                        <p>Spread your payments over the duration of the term with <span class="highlight-text">interest-free</span> monthly installments. Flexible options available.</p>
                     </div>
                     <div class="payment-card">
-                        <span class="pay-icon">🎓</span>
+                        <div class="payment-arch-wrapper">
+                            <div class="payment-arch-container">
+                                <span class="arch-icon">🎓</span>
+                            </div>
+                        </div>
+                        <span class="payment-number">03</span>
                         <h4>Scholarship Support</h4>
                         <p>Need-based and merit-based scholarships available for eligible students. Apply for financial aid during the application process.</p>
                     </div>
                     <div class="payment-card">
-                        <span class="pay-icon">👨‍👩‍👧‍👦</span>
+                        <div class="payment-arch-wrapper">
+                            <div class="payment-arch-container">
+                                <span class="arch-icon">👨‍👩‍👧‍👦</span>
+                            </div>
+                        </div>
+                        <span class="payment-number">04</span>
                         <h4>Family Discount</h4>
-                        <p>Families with multiple students receive a <strong>10% discount</strong> on total fees. Applicable to immediate family members.</p>
+                        <p>Families with multiple students receive a <span class="highlight-text">10% discount</span> on total fees. Applicable to immediate family members.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===== CTA ===== -->
-        <section class="section" aria-labelledby="cta-title">
+        <!-- ===== SCHOLARSHIP SECTION ===== -->
+        <section class="section section-light" aria-labelledby="scholarship-title">
             <div class="container">
-                <div class="cta-section reveal">
-                    <h2 id="cta-title">Ready to Enrol?</h2>
-                    <p>Begin your journey of authentic Islamic learning today. Apply now and take the first step towards transforming your relationship with the Qurʾān.</p>
-                    <div class="cta-actions">
-                        <a href="apply.html" class="btn btn-gold btn-lg">Apply Now →</a>
-                        <a href="../contact/" class="btn btn-white btn-lg">Ask a Question</a>
+                <div class="section-header reveal">
+                    <span class="section-tag">Financial Aid</span>
+                    <h2 id="scholarship-title">Scholarships &amp; Financial Aid</h2>
+                    <div class="gold-divider">❖</div>
+                    <p>We believe that financial constraints should never be a barrier to seeking knowledge. Explore our support options below.</p>
+                </div>
+
+                <div class="scholarship-grid reveal">
+                    <div class="scholarship-card">
+                        <span class="scholarship-icon">🤲</span>
+                        <h4>Need-Based Scholarships</h4>
+                        <p>For students facing financial hardship. Apply with a simple statement of need, and we'll review your case compassionately.</p>
+                    </div>
+                    <div class="scholarship-card">
+                        <span class="scholarship-icon">⭐</span>
+                        <h4>Merit-Based Awards</h4>
+                        <p>Outstanding students can receive scholarships based on academic performance, dedication, and progress in their studies.</p>
+                    </div>
+                    <div class="scholarship-card">
+                        <span class="scholarship-icon">🕌</span>
+                        <h4>Community Sponsorship</h4>
+                        <p>We partner with donors and community organizations to sponsor students who demonstrate commitment to Islamic learning.</p>
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin-top:32px;">
+                    <p style="color:var(--text-muted); font-size:15px;">
+                        💬 <strong>Questions about financial aid?</strong> 
+                        <a href="../contact/" style="color:var(--gold-primary); font-weight:600;">Contact our admissions team</a> 
+                        — we're here to help.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section class="cta-section-wrapper" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-box reveal">
+                    <div class="cta-glow"></div>
+                    <div class="cta-content">
+                        <h2 id="cta-title">Ready to <span class="highlight">Enrol</span>?</h2>
+                        <p>Begin your journey of authentic Islamic learning today. Apply now and take the first step towards transforming your relationship with the Qurʾān.</p>
+                        <div class="cta-actions">
+                            <a href="apply.html" class="btn btn-gold btn-lg">Apply Now →</a>
+                            <a href="../contact/" class="btn btn-white btn-lg">Ask a Question</a>
+                            <a href="../donate/" class="btn btn-white btn-lg">❤️ Support a Student</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -996,11 +1399,11 @@
                 <div class="footer-brand">
                     <img src="../assets/branding/logo-white.svg" alt="FIKD Foundation" height="48" style="margin-bottom:12px;" />
                     <h3>FIKD Foundation</h3>
-                    <p>Empowering hearts and minds through authentic Islamic education.</p>
+                    <p>Building Knowledge, Character &amp; Civilization Through Authentic Islamic Education.</p>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/fikd.official" aria-label="Facebook">📘</a>
-                        <a href="https://www.instagram.com/muftiubaidullah.official" aria-label="Instagram">📸</a>
-                        <a href="https://www.youtube.com/@ubaidullahalfateh2874" aria-label="YouTube">▶️</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
                         <a href="#" aria-label="Twitter">🐦</a>
                     </div>
                 </div>
@@ -1012,6 +1415,7 @@
                         <li><a href="../teachers/">Teachers</a></li>
                         <li><a href="index.html">Admissions</a></li>
                         <li><a href="../resources/">Resources</a></li>
+                        <li><a href="../donate/">Donate</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -1027,7 +1431,7 @@
                 <div class="footer-contact">
                     <h4>Contact</h4>
                     <address>
-                        <p>📧 <a href="fikd.official@gmail.com">fikd.official@gmail.com</a></p>
+                        <p>📧 <a href="mailto:fikd.official@gmail.com">fikd.official@gmail.com</a></p>
                         <p>📞 <a href="tel:+923159993378">+92 315 9993 378</a></p>
                         <p>📍 FIKD Foundation, Chargulli, Mardan, KPK, Pakistan</p>
                     </address>
@@ -1046,6 +1450,7 @@
 
     <!-- ====== SCRIPTS ====== -->
     <script>
+        // ===== NAVIGATION =====
         const navToggle = document.getElementById('navToggle');
         const mainNav = document.getElementById('mainNav');
 
@@ -1061,6 +1466,7 @@
             }
         });
 
+        // ===== DROPDOWN MOBILE =====
         document.querySelectorAll('.dropdown > a').forEach(link => {
             link.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
@@ -1070,12 +1476,15 @@
             });
         });
 
+        // ===== HEADER SCROLL =====
         const header = document.querySelector('.site-header');
         window.addEventListener('scroll', function() {
             header.classList.toggle('scrolled', window.scrollY > 50);
         });
 
+        // ===== SCROLL REVEAL =====
         const revealElements = document.querySelectorAll('.reveal');
+
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1083,6 +1492,7 @@
                 }
             });
         }, { threshold: 0.1 });
+
         revealElements.forEach(el => revealObserver.observe(el));
 
         console.log('🚀 FIKD Foundation - Fees page loaded successfully!');
