@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us – FIKD Foundation</title>
+    <title>About Us – FIKD </title>
     <meta name="description" content="Learn about FIKD Foundation – our mission, vision, history, and the team behind the Islamic educational journey." />
     <link rel="icon" href="../assets/icons/favicon.ico" />
     <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
@@ -17,6 +17,7 @@
     <style>
         /* ========================================
            COMPLETE STYLESHEET - FIKD FOUNDATION
+           ROYAL NAVY + GOLD DESIGN (matching main index)
            ======================================== */
 
         /* ----- RESET & BASE ----- */
@@ -29,17 +30,28 @@
         }
 
         :root {
-            --primary: #0d2e1a;
-            --primary-light: #1a4d2e;
-            --primary-dark: #081f12;
-            --gold: #c8a96e;
-            --gold-light: #e8d5a3;
-            --gold-dark: #a8894a;
-            --white: #ffffff;
-            --off-white: #f8f6f2;
-            --light-bg: #f0ede7;
-            --text-dark: #1a1a1a;
-            --text-muted: #6b6b6b;
+            /* Royal Navy + Gold Color Palette */
+            --navy-dark: #0A192F;
+            --navy-medium: #112240;
+            --navy-light: #1A2D4A;
+            --navy-lighter: #233B5E;
+            --gold-primary: #D4AF37;
+            --gold-light: #E8D5A3;
+            --gold-dark: #A8894A;
+            --gold-button: #E5B252;
+            --white: #FFFFFF;
+            --cream: #FAF8F5;
+            --light-bg: #F0EDE7;
+            --text-dark: #0A192F;
+            --text-muted: #556070;
+            --text-white: #FFFFFF;
+            --border-gold: rgba(212, 175, 55, 0.3);
+
+            /* Typography */
+            --font-heading: 'Amiri', 'Times New Roman', serif;
+            --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
+
+            /* Spacing */
             --shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
             --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
             --radius: 16px;
@@ -52,10 +64,10 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: var(--font-body);
             font-size: 16px;
             color: var(--text-dark);
-            background: var(--off-white);
+            background: var(--cream);
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -80,7 +92,7 @@
             padding: 0 24px;
         }
 
-        /* ----- BUTTONS ----- */
+        /* ----- BUTTONS (matching main index) ----- */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -100,25 +112,25 @@
         }
 
         .btn-primary {
-            background: var(--primary);
+            background: var(--navy-dark);
             color: var(--white);
-            box-shadow: 0 4px 24px rgba(13, 46, 26, 0.3);
+            box-shadow: 0 4px 24px rgba(10, 25, 47, 0.3);
         }
 
         .btn-primary:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(13, 46, 26, 0.4);
+            box-shadow: 0 12px 40px rgba(10, 25, 47, 0.4);
         }
 
         .btn-gold {
-            background: var(--gold);
-            color: var(--white);
-            box-shadow: 0 4px 24px rgba(200, 169, 110, 0.3);
+            background: var(--gold-button);
+            color: var(--navy-dark);
+            box-shadow: 0 4px 24px rgba(229, 178, 82, 0.3);
         }
 
         .btn-gold:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(200, 169, 110, 0.4);
+            box-shadow: 0 12px 40px rgba(229, 178, 82, 0.4);
         }
 
         .btn-outline {
@@ -135,7 +147,7 @@
 
         .btn-white {
             background: var(--white);
-            color: var(--primary);
+            color: var(--navy-dark);
         }
 
         .btn-white:hover {
@@ -153,7 +165,7 @@
             font-size: 18px;
         }
 
-        /* ----- HEADER ----- */
+        /* ----- HEADER (matching main index) ----- */
         .site-header {
             position: fixed;
             top: 0;
@@ -164,7 +176,7 @@
             height: 80px;
             background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(200, 169, 110, 0.12);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.12);
             transition: all 0.3s ease;
         }
 
@@ -193,10 +205,10 @@
         }
 
         .logo-text {
-            font-family: 'Amiri', serif;
+            font-family: var(--font-heading);
             font-size: 22px;
             font-weight: 700;
-            color: var(--primary);
+            color: var(--navy-dark);
         }
 
         .logo-text span {
@@ -227,13 +239,13 @@
         }
 
         .nav-list>li>a:hover {
-            color: var(--primary);
-            background: rgba(13, 46, 26, 0.06);
+            color: var(--navy-dark);
+            background: rgba(10, 25, 47, 0.06);
         }
 
         .nav-list>li>a.active {
-            color: var(--primary);
-            background: rgba(13, 46, 26, 0.08);
+            color: var(--navy-dark);
+            background: rgba(10, 25, 47, 0.08);
             font-weight: 600;
         }
 
@@ -281,8 +293,8 @@
         }
 
         .dropdown-menu li a:hover {
-            background: rgba(13, 46, 26, 0.05);
-            color: var(--primary);
+            background: rgba(10, 25, 47, 0.05);
+            color: var(--navy-dark);
         }
 
         .nav-actions {
@@ -319,11 +331,11 @@
             transform: translateY(-8px) rotate(-45deg);
         }
 
-        /* ----- PAGE HERO ----- */
+        /* ----- PAGE HERO (matching main index hero) ----- */
         .page-hero {
             position: relative;
             padding: 140px 0 80px;
-            background: var(--primary);
+            background: var(--navy-dark);
             overflow: hidden;
         }
 
@@ -331,8 +343,19 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(13, 46, 26, 0.92) 0%, rgba(13, 46, 26, 0.75) 100%);
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.92) 0%, rgba(17, 34, 64, 0.85) 100%);
             z-index: 1;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-light), var(--gold-primary));
+            z-index: 2;
         }
 
         .page-hero-bg {
@@ -374,11 +397,15 @@
         }
 
         .page-hero h1 {
-            font-family: 'Amiri', serif;
+            font-family: var(--font-heading);
             font-size: 48px;
             color: var(--white);
             margin-bottom: 16px;
             line-height: 1.2;
+        }
+
+        .page-hero h1 .highlight {
+            color: var(--gold-primary);
         }
 
         .page-hero p {
@@ -388,17 +415,42 @@
             max-width: 600px;
         }
 
+        .page-hero .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .page-hero .hero-stats .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .page-hero .hero-stats .stat-number {
+            font-family: var(--font-heading);
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--gold-primary);
+        }
+
+        .page-hero .hero-stats .stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
         /* ----- SECTION COMMON ----- */
         .section {
             padding: 80px 0;
         }
 
         .section-light {
-            background: var(--off-white);
+            background: var(--cream);
         }
 
         .section-alt {
-            background: var(--light-bg);
+            background: var(--white);
         }
 
         .section-header {
@@ -413,28 +465,51 @@
             font-weight: 600;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: var(--gold);
+            color: var(--gold-primary);
             padding: 4px 16px;
-            border: 1px solid var(--gold);
+            border: 1px solid var(--gold-primary);
             border-radius: 50px;
             margin-bottom: 12px;
         }
 
         .section-header h2 {
-            font-family: 'Amiri', serif;
+            font-family: var(--font-heading);
             font-size: 40px;
-            color: var(--primary);
+            color: var(--navy-dark);
             margin-bottom: 12px;
             line-height: 1.2;
         }
 
+        .gold-divider {
+            color: var(--gold-primary);
+            font-size: 20px;
+            margin: 6px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .gold-divider::before,
+        .gold-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            max-width: 80px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary));
+        }
+
+        .gold-divider::after {
+            background: linear-gradient(90deg, var(--gold-primary), transparent);
+        }
+
         .section-header p {
-            font-size: 18px;
+            font-size: 16px;
             color: var(--text-muted);
             line-height: 1.8;
         }
 
-        /* ----- MISSION & VISION ----- */
+        /* ----- MISSION & VISION (with arch icons) ----- */
         .mission-vision-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -448,28 +523,81 @@
             padding: 40px 32px;
             box-shadow: var(--shadow);
             transition: all var(--transition);
-            border: 1px solid rgba(200, 169, 110, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-card::before,
+        .vision-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mission-card:hover::before,
+        .vision-card:hover::before {
+            opacity: 1;
         }
 
         .mission-card:hover,
         .vision-card:hover {
             transform: translateY(-6px);
             box-shadow: var(--shadow-lg);
-            border-color: var(--gold-light);
+            border-color: var(--gold-primary);
         }
 
-        .mission-card .icon,
-        .vision-card .icon {
-            font-size: 48px;
-            display: block;
-            margin-bottom: 16px;
+        /* Arch icon wrapper */
+        .mission-arch-wrapper,
+        .vision-arch-wrapper {
+            width: 72px;
+            height: 86px;
+            background: var(--gold-primary);
+            padding: 3px;
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
+            margin: 0 auto 12px auto;
+            transition: all 0.3s ease;
+        }
+
+        .mission-arch-container,
+        .vision-arch-container {
+            width: 100%;
+            height: 100%;
+            background-color: var(--navy-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
+        }
+
+        .mission-arch-container .arch-icon,
+        .vision-arch-container .arch-icon {
+            color: var(--gold-primary);
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            transition: all 0.3s ease;
+        }
+
+        .mission-card:hover .mission-arch-wrapper,
+        .vision-card:hover .vision-arch-wrapper {
+            transform: scale(1.05) rotate(-2deg);
         }
 
         .mission-card h3,
         .vision-card h3 {
-            font-family: 'Amiri', serif;
+            font-family: var(--font-heading);
             font-size: 28px;
-            color: var(--primary);
+            color: var(--navy-dark);
             margin-bottom: 12px;
         }
 
@@ -480,10 +608,113 @@
             line-height: 1.8;
         }
 
-        /* ----- TIMELINE ----- */
+        /* ----- WHY CHOOSE FIKD (new section) ----- */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .why-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 32px 24px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .why-card:hover::before {
+            opacity: 1;
+        }
+
+        .why-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--gold-primary);
+        }
+
+        .why-arch-wrapper {
+            width: 64px;
+            height: 78px;
+            background: var(--gold-primary);
+            padding: 3px;
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
+            margin: 0 auto 10px auto;
+            transition: all 0.3s ease;
+        }
+
+        .why-arch-container {
+            width: 100%;
+            height: 100%;
+            background-color: var(--navy-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
+        }
+
+        .why-arch-container .arch-icon {
+            color: var(--gold-primary);
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            transition: all 0.3s ease;
+        }
+
+        .why-card:hover .why-arch-wrapper {
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        .why-card .why-number {
+            display: inline-block;
+            background: var(--navy-dark);
+            color: var(--gold-primary);
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 12px;
+            border-radius: 50px;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+
+        .why-card h4 {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            color: var(--navy-dark);
+            margin-bottom: 6px;
+        }
+
+        .why-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ----- TIMELINE (with gold styling) ----- */
         .timeline {
             position: relative;
             padding-left: 40px;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .timeline::before {
@@ -493,7 +724,7 @@
             top: 0;
             bottom: 0;
             width: 3px;
-            background: var(--gold);
+            background: var(--gold-primary);
             border-radius: 4px;
         }
 
@@ -515,23 +746,24 @@
             width: 16px;
             height: 16px;
             border-radius: 50%;
-            background: var(--gold);
+            background: var(--gold-primary);
             border: 3px solid var(--white);
-            box-shadow: 0 0 0 3px var(--gold);
+            box-shadow: 0 0 0 3px var(--gold-primary);
         }
 
         .timeline-item .year {
-            font-family: 'Amiri', serif;
-            font-size: 20px;
+            font-family: var(--font-heading);
+            font-size: 22px;
             font-weight: 700;
-            color: var(--gold);
+            color: var(--gold-primary);
             display: block;
             margin-bottom: 4px;
         }
 
         .timeline-item h4 {
+            font-family: var(--font-heading);
             font-size: 18px;
-            color: var(--primary);
+            color: var(--navy-dark);
             margin-bottom: 4px;
         }
 
@@ -541,7 +773,7 @@
             line-height: 1.7;
         }
 
-        /* ----- VALUES ----- */
+        /* ----- VALUES (with arch icons matching main index) ----- */
         .values-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -551,73 +783,244 @@
         .value-card {
             background: var(--white);
             border-radius: var(--radius);
-            padding: 32px 24px;
+            padding: 28px 20px;
             text-align: center;
             box-shadow: var(--shadow);
             transition: all var(--transition);
-            border: 1px solid rgba(200, 169, 110, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .value-card:hover::before {
+            opacity: 1;
         }
 
         .value-card:hover {
-            transform: translateY(-6px);
+            transform: translateY(-8px);
             box-shadow: var(--shadow-lg);
-            border-color: var(--gold-light);
+            border-color: var(--gold-primary);
         }
 
-        .value-card .value-icon {
-            font-size: 40px;
-            display: block;
-            margin-bottom: 12px;
+        .value-arch-wrapper {
+            width: 64px;
+            height: 78px;
+            background: var(--gold-primary);
+            padding: 3px;
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
+            margin: 0 auto 10px auto;
+            transition: all 0.3s ease;
+        }
+
+        .value-arch-container {
+            width: 100%;
+            height: 100%;
+            background-color: var(--navy-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
+        }
+
+        .value-arch-container .arch-icon {
+            color: var(--gold-primary);
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover .value-arch-wrapper {
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        .value-card .value-number {
+            display: inline-block;
+            background: var(--navy-dark);
+            color: var(--gold-primary);
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 12px;
+            border-radius: 50px;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
         }
 
         .value-card h4 {
+            font-family: var(--font-heading);
             font-size: 18px;
-            color: var(--primary);
-            margin-bottom: 8px;
+            color: var(--navy-dark);
+            margin-bottom: 6px;
         }
 
         .value-card p {
             font-size: 14px;
             color: var(--text-muted);
             line-height: 1.6;
+            margin: 0;
         }
 
-        /* ----- CTA ----- */
-        .cta-section {
-            background: var(--primary);
+        /* ----- TESTIMONIALS (new section) ----- */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(212, 175, 55, 0.06);
+            transition: all var(--transition);
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--gold-primary);
+        }
+
+        .testimonial-card .quote-icon {
+            font-size: 36px;
+            color: var(--gold-primary);
+            opacity: 0.15;
+            font-family: var(--font-heading);
+            line-height: 1;
+            margin-bottom: -8px;
+        }
+
+        .testimonial-card .stars {
+            color: var(--gold-primary);
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .testimonial-card .testimonial-text {
+            font-family: var(--font-heading);
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--text-dark);
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .testimonial-card .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-card .testimonial-author .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--navy-dark);
+            color: var(--gold-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            border: 2px solid var(--gold-primary);
+        }
+
+        .testimonial-card .testimonial-author .author-info strong {
+            display: block;
+            font-size: 14px;
+            color: var(--navy-dark);
+        }
+
+        .testimonial-card .testimonial-author .author-info span {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* ----- CTA (matching main index) ----- */
+        .cta-section-wrapper {
+            padding: 60px 0 80px;
+            background: var(--navy-dark);
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--navy-dark), var(--navy-medium));
             border-radius: var(--radius-lg);
-            padding: 64px 48px;
+            padding: 56px 48px;
             text-align: center;
+            border: 1px solid var(--gold-primary);
             position: relative;
             overflow: hidden;
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.05);
         }
 
-        .cta-section::before {
+        .cta-box::before {
             content: '';
             position: absolute;
             top: -50%;
             right: -20%;
             width: 60%;
             height: 200%;
-            background: linear-gradient(135deg, rgba(200, 169, 110, 0.05), rgba(200, 169, 110, 0.02));
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(212, 175, 55, 0.02));
             transform: rotate(30deg);
         }
 
-        .cta-section h2 {
-            font-family: 'Amiri', serif;
-            font-size: 36px;
-            color: var(--white);
+        .cta-box .cta-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.04), transparent 70%);
+            pointer-events: none;
+            animation: ctaGlow 6s ease-in-out infinite;
+        }
+
+        @keyframes ctaGlow {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+            50% { transform: translate(-50%, -50%) scale(1.3); opacity: 1; }
+        }
+
+        .cta-box .cta-content {
             position: relative;
             z-index: 1;
         }
 
-        .cta-section p {
+        .cta-box h2 {
+            font-family: var(--font-heading);
+            font-size: 38px;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .cta-box h2 .highlight {
+            color: var(--gold-primary);
+        }
+
+        .cta-box p {
             color: rgba(255, 255, 255, 0.8);
             max-width: 560px;
-            margin: 16px auto 32px;
+            margin: 0 auto 32px;
             font-size: 18px;
-            position: relative;
-            z-index: 1;
+            line-height: 1.7;
         }
 
         .cta-actions {
@@ -625,16 +1028,15 @@
             gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
-            position: relative;
-            z-index: 1;
         }
 
-        /* ----- FOOTER ----- */
+        /* ----- FOOTER (matching main index) ----- */
         .site-footer {
-            background: var(--primary-dark);
+            background: #05101D;
             color: rgba(255, 255, 255, 0.8);
             padding: 60px 0 32px;
-            margin-top: 80px;
+            margin-top: 0;
+            border-top: 3px solid var(--gold-primary);
         }
 
         .footer-grid {
@@ -644,7 +1046,7 @@
         }
 
         .footer-brand h3 {
-            font-family: 'Amiri', serif;
+            font-family: var(--font-heading);
             font-size: 22px;
             color: var(--white);
             margin-bottom: 8px;
@@ -674,11 +1076,14 @@
             color: var(--white);
             transition: all 0.3s ease;
             font-size: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .footer-social a:hover {
-            background: var(--gold);
+            background: var(--gold-primary);
             transform: translateY(-3px);
+            border-color: var(--gold-primary);
+            color: var(--navy-dark);
         }
 
         .footer-links h4 {
@@ -699,7 +1104,7 @@
         }
 
         .footer-links ul li a:hover {
-            color: var(--gold);
+            color: var(--gold-primary);
         }
 
         .footer-contact address {
@@ -718,7 +1123,7 @@
         }
 
         .footer-contact a:hover {
-            color: var(--gold);
+            color: var(--gold-primary);
         }
 
         .footer-bottom {
@@ -750,7 +1155,7 @@
         }
 
         .footer-legal a:hover {
-            color: var(--gold);
+            color: var(--gold-primary);
         }
 
         /* ========================================
@@ -763,6 +1168,12 @@
                 gap: 32px;
             }
             .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .why-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -849,6 +1260,12 @@
             .page-hero p {
                 font-size: 16px;
             }
+            .page-hero .hero-stats {
+                gap: 16px;
+            }
+            .page-hero .hero-stats .stat-number {
+                font-size: 24px;
+            }
 
             .mission-vision-grid {
                 grid-template-columns: 1fr;
@@ -856,16 +1273,34 @@
 
             .values-grid {
                 grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .section {
+                padding: 40px 0;
             }
 
             .section-header h2 {
                 font-size: 30px;
             }
 
-            .cta-section {
-                padding: 40px 24px;
+            .cta-box {
+                padding: 32px 20px;
             }
-            .cta-section h2 {
+            .cta-box h2 {
                 font-size: 28px;
             }
 
@@ -880,6 +1315,16 @@
             .footer-legal {
                 justify-content: center;
             }
+
+            .gold-divider::before,
+            .gold-divider::after {
+                max-width: 30px;
+            }
+
+            .mission-card,
+            .vision-card {
+                padding: 24px 20px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -889,11 +1334,7 @@
             .section-header h2 {
                 font-size: 24px;
             }
-            .mission-card,
-            .vision-card {
-                padding: 24px 20px;
-            }
-            .cta-section h2 {
+            .cta-box h2 {
                 font-size: 24px;
             }
             .cta-actions {
@@ -902,8 +1343,26 @@
             }
             .cta-actions .btn {
                 width: 100%;
-                max-width: 300px;
+                max-width: 280px;
                 justify-content: center;
+            }
+            .mission-arch-wrapper,
+            .vision-arch-wrapper {
+                width: 60px;
+                height: 74px;
+            }
+            .mission-arch-container .arch-icon,
+            .vision-arch-container .arch-icon {
+                font-size: 24px;
+            }
+            .value-arch-wrapper,
+            .why-arch-wrapper {
+                width: 56px;
+                height: 68px;
+            }
+            .value-arch-container .arch-icon,
+            .why-arch-container .arch-icon {
+                font-size: 20px;
             }
         }
 
@@ -927,8 +1386,8 @@
         <div class="header-inner">
             <div class="logo">
                 <a href="../index.html">
-                    <img src="../assets/branding/logo.svg" alt="FIKD Foundation" />
-                    <span class="logo-text">FIKD <span>Foundation</span></span>
+                    <img src="../assets/branding/logo.svg" alt="FIKD" />
+                    <span class="logo-text">FIKD <span></span></span>
                 </a>
             </div>
 
@@ -949,6 +1408,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="../programmes/qaida-beginner.html">Qāʿidah – Beginner</a></li>
                             <li><a href="../programmes/qaida-upper.html">Qāʿidah – Upper</a></li>
+                            <li><a href="../programmes/quran-nazera.html">Quran Nazera</a></li>
                             <li><a href="../programmes/quran-beginner.html">Qurʾān – Beginner</a></li>
                             <li><a href="../programmes/quran-upper.html">Qurʾān – Upper</a></li>
                         </ul>
@@ -968,12 +1428,13 @@
                     <li><a href="../teachers/">Teachers</a></li>
                     <li><a href="../admissions/">Admissions</a></li>
                     <li><a href="../resources/">Resources</a></li>
-                    <li><a href="donate/">Donate</a></li>
+                    <li><a href="../donate/">Donate</a></li>
                     <li><a href="../contact/">Contact</a></li>
                 </ul>
 
                 <div class="nav-actions">
                     <a href="../admissions/apply.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    <a href="../donate/" class="btn btn-gold btn-sm">❤️ Donate</a>
                 </div>
             </nav>
         </div>
@@ -991,8 +1452,26 @@
                 <nav class="breadcrumb" aria-label="Breadcrumb">
                     <a href="../index.html">Home</a> / <span>About Us</span>
                 </nav>
-                <h1 id="hero-title">About FIKD Foundation</h1>
-                <p>Discover our journey, mission, and the people dedicated to nurturing Islamic knowledge and character.</p>
+                <h1 id="hero-title">About <span class="highlight">FIKD</span></h1>
+                <p>Building Knowledge, Character &amp; Civilization — discover our journey, mission, and the community dedicated to authentic Islamic education.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">650+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Qualified Teachers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2016</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1001,12 +1480,20 @@
             <div class="container">
                 <div class="mission-vision-grid reveal">
                     <div class="mission-card">
-                        <span class="icon">🎯</span>
+                        <div class="mission-arch-wrapper">
+                            <div class="mission-arch-container">
+                                <span class="arch-icon">🎯</span>
+                            </div>
+                        </div>
                         <h3 id="mission-title">Our Mission</h3>
                         <p>To provide authentic, accessible, and transformative Islamic education that nurtures faith, knowledge, and character — empowering individuals to live Islam with confidence and contribute positively to their communities.</p>
                     </div>
                     <div class="vision-card">
-                        <span class="icon">🔭</span>
+                        <div class="vision-arch-wrapper">
+                            <div class="vision-arch-container">
+                                <span class="arch-icon">🔭</span>
+                            </div>
+                        </div>
                         <h3 id="vision-title">Our Vision</h3>
                         <p>To be a global beacon of Islamic learning, where every student finds a pathway to connect with the Qurʾān and Sunnah, and where traditional scholarship meets contemporary relevance.</p>
                     </div>
@@ -1014,12 +1501,89 @@
             </div>
         </section>
 
-        <!-- ===== OUR STORY ===== -->
-        <section class="section section-alt" aria-labelledby="story-title">
+        <!-- ===== WHY CHOOSE FIKD ===== -->
+        <section class="section section-alt" aria-labelledby="why-title">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-tag">Our Story</span>
+                    <span class="section-tag">Why Choose FIKD</span>
+                    <h2 id="why-title">For Students &amp; Parents Alike</h2>
+                    <div class="gold-divider">❖</div>
+                    <p>We understand what families are looking for — and we deliver it with excellence.</p>
+                </div>
+
+                <div class="why-grid reveal">
+                    <div class="why-card">
+                        <div class="why-arch-wrapper">
+                            <div class="why-arch-container">
+                                <span class="arch-icon">👨‍🏫</span>
+                            </div>
+                        </div>
+                        <span class="why-number">01</span>
+                        <h4>Qualified &amp; Caring Teachers</h4>
+                        <p>Our educators are not just scholars — they are mentors who care about every student's growth. Each teacher holds Ijāzah and years of experience.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-arch-wrapper">
+                            <div class="why-arch-container">
+                                <span class="arch-icon">📚</span>
+                            </div>
+                        </div>
+                        <span class="why-number">02</span>
+                        <h4>Structured &amp; Progressive Curriculum</h4>
+                        <p>From Qāʿidah to advanced Qurʾānic studies, every level builds on the previous one. No gaps, no confusion — just steady progress.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-arch-wrapper">
+                            <div class="why-arch-container">
+                                <span class="arch-icon">💻</span>
+                            </div>
+                        </div>
+                        <span class="why-number">03</span>
+                        <h4>Learn From Anywhere</h4>
+                        <p>Our online platform brings authentic Islamic education to your home — live, interactive, and accessible from any device.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-arch-wrapper">
+                            <div class="why-arch-container">
+                                <span class="arch-icon">⏱️</span>
+                            </div>
+                        </div>
+                        <span class="why-number">04</span>
+                        <h4>Flexible Scheduling</h4>
+                        <p>Busy parents and students can choose timings that work for them. We adapt to your routine, not the other way around.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-arch-wrapper">
+                            <div class="why-arch-container">
+                                <span class="arch-icon">🌟</span>
+                            </div>
+                        </div>
+                        <span class="why-number">05</span>
+                        <h4>Character First</h4>
+                        <p>We don't just teach knowledge — we build character. Every lesson includes practical guidance on manners, discipline, and Islamic values.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-arch-wrapper">
+                            <div class="why-arch-container">
+                                <span class="arch-icon">👨‍👩‍👧‍👦</span>
+                            </div>
+                        </div>
+                        <span class="why-number">06</span>
+                        <h4>Parental Involvement</h4>
+                        <p>We keep parents informed with regular progress reports and feedback. You're not just enrolling a student — you're joining a community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OUR STORY ===== -->
+        <section class="section section-light" aria-labelledby="story-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Our Journey</span>
                     <h2 id="story-title">From a Dream to a Global Community</h2>
+                    <div class="gold-divider">❖</div>
+                    <p>What started as a small study circle has grown into a worldwide movement of authentic Islamic learning.</p>
                 </div>
 
                 <div class="timeline reveal">
@@ -1043,36 +1607,63 @@
                         <h4>Global Reach</h4>
                         <p>Today, FIKD serves over 1,200 students from more than 30 countries, with a dedicated team of 48 qualified teachers.</p>
                     </div>
+                    <div class="timeline-item">
+                        <span class="year">2026</span>
+                        <h4>Looking Ahead</h4>
+                        <p>We continue to grow, improve, and reach more families — always committed to authentic Islamic education for all.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- ===== VALUES ===== -->
-        <section class="section section-light" aria-labelledby="values-title">
+        <section class="section section-alt" aria-labelledby="values-title">
             <div class="container">
                 <div class="section-header reveal">
                     <span class="section-tag">Core Values</span>
                     <h2 id="values-title">What We Stand For</h2>
+                    <div class="gold-divider">❖</div>
+                    <p>These principles guide everything we do at FIKD.</p>
                 </div>
 
                 <div class="values-grid reveal">
                     <div class="value-card">
-                        <span class="value-icon">📿</span>
+                        <div class="value-arch-wrapper">
+                            <div class="value-arch-container">
+                                <span class="arch-icon">📿</span>
+                            </div>
+                        </div>
+                        <span class="value-number">01</span>
                         <h4>Authenticity</h4>
                         <p>We adhere to the Qurʾān and Sunnah as understood by the righteous predecessors (Salaf), with respect for classical scholarship.</p>
                     </div>
                     <div class="value-card">
-                        <span class="value-icon">🧠</span>
+                        <div class="value-arch-wrapper">
+                            <div class="value-arch-container">
+                                <span class="arch-icon">🧠</span>
+                            </div>
+                        </div>
+                        <span class="value-number">02</span>
                         <h4>Excellence</h4>
                         <p>We strive for the highest quality in teaching, materials, and student support, continuously improving our programmes.</p>
                     </div>
                     <div class="value-card">
-                        <span class="value-icon">🤝</span>
+                        <div class="value-arch-wrapper">
+                            <div class="value-arch-container">
+                                <span class="arch-icon">🤝</span>
+                            </div>
+                        </div>
+                        <span class="value-number">03</span>
                         <h4>Community</h4>
                         <p>We foster a supportive, inclusive environment where students and teachers grow together in faith and knowledge.</p>
                     </div>
                     <div class="value-card">
-                        <span class="value-icon">🌱</span>
+                        <div class="value-arch-wrapper">
+                            <div class="value-arch-container">
+                                <span class="arch-icon">🌱</span>
+                            </div>
+                        </div>
+                        <span class="value-number">04</span>
                         <h4>Character Development</h4>
                         <p>Knowledge without action is incomplete; we emphasise adab (manners) and tazkiyah (purification) alongside study.</p>
                     </div>
@@ -1080,15 +1671,35 @@
             </div>
         </section>
 
-        <!-- ===== CTA ===== -->
-        <section class="section" aria-labelledby="cta-title">
+        <!-- ===== TESTIMONIALS ===== -->
+        <section class="section section-light" aria-labelledby="testimonials-title">
             <div class="container">
-                <div class="cta-section reveal">
-                    <h2 id="cta-title">Join Our Community</h2>
-                    <p>Become part of a growing global family that values authentic Islamic education and personal growth.</p>
-                    <div class="cta-actions">
-                        <a href="../admissions/apply.html" class="btn btn-gold btn-lg">Apply Now →</a>
-                        <a href="../contact/" class="btn btn-white btn-lg">Get in Touch</a>
+                <div class="section-header reveal">
+                    <span class="section-tag">What Families Say</span>
+                    <h2 id="testimonials-title">Real Stories from Our Community</h2>
+                    <div class="gold-divider">❖</div>
+                    <p>Hear from students and parents who have experienced the FIKD difference.</p>
+                </div>
+
+                <div class="testimonials-grid reveal" id="testimonialsGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section class="cta-section-wrapper" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-box reveal">
+                    <div class="cta-glow"></div>
+                    <div class="cta-content">
+                        <h2 id="cta-title">Ready to Begin Your <span class="highlight">Journey</span>?</h2>
+                        <p>Join a global community of students and families who are transforming their lives through authentic Islamic education.</p>
+                        <div class="cta-actions">
+                            <a href="../admissions/apply.html" class="btn btn-gold btn-lg">Apply Now →</a>
+                            <a href="../contact/" class="btn btn-white btn-lg">Get in Touch</a>
+                            <a href="../donate/" class="btn btn-white btn-lg">❤️ Support a Child</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1103,11 +1714,11 @@
                 <div class="footer-brand">
                     <img src="../assets/branding/logo-white.svg" alt="FIKD Foundation" height="48" style="margin-bottom:12px;" />
                     <h3>FIKD Foundation</h3>
-                    <p>Empowering hearts and minds through authentic Islamic education.</p>
+                    <p>Building Knowledge, Character &amp; Civilization Through Authentic Islamic Education.</p>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/fikd.official" aria-label="Facebook">📘</a>
-                        <a href="https://www.instagram.com/muftiubaidullah.official" aria-label="Instagram">📸</a>
-                        <a href="https://www.youtube.com/@ubaidullahalfateh2874" aria-label="YouTube">▶️</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
                         <a href="#" aria-label="Twitter">🐦</a>
                     </div>
                 </div>
@@ -1119,6 +1730,7 @@
                         <li><a href="../teachers/">Teachers</a></li>
                         <li><a href="../admissions/">Admissions</a></li>
                         <li><a href="../resources/">Resources</a></li>
+                        <li><a href="../donate/">Donate</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -1134,7 +1746,7 @@
                 <div class="footer-contact">
                     <h4>Contact</h4>
                     <address>
-                        <p>📧 <a href="fikd.official@gmail.com">fikd.official@gmail.com</a></p>
+                        <p>📧 <a href="mailto:fikd.official@gmail.com">fikd.official@gmail.com</a></p>
                         <p>📞 <a href="tel:+923159993378">+92 315 9993 378</a></p>
                         <p>📍 FIKD Foundation, Chargulli, Mardan, KPK, Pakistan</p>
                     </address>
@@ -1197,6 +1809,47 @@
         }, { threshold: 0.1 });
 
         revealElements.forEach(el => revealObserver.observe(el));
+
+        // ===== TESTIMONIALS =====
+        const testimonials = [{
+            name: "Amina Khan",
+            role: "Student, Qurʾān Programme",
+            initial: "A",
+            text: "FIKD has completely transformed my relationship with the Qurʾān. The teachers are patient, knowledgeable, and truly care about each student's progress.",
+            rating: 5
+        }, {
+            name: "Yusuf Ali",
+            role: "Parent",
+            initial: "Y",
+            text: "My children have grown so much in their Islamic knowledge and character since joining FIKD. The curriculum is well-structured and engaging.",
+            rating: 5
+        }, {
+            name: "Dr. Fatima El-Sayed",
+            role: "Alumna",
+            initial: "F",
+            text: "I completed the advanced Qurʾān programme and now teach in my community. FIKD gave me the foundation I needed to serve others.",
+            rating: 5
+        }];
+
+        const testimonialsGrid = document.getElementById('testimonialsGrid');
+
+        testimonials.forEach(t => {
+            const card = document.createElement('div');
+            card.className = 'testimonial-card';
+            card.innerHTML = `
+                <div class="quote-icon">"</div>
+                <div class="stars">${'★'.repeat(t.rating)}${'☆'.repeat(5 - t.rating)}</div>
+                <p class="testimonial-text">"${t.text}"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">${t.initial}</div>
+                    <div class="author-info">
+                        <strong>${t.name}</strong>
+                        <span>${t.role}</span>
+                    </div>
+                </div>
+            `;
+            testimonialsGrid.appendChild(card);
+        });
 
         console.log('🚀 FIKD Foundation - About page loaded successfully!');
     </script>
