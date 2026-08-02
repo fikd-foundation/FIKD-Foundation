@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quran Nazirah Programme – FIKD</title>
-    <meta name="description" content="Complete Quran Naazera programme with structured levels from foundation to advanced recitation. Master the Qurʾān with proper tajwīd and understanding." />
+    <title>Quran Nazirah Programme – FIKD Foundation</title>
+    <meta name="description" content="Complete Quran Nazirah programme with structured levels from foundation to advanced recitation. Master the Qurʾān with proper tajwīd and understanding." />
     <link rel="icon" href="../assets/icons/favicon.ico" />
     <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
     <link rel="manifest" href="../seo/manifest.webmanifest" />
@@ -1134,21 +1134,40 @@
                     <li><a href="../about/">About</a></li>
                     <li><a href="../philosophy/">Philosophy</a></li>
                     <li><a href="../prospectus.html">Prospectus</a></li>
+                    
+                    <!-- Programmes Dropdown -->
                     <li class="dropdown">
                         <a href="index.html" class="active">Programmes <span class="dropdown-arrow">▾</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="qaida-beginner.html">Qāʿidah – Beginner</a></li>
-                            </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="../narirah/">Nazirah <span class="dropdown-arrow">▾</span></a>
-                        <ul class="dropdown-menu">
-<li><a href="qaida-upper.html">Qāʿidah – Upper</a></li>
-                            <li><a href="index.html" class="active">Nazirah</a></li>
-                            <li><a href="quran-beginner.html">Qurʾān – Beginner</a></li>
-                            <li><a href="quran-upper.html">Qurʾān – Upper</a></li>
+                            <!-- Qaida Sub-menu -->
+                            <li class="dropdown" style="position:relative;">
+                                <a href="#" style="display:flex; justify-content:space-between; align-items:center;">
+                                    Qāʿidah <span style="font-size:10px;">▸</span>
+                                </a>
+                                <ul class="dropdown-menu" style="position:absolute; left:100%; top:-8px; min-width:200px;">
+                                    <li><a href="qaida-beginner.html">Qāʿidah – Beginner</a></li>
+                                    <li><a href="qaida-upper.html">Qāʿidah – Upper</a></li>
+                                </ul>
+                            </li>
+                            <!-- Nazirah Sub-menu -->
+                            <li class="dropdown" style="position:relative;">
+                                <a href="#" style="display:flex; justify-content:space-between; align-items:center;" class="active">
+                                    Nazirah <span style="font-size:10px;">▸</span>
+                                </a>
+                                <ul class="dropdown-menu" style="position:absolute; left:100%; top:-8px; min-width:220px;">
+                                    <li><a href="index.html" class="active">Nazirah Overview</a></li>
+                                    <li><a href="quran-level1.html">Qurʾān – Level 1</a></li>
+                                    <li><a href="quran-level2.html">Qurʾān – Level 2</a></li>
+                                    <li><a href="quran-level3.html">Qurʾān – Level 3</a></li>
+                                    <li><a href="quran-level4a.html">Qurʾān – Level 4A</a></li>
+                                    <li><a href="quran-level4b.html">Qurʾān – Level 4B</a></li>
+                                    <li><a href="quran-level4c.html">Qurʾān – Level 4C</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
+
+                    <!-- Curriculum Dropdown -->
                     <li class="dropdown">
                         <a href="../curriculum/">Curriculum <span class="dropdown-arrow">▾</span></a>
                         <ul class="dropdown-menu">
@@ -1186,9 +1205,9 @@
             </div>
             <div class="container page-hero-content">
                 <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <a href="../index.html">Home</a> / <a href="index.html">Programmes</a> / <span>Quran Naazera</span>
+                    <a href="../index.html">Home</a> / <a href="index.html">Programmes</a> / <span>Quran Nazirah</span>
                 </nav>
-                <h1 id="hero-title">Quran <span class="highlight">Naazera</span> Programme</h1>
+                <h1 id="hero-title">Quran <span class="highlight">Nazirah</span> Programme</h1>
                 <p>A comprehensive, structured journey from foundational Noorani Qaida to advanced Qurʾānic recitation with tajwīd, memorisation, and deep Islamic understanding.</p>
                 <div class="sub-meta">
                     <span>📖 6 Levels</span>
@@ -1203,7 +1222,7 @@
         <section class="section section-light" aria-labelledby="overview-title">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-tag">Quran Naazera</span>
+                    <span class="section-tag">Quran Nazirah</span>
                     <h2 id="overview-title">Complete Recitation Programme</h2>
                     <div class="gold-divider">❖</div>
                     <p>From Foundation to Excellence — A structured journey through the Qurʾān with integrated Islamic knowledge, tajwīd, and character development.</p>
@@ -1360,7 +1379,7 @@
                 <div class="cta-box reveal">
                     <div class="cta-glow"></div>
                     <div class="cta-content">
-                        <h2 id="cta-title">Begin Your Quran <span class="highlight">Naazera</span> Journey Today</h2>
+                        <h2 id="cta-title">Begin Your Quran <span class="highlight">Nazirah</span> Journey Today</h2>
                         <p>Start your child's Qurʾānic journey with a structured, comprehensive programme that builds strong foundations and lasting connection with the Book of Allah.</p>
                         <div class="cta-actions">
                             <a href="../admissions/apply.html" class="btn btn-gold btn-lg">Apply Now →</a>
@@ -1477,7 +1496,7 @@
 
         revealElements.forEach(el => revealObserver.observe(el));
 
-        console.log('🚀 FIKD Foundation - Quran Naazera overview page loaded successfully!');
+        console.log('🚀 FIKD Foundation - Quran Nazirah overview page loaded successfully!');
     </script>
 
 </body>
