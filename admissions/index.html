@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admissions – FIKD</title>
+    <title>Admissions – FIKD Foundation</title>
     <meta name="description" content="Apply to FIKD Foundation. Learn about our admissions process, requirements, fees, and how to enrol in our Islamic education programmes." />
     <link rel="icon" href="../assets/icons/favicon.ico" />
     <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
@@ -818,7 +818,7 @@
             top: 7px;
         }
 
-        /* ----- TUITION / FEES SECTION (new) ----- */
+        /* ----- TUITION / FEES SECTION (with View All Fees link) ----- */
         .fees-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -933,6 +933,33 @@
             color: var(--text-muted);
             line-height: 1.6;
             margin: 0;
+        }
+
+        .fees-cta-wrapper {
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .fees-cta-wrapper .btn-fees {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 32px;
+            background: transparent;
+            color: var(--gold-primary);
+            border: 2px solid var(--gold-primary);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all var(--transition);
+            text-decoration: none;
+        }
+
+        .fees-cta-wrapper .btn-fees:hover {
+            background: var(--gold-primary);
+            color: var(--navy-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
         }
 
         /* ----- CTA (matching main index) ----- */
@@ -1621,7 +1648,7 @@
             </div>
         </section>
 
-        <!-- ===== TUITION & FEES (new section) ===== -->
+        <!-- ===== TUITION & FEES (with View All Fees link) ===== -->
         <section class="section section-alt" aria-labelledby="fees-title">
             <div class="container">
                 <div class="section-header reveal">
@@ -1670,14 +1697,14 @@
                     </div>
                 </div>
 
-                <div style="text-align:center; margin-top:32px;">
-                    <p style="color:var(--text-muted); font-size:15px;">
-                        💰 <strong>Financial Aid:</strong> We offer scholarships and discounts for families in need. 
-                        <a href="../contact/" style="color:var(--gold-primary); font-weight:600;">Contact us</a> to learn more.
+                <div style="text-align:center; margin-top:24px;">
+                    <p style="color:var(--text-muted); font-size:14px;">
+                        💰 <strong>Financial Aid:</strong> Scholarships and discounts available for families in need.
                     </p>
-                    <p style="color:var(--text-muted); font-size:14px; margin-top:8px;">
-                        🌟 <strong>Sibling Discount:</strong> 10% off for each additional family member enrolled.
-                    </p>
+                </div>
+
+                <div class="fees-cta-wrapper">
+                    <a href="fees.html" class="btn-fees">📊 View Full Fee Details →</a>
                 </div>
             </div>
         </section>
