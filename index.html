@@ -334,7 +334,7 @@
         }
 
         /* ========================================
-           HERO SECTION - ROYAL NAVY + GOLD
+           HERO SECTION
            ======================================== */
 
         .hero {
@@ -367,7 +367,6 @@
             z-index: 1;
         }
 
-        /* Gold Accent Line */
         .hero::after {
             content: '';
             position: absolute;
@@ -379,8 +378,8 @@
             z-index: 2;
         }
 
-        /* Animated particles - Enhanced */
-        .particles {
+        /* Animated particles */
+        .hero-particles {
             position: absolute;
             inset: 0;
             z-index: 1;
@@ -393,71 +392,21 @@
             border-radius: 50%;
             background: var(--gold-primary);
             opacity: 0.06;
-            animation: floatParticle 20s infinite ease-in-out;
+            animation: float-particle 20s infinite ease-in-out;
         }
 
-        .particle:nth-child(1) {
-            width: 150px;
-            height: 150px;
-            top: 5%;
-            left: 3%;
-            animation-delay: 0s;
-            animation-duration: 25s;
-        }
-        .particle:nth-child(2) {
-            width: 100px;
-            height: 100px;
-            top: 70%;
-            right: 5%;
-            animation-delay: -4s;
-            animation-duration: 20s;
-        }
-        .particle:nth-child(3) {
-            width: 200px;
-            height: 200px;
-            top: 25%;
-            right: 25%;
-            animation-delay: -8s;
-            animation-duration: 30s;
-        }
-        .particle:nth-child(4) {
-            width: 70px;
-            height: 70px;
-            bottom: 15%;
-            left: 10%;
-            animation-delay: -12s;
-            animation-duration: 18s;
-        }
-        .particle:nth-child(5) {
-            width: 250px;
-            height: 250px;
-            bottom: 5%;
-            right: 15%;
-            animation-delay: -16s;
-            animation-duration: 35s;
-        }
-        .particle:nth-child(6) {
-            width: 50px;
-            height: 50px;
-            top: 45%;
-            left: 50%;
-            animation-delay: -6s;
-            animation-duration: 15s;
-        }
+        .particle:nth-child(1) { width: 150px; height: 150px; top: 5%; left: 3%; animation-delay: 0s; animation-duration: 25s; }
+        .particle:nth-child(2) { width: 100px; height: 100px; top: 70%; right: 5%; animation-delay: -4s; animation-duration: 20s; }
+        .particle:nth-child(3) { width: 200px; height: 200px; top: 25%; right: 25%; animation-delay: -8s; animation-duration: 30s; }
+        .particle:nth-child(4) { width: 70px; height: 70px; bottom: 15%; left: 10%; animation-delay: -12s; animation-duration: 18s; }
+        .particle:nth-child(5) { width: 250px; height: 250px; bottom: 5%; right: 15%; animation-delay: -16s; animation-duration: 35s; }
+        .particle:nth-child(6) { width: 50px; height: 50px; top: 45%; left: 50%; animation-delay: -6s; animation-duration: 15s; }
 
-        @keyframes floatParticle {
-            0%, 100% {
-                transform: translate(0, 0) scale(1) rotate(0deg);
-            }
-            25% {
-                transform: translate(60px, -80px) scale(1.15) rotate(90deg);
-            }
-            50% {
-                transform: translate(-40px, 50px) scale(0.85) rotate(180deg);
-            }
-            75% {
-                transform: translate(70px, 40px) scale(1.05) rotate(270deg);
-            }
+        @keyframes float-particle {
+            0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+            25% { transform: translate(60px, -80px) scale(1.15) rotate(90deg); }
+            50% { transform: translate(-40px, 50px) scale(0.85) rotate(180deg); }
+            75% { transform: translate(70px, 40px) scale(1.05) rotate(270deg); }
         }
 
         .hero-content {
@@ -495,6 +444,40 @@
 
         .hero-badge .badge-icon {
             margin-right: 6px;
+        }
+
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 50px;
+            padding: 6px 18px 6px 6px;
+            margin-bottom: 24px;
+        }
+
+        .trust-badge .trust-icon {
+            background: var(--gold-primary);
+            color: var(--navy-dark);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .trust-badge span {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+        }
+
+        .trust-badge strong {
+            color: var(--gold-primary);
         }
 
         .hero h1 {
@@ -537,39 +520,127 @@
             margin-bottom: 32px;
         }
 
-        /* Trust Badge */
-        .trust-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 50px;
-            padding: 6px 18px 6px 6px;
-            margin-bottom: 24px;
+        /* Hero Carousel */
+        .hero-carousel {
+            position: relative;
+            width: 100%;
+            max-width: 520px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 2px solid var(--gold-primary);
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.15);
+            aspect-ratio: 4/3;
         }
 
-        .trust-badge .trust-icon {
-            background: var(--gold-primary);
-            color: var(--navy-dark);
-            width: 28px;
-            height: 28px;
+        .hero-carousel .carousel-track {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .hero-carousel .carousel-slide {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .hero-carousel .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-carousel .carousel-slide .slide-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-carousel .carousel-dots {
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 3;
+        }
+
+        .hero-carousel .carousel-dots .dot {
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hero-carousel .carousel-dots .dot.active {
+            background: var(--gold-primary);
+            border-color: var(--gold-primary);
+            transform: scale(1.2);
+        }
+
+        .hero-carousel .carousel-dots .dot:hover {
+            background: var(--gold-primary);
+            opacity: 0.7;
+        }
+
+        .hero-carousel .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(10, 25, 47, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--gold-primary);
+            font-size: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
 
-        .trust-badge span {
-            font-size: 12px;
-            color: rgba(255, 255, 255, 0.7);
-            font-weight: 500;
+        .hero-carousel .carousel-arrow:hover {
+            background: rgba(10, 25, 47, 0.9);
+            border-color: var(--gold-primary);
         }
 
-        .trust-badge strong {
-            color: var(--gold-primary);
+        .hero-carousel .carousel-arrow.prev {
+            left: 12px;
+        }
+        .hero-carousel .carousel-arrow.next {
+            right: 12px;
+        }
+
+        .hero-carousel .gold-sparkle {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: var(--gold-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 20px var(--gold-primary);
+            animation: sparkle 3s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .hero-carousel .gold-sparkle:nth-child(1) { top: 15%; left: 10%; animation-delay: 0s; }
+        .hero-carousel .gold-sparkle:nth-child(2) { bottom: 20%; right: 15%; animation-delay: -1s; width: 12px; height: 12px; }
+        .hero-carousel .gold-sparkle:nth-child(3) { top: 50%; left: 80%; animation-delay: -2s; width: 6px; height: 6px; }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.2; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.2); }
         }
 
         .hero-stats {
@@ -609,119 +680,8 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
-        /* ----- Hero Image / Visual ----- */
-        .hero-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-image-frame {
-            position: relative;
-            width: 100%;
-            max-width: 520px;
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            border: 2px solid var(--gold-primary);
-            box-shadow: 0 0 60px rgba(212, 175, 55, 0.15);
-            transition: all var(--transition);
-        }
-
-        .hero-image-frame:hover {
-            box-shadow: 0 0 80px rgba(212, 175, 55, 0.25);
-            transform: scale(1.01);
-        }
-
-        /* Animated gold border glow */
-        .hero-image-frame::before {
-            content: '';
-            position: absolute;
-            inset: -2px;
-            border-radius: var(--radius-lg);
-            padding: 2px;
-            background: linear-gradient(135deg, var(--gold-primary), var(--gold-light), var(--gold-primary), var(--gold-light));
-            background-size: 300% 300%;
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            animation: borderGlow 4s ease-in-out infinite;
-            pointer-events: none;
-            z-index: 2;
-        }
-
-        @keyframes borderGlow {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-
-        .hero-image-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            min-height: 380px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-image-frame .gold-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), transparent 50%);
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .hero-image-frame .arch-decoration {
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            width: 140px;
-            height: 160px;
-            border: 3px solid rgba(212, 175, 55, 0.15);
-            border-radius: 50% 50% 8px 8px / 60% 60% 8px 8px;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .hero-image-frame .gold-sparkle {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: var(--gold-primary);
-            border-radius: 50%;
-            box-shadow: 0 0 20px var(--gold-primary);
-            animation: sparkle 3s ease-in-out infinite;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .hero-image-frame .gold-sparkle:nth-child(1) {
-            top: 15%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-        .hero-image-frame .gold-sparkle:nth-child(2) {
-            bottom: 20%;
-            right: 15%;
-            animation-delay: -1s;
-            width: 12px;
-            height: 12px;
-        }
-        .hero-image-frame .gold-sparkle:nth-child(3) {
-            top: 50%;
-            left: 80%;
-            animation-delay: -2s;
-            width: 6px;
-            height: 6px;
-        }
-
-        @keyframes sparkle {
-            0%, 100% { opacity: 0.2; transform: scale(0.5); }
-            50% { opacity: 1; transform: scale(1.2); }
-        }
-
         /* ========================================
-           WHY FAMILIES CHOOSE FIKD SECTION
+           WHY FAMILIES CHOOSE FIKD
            ======================================== */
 
         .why-section {
@@ -747,7 +707,7 @@
             margin: 0 auto 56px;
         }
 
-        .why-header .section-tag {
+        .section-tag {
             display: inline-block;
             font-size: 12px;
             font-weight: 600;
@@ -767,7 +727,7 @@
             margin-bottom: 8px;
         }
 
-        .why-header .gold-divider {
+        .gold-divider {
             color: var(--gold-primary);
             font-size: 20px;
             margin: 6px 0;
@@ -777,8 +737,8 @@
             gap: 16px;
         }
 
-        .why-header .gold-divider::before,
-        .why-header .gold-divider::after {
+        .gold-divider::before,
+        .gold-divider::after {
             content: '';
             flex: 1;
             height: 1px;
@@ -786,7 +746,7 @@
             background: linear-gradient(90deg, transparent, var(--gold-primary));
         }
 
-        .why-header .gold-divider::after {
+        .gold-divider::after {
             background: linear-gradient(90deg, var(--gold-primary), transparent);
         }
 
@@ -796,7 +756,7 @@
             line-height: 1.8;
         }
 
-        /* ----- Features Grid (8 items) ----- */
+        /* Features Grid */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -837,34 +797,12 @@
             border-color: var(--gold-primary);
         }
 
-        .feature-card::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 80px;
-            height: 80px;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.03), transparent 70%);
-            pointer-events: none;
-        }
-
-        /* Islamic Arch Icon inside feature card */
         .feature-arch-wrapper {
             width: 80px;
             height: 95px;
             background: var(--gold-primary);
             padding: 3px;
-            clip-path: polygon(
-                0% 100%, 
-                0% 35%, 
-                15% 15%, 
-                35% 5%, 
-                50% 0%, 
-                65% 5%, 
-                85% 15%, 
-                100% 35%, 
-                100% 100%
-            );
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
             margin: 0 auto 12px auto;
             transition: all 0.3s ease;
         }
@@ -876,17 +814,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            clip-path: polygon(
-                0% 100%, 
-                0% 35%, 
-                15% 15%, 
-                35% 5%, 
-                50% 0%, 
-                65% 5%, 
-                85% 15%, 
-                100% 35%, 
-                100% 100%
-            );
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
         }
 
         .feature-arch-container .arch-icon {
@@ -931,16 +859,147 @@
         }
 
         /* ========================================
-           PROGRAMMES PREVIEW SECTION
+           MANHAJ-E-TA'SEES - SIGNATURE BOX
+           ======================================== */
+
+        .manhaj-section {
+            padding: 60px 0 80px;
+            background: var(--white);
+        }
+
+        .manhaj-box {
+            background: linear-gradient(135deg, var(--cream), var(--white));
+            border-radius: var(--radius-lg);
+            padding: 48px 40px;
+            border: 2px solid var(--gold-primary);
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.08);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .manhaj-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.03), rgba(212, 175, 55, 0.01));
+            transform: rotate(30deg);
+            pointer-events: none;
+        }
+
+        .manhaj-box .manhaj-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        .manhaj-box .manhaj-text .signature-tag {
+            display: inline-block;
+            background: var(--navy-dark);
+            color: var(--gold-primary);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 4px 16px;
+            border-radius: 50px;
+            margin-bottom: 8px;
+        }
+
+        .manhaj-box .manhaj-text h2 {
+            font-family: var(--font-heading);
+            font-size: 32px;
+            color: var(--navy-dark);
+            margin-bottom: 4px;
+        }
+
+        .manhaj-box .manhaj-text .manhaj-urdu {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            color: var(--gold-primary);
+            direction: rtl;
+            margin-bottom: 12px;
+        }
+
+        .manhaj-box .manhaj-text p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .manhaj-box .manhaj-text .btn-manhaj {
+            display: inline-block;
+            padding: 10px 28px;
+            background: var(--navy-dark);
+            color: var(--gold-primary);
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .manhaj-box .manhaj-text .btn-manhaj:hover {
+            background: var(--gold-primary);
+            color: var(--navy-dark);
+            transform: translateY(-2px);
+        }
+
+        .manhaj-box .manhaj-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .manhaj-box .manhaj-visual .logo-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 2px solid var(--gold-primary);
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.1);
+        }
+
+        .manhaj-box .manhaj-visual .logo-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .manhaj-box .manhaj-visual .logo-wrapper .logo-gold-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), transparent 60%);
+            pointer-events: none;
+        }
+
+        .manhaj-box .manhaj-visual .logo-wrapper .logo-arch {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 60px;
+            height: 70px;
+            border: 2px solid rgba(212, 175, 55, 0.15);
+            border-radius: 50% 50% 4px 4px / 60% 60% 4px 4px;
+            pointer-events: none;
+        }
+
+        /* ========================================
+           PROGRAMMES PREVIEW
            ======================================== */
 
         .programmes-preview {
             padding: 60px 0 80px;
             background: var(--white);
-        }
-
-        .programmes-preview .why-header {
-            margin-bottom: 40px;
         }
 
         .preview-grid {
@@ -964,12 +1023,6 @@
             transform: translateY(-6px);
             box-shadow: var(--shadow-lg);
             border-color: var(--gold-primary);
-        }
-
-        .preview-card .preview-icon {
-            font-size: 40px;
-            display: block;
-            margin-bottom: 10px;
         }
 
         .preview-card .preview-arch {
@@ -1033,7 +1086,7 @@
         }
 
         /* ========================================
-           TESTIMONIALS SECTION
+           TESTIMONIALS
            ======================================== */
 
         .testimonials-section {
@@ -1151,17 +1204,6 @@
             transform: rotate(30deg);
         }
 
-        .cta-box::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 40%;
-            height: 150%;
-            background: radial-gradient(ellipse, rgba(212, 175, 55, 0.03), transparent 70%);
-            pointer-events: none;
-        }
-
         .cta-box .cta-glow {
             position: absolute;
             top: 50%;
@@ -1208,14 +1250,6 @@
             gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
-        }
-
-        .cta-actions .btn-gold {
-            box-shadow: 0 0 30px rgba(229, 178, 82, 0.2);
-        }
-
-        .cta-actions .btn-gold:hover {
-            box-shadow: 0 0 50px rgba(229, 178, 82, 0.4);
         }
 
         /* ========================================
@@ -1358,20 +1392,26 @@
                 gap: 32px;
             }
 
-            .hero-visual {
-                order: -1;
-            }
-
-            .hero-image-frame {
+            .hero-carousel {
                 max-width: 100%;
-            }
-
-            .hero-image-frame img {
-                min-height: 250px;
             }
 
             .features-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .manhaj-box {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 32px 24px;
+            }
+
+            .manhaj-box .manhaj-visual {
+                order: -1;
+            }
+
+            .manhaj-box .manhaj-visual .logo-wrapper {
+                max-width: 200px;
             }
 
             .preview-grid {
@@ -1487,13 +1527,32 @@
                 text-align: center;
             }
 
-            .hero-image-frame img {
-                min-height: 200px;
+            .hero-carousel {
+                max-width: 100%;
+                aspect-ratio: 4/3;
+            }
+
+            .hero-carousel .carousel-arrow {
+                width: 28px;
+                height: 28px;
+                font-size: 14px;
             }
 
             .features-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 16px;
+            }
+
+            .feature-card {
+                padding: 20px 16px;
+            }
+
+            .manhaj-box .manhaj-text h2 {
+                font-size: 26px;
+            }
+
+            .manhaj-box .manhaj-text .manhaj-urdu {
+                font-size: 20px;
             }
 
             .preview-grid {
@@ -1506,10 +1565,6 @@
                 grid-template-columns: 1fr;
                 max-width: 400px;
                 margin: 0 auto;
-            }
-
-            .feature-card {
-                padding: 20px 16px;
             }
 
             .why-header h2 {
@@ -1542,8 +1597,8 @@
                 font-size: 22px;
             }
 
-            .why-header .gold-divider::before,
-            .why-header .gold-divider::after {
+            .gold-divider::before,
+            .gold-divider::after {
                 max-width: 30px;
             }
         }
@@ -1581,6 +1636,18 @@
 
             .why-header h2 {
                 font-size: 24px;
+            }
+
+            .manhaj-box .manhaj-text h2 {
+                font-size: 22px;
+            }
+
+            .manhaj-box .manhaj-text .manhaj-urdu {
+                font-size: 18px;
+            }
+
+            .manhaj-box {
+                padding: 24px 16px;
             }
 
             .cta-box h2 {
@@ -1638,8 +1705,8 @@
         <div class="header-inner">
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets/branding/logo.svg" alt="FIKD Foundation" />
-                    <span class="logo-text">FIKD <span>Foundation</span></span>
+                    <img src="assets/branding/logo.svg" alt="FIKD" />
+                    <span class="logo-text">FIKD <span></span></span>
                 </a>
             </div>
 
@@ -1702,8 +1769,8 @@
             </div>
             <div class="hero-overlay"></div>
 
-            <!-- Enhanced Particles -->
-            <div class="particles">
+            <!-- Particles -->
+            <div class="hero-particles">
                 <div class="particle"></div>
                 <div class="particle"></div>
                 <div class="particle"></div>
@@ -1716,14 +1783,11 @@
                 <div class="hero-grid">
                     <!-- Left: Text -->
                     <div class="hero-text">
-                        <span class="hero-badge">
-                            <span class="badge-icon">🌟</span> Since 2016
-                        </span>
+                        <span class="hero-badge"><span class="badge-icon">🌟</span> Since 2016</span>
 
-                        <!-- Trust Badge -->
                         <div class="trust-badge">
                             <span class="trust-icon">✓</span>
-                            <span>Trusted by <strong>1200+</strong> students worldwide</span>
+                            <span>Trusted by <strong>650+</strong> students worldwide</span>
                         </div>
 
                         <h1 id="hero-title">
@@ -1741,15 +1805,15 @@
 
                         <div class="hero-stats stagger">
                             <div class="stat-item">
-                                <span class="stat-number" data-count="650+">0</span>
+                                <span class="stat-number" data-count="650">0</span>
                                 <span class="stat-label">Students</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-number" data-count="12+">0</span>
+                                <span class="stat-number" data-count="12">0</span>
                                 <span class="stat-label">Teachers</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-number" data-count="15">0</span>
+                                <span class="stat-number" data-count="10">0</span>
                                 <span class="stat-label">Years</span>
                             </div>
                             <div class="stat-item">
@@ -1759,15 +1823,44 @@
                         </div>
                     </div>
 
-                    <!-- Right: Hero Image / Visual -->
-                    <div class="hero-visual">
-                        <div class="hero-image-frame">
-                            <img src="assets/images/hero/hero-visual.jpg" alt="Islamic Education - Knowledge, Character & Civilization" loading="lazy" />
-                            <div class="gold-overlay"></div>
-                            <div class="arch-decoration"></div>
-                            <div class="gold-sparkle"></div>
-                            <div class="gold-sparkle"></div>
-                            <div class="gold-sparkle"></div>
+                    <!-- Right: Hero Carousel -->
+                    <div class="hero-carousel" id="heroCarousel">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-slide">
+                                <img src="assets/images/hero/child-1.jpg" alt="Child learning" loading="lazy" />
+                                <div class="slide-overlay"></div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/hero/child-2.jpg" alt="Girl studying" loading="lazy" />
+                                <div class="slide-overlay"></div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/hero/youth-1.jpg" alt="Youth learning online" loading="lazy" />
+                                <div class="slide-overlay"></div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/hero/online-class.jpg" alt="Online class" loading="lazy" />
+                                <div class="slide-overlay"></div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/hero/teacher-1.jpg" alt="Teacher with student" loading="lazy" />
+                                <div class="slide-overlay"></div>
+                            </div>
+                        </div>
+
+                        <div class="gold-sparkle"></div>
+                        <div class="gold-sparkle"></div>
+                        <div class="gold-sparkle"></div>
+
+                        <button class="carousel-arrow prev" id="carouselPrev">‹</button>
+                        <button class="carousel-arrow next" id="carouselNext">›</button>
+
+                        <div class="carousel-dots" id="carouselDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
                         </div>
                     </div>
                 </div>
@@ -1785,7 +1878,6 @@
                 </div>
 
                 <div class="features-grid stagger">
-
                     <!-- 1. Authentic Qur'an & Sunnah -->
                     <div class="feature-card">
                         <div class="feature-arch-wrapper">
@@ -1798,7 +1890,7 @@
                         <p>Rooted in the Qurʾān and authentic Prophetic traditions, ensuring sound Islamic knowledge.</p>
                     </div>
 
-                    <!-- 2. Structured Curriculum -->
+                    <!-- 2. Age-Wise Structured Curriculum -->
                     <div class="feature-card">
                         <div class="feature-arch-wrapper">
                             <div class="feature-arch-container">
@@ -1806,11 +1898,11 @@
                             </div>
                         </div>
                         <span class="feature-number">02</span>
-                        <h3>Structured Curriculum</h3>
-                        <p>A progressive, well-organised curriculum designed for meaningful and lasting learning.</p>
+                        <h3>Age-Wise Structured Curriculum</h3>
+                        <p>A progressive curriculum designed specifically for each age group for meaningful and lasting learning.</p>
                     </div>
 
-                    <!-- 3. Manhaj-e-Ta'sees Foundation Program -->
+                    <!-- 3. Manhaj-e-Ta'sees Foundation -->
                     <div class="feature-card">
                         <div class="feature-arch-wrapper">
                             <div class="feature-arch-container">
@@ -1818,11 +1910,11 @@
                             </div>
                         </div>
                         <span class="feature-number">03</span>
-                        <h3>Manhaj-e-Ta'sees Foundation Program</h3>
+                        <h3>Manhaj-e-Ta'sees Foundation</h3>
                         <p>Our signature foundation programme building strong Islamic roots from the very beginning.</p>
                     </div>
 
-                    <!-- 4. Character & Leadership Development -->
+                    <!-- 4. Character & Leadership -->
                     <div class="feature-card">
                         <div class="feature-arch-wrapper">
                             <div class="feature-arch-container">
@@ -1838,7 +1930,7 @@
                     <div class="feature-card">
                         <div class="feature-arch-wrapper">
                             <div class="feature-arch-container">
-                                <span class="arch-icon">👨‍🏫</span>
+                                <span class="arch-icon">🧑‍🎓</span>
                             </div>
                         </div>
                         <span class="feature-number">05</span>
@@ -1850,7 +1942,7 @@
                     <div class="feature-card">
                         <div class="feature-arch-wrapper">
                             <div class="feature-arch-container">
-                                <span class="arch-icon">🕐</span>
+                                <span class="arch-icon">⏱️</span>
                             </div>
                         </div>
                         <span class="feature-number">06</span>
@@ -1862,7 +1954,7 @@
                     <div class="feature-card">
                         <div class="feature-arch-wrapper">
                             <div class="feature-arch-container">
-                                <span class="arch-icon">🌍</span>
+                                <span class="arch-icon">🌐</span>
                             </div>
                         </div>
                         <span class="feature-number">07</span>
@@ -1874,14 +1966,36 @@
                     <div class="feature-card">
                         <div class="feature-arch-wrapper">
                             <div class="feature-arch-container">
-                                <span class="arch-icon">📚</span>
+                                <span class="arch-icon">💎</span>
                             </div>
                         </div>
                         <span class="feature-number">08</span>
                         <h3>Lifelong Learning Pathway</h3>
                         <p>A continuous journey of Islamic knowledge from childhood through to advanced studies.</p>
                     </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- ===== MANHAJ-E-TA'SEES - SIGNATURE BOX ===== -->
+        <section class="manhaj-section" aria-labelledby="manhaj-title">
+            <div class="container">
+                <div class="manhaj-box reveal">
+                    <div class="manhaj-text">
+                        <span class="signature-tag">Our Signature Foundation Programme</span>
+                        <h2 id="manhaj-title">منہجِ تاسیس</h2>
+                        <div class="manhaj-urdu">Manhaj-e-Ta'sees</div>
+                        <p><strong>The Foundation of Every FIKD Learning Journey</strong></p>
+                        <p>Every learner begins here before advancing through the FIKD educational pathway. Age-wise structured Islamic foundation programme designed to build correct Qur'anic recitation, authentic Islamic beliefs, noble character, essential worship, and lifelong love for knowledge — preparing every learner for advanced Islamic studies and responsible leadership.</p>
+                        <a href="programmes/qaida-beginner.html" class="btn-manhaj">Learn More →</a>
+                    </div>
+                    <div class="manhaj-visual">
+                        <div class="logo-wrapper">
+                            <img src="assets/images/manhaj-tasees-logo.png" alt="Manhaj-e-Ta'sees Logo" loading="lazy" />
+                            <div class="logo-gold-overlay"></div>
+                            <div class="logo-arch"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -2114,6 +2228,68 @@
             });
         }, { threshold: 0.5 });
         counters.forEach(counter => counterObserver.observe(counter));
+
+        // ===== HERO CAROUSEL =====
+        const track = document.getElementById('carouselTrack');
+        const dots = document.querySelectorAll('#carouselDots .dot');
+        const prevBtn = document.getElementById('carouselPrev');
+        const nextBtn = document.getElementById('carouselNext');
+        let currentSlide = 0;
+        const totalSlides = dots.length;
+        let autoplayInterval;
+
+        function goToSlide(index) {
+            currentSlide = index;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            goToSlide((currentSlide + 1) % totalSlides);
+        }
+
+        function prevSlide() {
+            goToSlide((currentSlide - 1 + totalSlides) % totalSlides);
+        }
+
+        function startAutoplay() {
+            autoplayInterval = setInterval(nextSlide, 4000);
+        }
+
+        function stopAutoplay() {
+            clearInterval(autoplayInterval);
+        }
+
+        // Event listeners
+        nextBtn.addEventListener('click', () => {
+            stopAutoplay();
+            nextSlide();
+            startAutoplay();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            stopAutoplay();
+            prevSlide();
+            startAutoplay();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                stopAutoplay();
+                goToSlide(index);
+                startAutoplay();
+            });
+        });
+
+        // Pause on hover
+        const carousel = document.getElementById('heroCarousel');
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+
+        // Start autoplay
+        startAutoplay();
 
         // ===== TESTIMONIALS =====
         const testimonials = [{
