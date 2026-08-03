@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qurʾān Level 3 – FIKD Foundation</title>
+    <meta name="description" content="Qurʾān Level 3 programme with revision of Noorani Qaida, memorisation of 9 Sūrahs, complete Juz ʿAmma with Tajwīd, Islamic beliefs, Hadith, Seerah, and character development." />
+    <link rel="icon" href="../../assets/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="../../seo/manifest.webmanifest" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ========================================
+           COMPLETE STYLESHEET - FIKD FOUNDATION
+           ROYAL NAVY + GOLD DESIGN (matching main index)
+           ======================================== */
+
+        /* ----- RESET & BASE ----- */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Royal Navy + Gold Color Palette */
+            --navy-dark: #0A192F;
+            --navy-medium: #112240;
+            --navy-light: #1A2D4A;
+            --navy-lighter: #233B5E;
+            --gold-primary: #D4AF37;
+            --gold-light: #E8D5A3;
+            --gold-dark: #A8894A;
+            --gold-button: #E5B252;
+            --white: #FFFFFF;
+            --cream: #FAF8F5;
+            --light-bg: #F0EDE7;
+            --text-dark: #0A192F;
+            --text-muted: #556070;
+            --text-white: #FFFFFF;
+            --border-gold: rgba(212, 175, 55, 0.3);
+            --level-intermediate: #e65100;
+
+            /* Typography */
+            --font-heading: 'Amiri', 'Times New Roman', serif;
+            --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
+
+            /* Spacing */
+            --shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+            --radius: 16px;
+            --radius-lg: 24px;
+            --transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            color: var(--text-dark);
+            background: var(--cream);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ----- BUTTONS (matching main index) ----- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            transition: all var(--transition);
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            line-height: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--navy-dark);
+            color: var(--white);
+            box-shadow: 0 4px 24px rgba(10, 25, 47, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(10, 25, 47, 0.4);
+        }
+
+        .btn-gold {
+            background: var(--gold-button);
+            color: var(--navy-dark);
+            box-shadow: 0 4px 24px rgba(229, 178, 82, 0.3);
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(229, 178, 82, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--white);
+            transform: translateY(-4px);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--navy-dark);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-sm {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        .btn-lg {
+            padding: 18px 44px;
+            font-size: 18px;
+        }
+
+        /* ----- HEADER (matching main index) ----- */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0 24px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+            transition: all 0.3s ease;
+        }
+
+        .site-header.scrolled {
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 44px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--navy-dark);
+        }
+
+        .logo-text span {
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .nav-list>li>a {
+            display: block;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-list>li>a:hover {
+            color: var(--navy-dark);
+            background: rgba(10, 25, 47, 0.06);
+        }
+
+        .nav-list>li>a.active {
+            color: var(--navy-dark);
+            background: rgba(10, 25, 47, 0.08);
+            font-weight: 600;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-arrow {
+            font-size: 10px;
+            margin-left: 4px;
+            transition: transform 0.2s;
+        }
+
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            min-width: 220px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+            padding: 8px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: all 0.3s ease;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: var(--text-muted);
+            transition: all 0.2s ease;
+        }
+
+        .dropdown-menu li a:hover {
+            background: rgba(10, 25, 47, 0.05);
+            color: var(--navy-dark);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 8px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-toggle .bar {
+            width: 28px;
+            height: 3px;
+            background: var(--text-dark);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-toggle.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .nav-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .nav-toggle.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* ----- PAGE HERO (matching main index hero) ----- */
+        .page-hero {
+            position: relative;
+            padding: 140px 0 80px;
+            background: var(--navy-dark);
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.92) 0%, rgba(17, 34, 64, 0.85) 100%);
+            z-index: 1;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-light), var(--gold-primary));
+            z-index: 2;
+        }
+
+        .page-hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .page-hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .page-hero .breadcrumb {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 16px;
+        }
+
+        .page-hero .breadcrumb a {
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 0.3s ease;
+        }
+
+        .page-hero .breadcrumb a:hover {
+            color: var(--gold-light);
+        }
+
+        .page-hero .breadcrumb span {
+            color: var(--white);
+        }
+
+        .page-hero h1 {
+            font-family: var(--font-heading);
+            font-size: 48px;
+            color: var(--white);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .page-hero h1 .highlight {
+            color: var(--gold-primary);
+        }
+
+        .page-hero p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            max-width: 600px;
+        }
+
+        .page-hero .sub-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .page-hero .sub-meta span {
+            display: inline-block;
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--gold-primary);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            background: rgba(212, 175, 55, 0.08);
+            backdrop-filter: blur(4px);
+        }
+
+        .page-hero .sub-meta span.intermediate-badge {
+            background: rgba(230, 81, 0, 0.2);
+            border-color: var(--level-intermediate);
+            color: var(--gold-light);
+        }
+
+        /* ----- SECTION COMMON ----- */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-light {
+            background: var(--cream);
+        }
+
+        .section-alt {
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 56px;
+        }
+
+        .section-tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold-primary);
+            padding: 4px 16px;
+            border: 1px solid var(--gold-primary);
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-heading);
+            font-size: 40px;
+            color: var(--navy-dark);
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .gold-divider {
+            color: var(--gold-primary);
+            font-size: 20px;
+            margin: 6px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .gold-divider::before,
+        .gold-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            max-width: 80px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary));
+        }
+
+        .gold-divider::after {
+            background: linear-gradient(90deg, var(--gold-primary), transparent);
+        }
+
+        .section-header p {
+            font-size: 16px;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* ----- PROGRAMME CONTENT ----- */
+        .programme-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* ----- PROGRAMME TITLE ----- */
+        .programme-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .programme-title .level-badge {
+            display: inline-block;
+            background: var(--navy-dark);
+            color: var(--gold-primary);
+            padding: 4px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .programme-title .intermediate-badge {
+            display: inline-block;
+            background: var(--level-intermediate);
+            color: var(--white);
+            padding: 4px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-left: 8px;
+        }
+
+        .programme-title h2 {
+            font-family: var(--font-heading);
+            font-size: 38px;
+            color: var(--navy-dark);
+            margin-bottom: 8px;
+        }
+
+        .programme-title .subtitle {
+            font-size: 17px;
+            color: var(--text-muted);
+            font-style: italic;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .programme-title .goal {
+            font-size: 16px;
+            color: var(--gold-primary);
+            margin-top: 12px;
+            font-weight: 600;
+            line-height: 1.6;
+            background: rgba(212, 175, 55, 0.06);
+            padding: 16px 24px;
+            border-radius: var(--radius);
+            border-left: 4px solid var(--gold-primary);
+            display: inline-block;
+            font-family: var(--font-heading);
+        }
+
+        /* ----- FEATURE CARDS (matching main index) ----- */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 24px 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--gold-primary);
+        }
+
+        .feature-arch-wrapper {
+            width: 56px;
+            height: 68px;
+            background: var(--gold-primary);
+            padding: 3px;
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
+            margin: 0 auto 10px auto;
+            transition: all 0.3s ease;
+        }
+
+        .feature-arch-container {
+            width: 100%;
+            height: 100%;
+            background-color: var(--navy-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(0% 100%, 0% 35%, 15% 15%, 35% 5%, 50% 0%, 65% 5%, 85% 15%, 100% 35%, 100% 100%);
+        }
+
+        .feature-arch-container .arch-icon {
+            color: var(--gold-primary);
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover .feature-arch-wrapper {
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        .feature-card .feature-number {
+            display: inline-block;
+            background: var(--navy-dark);
+            color: var(--gold-primary);
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 12px;
+            border-radius: 50px;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+
+        .feature-card h4 {
+            font-family: var(--font-heading);
+            font-size: 16px;
+            color: var(--navy-dark);
+            margin-bottom: 4px;
+        }
+
+        .feature-card p {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ----- QURAN SECTION (enhanced) ----- */
+        .quran-section {
+            background: linear-gradient(135deg, var(--navy-dark), var(--navy-medium));
+            border-radius: var(--radius-lg);
+            padding: 40px 36px;
+            color: var(--white);
+            margin-bottom: 32px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quran-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.03), rgba(212, 175, 55, 0.01));
+            transform: rotate(30deg);
+        }
+
+        .quran-section h3 {
+            font-family: var(--font-heading);
+            font-size: 26px;
+            color: var(--gold-primary);
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quran-section p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.8;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quran-section p strong {
+            color: var(--gold-light);
+        }
+
+        .quran-section .quran-topics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quran-section .quran-topics .topic-chip {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 10px 16px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .quran-section .quran-topics .topic-chip:hover {
+            background: rgba(212, 175, 55, 0.15);
+            border-color: var(--gold-primary);
+            transform: translateY(-3px);
+        }
+
+        /* ----- SURAH LIST (enhanced) ----- */
+        .surah-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .surah-list .surah-item {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 14px 16px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.3s ease;
+        }
+
+        .surah-list .surah-item:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateY(-3px) scale(1.02);
+            border-color: var(--gold-primary);
+        }
+
+        .surah-list .surah-item .surah-name {
+            font-family: var(--font-heading);
+            font-size: 20px;
+            color: var(--white);
+            display: block;
+        }
+
+        .surah-list .surah-item .surah-number {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* ----- STEP CARDS (matching main index card style) ----- */
+        .step-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 32px 28px;
+            margin-bottom: 32px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            transition: all var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .step-card:hover::before {
+            opacity: 1;
+        }
+
+        .step-card:hover {
+            box-shadow: var(--shadow-lg);
+            border-color: var(--gold-primary);
+            transform: translateY(-6px);
+        }
+
+        .step-card .step-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--light-bg);
+        }
+
+        .step-card .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gold-primary);
+            color: var(--navy-dark);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 20px;
+            flex-shrink: 0;
+            font-family: var(--font-heading);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+
+        .step-card .step-header h3 {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            color: var(--navy-dark);
+        }
+
+        .step-card .step-header .step-subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-left: auto;
+            font-style: italic;
+            background: var(--light-bg);
+            padding: 4px 16px;
+            border-radius: 50px;
+        }
+
+        .step-card .step-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .step-card .step-content .subject-group {
+            background: var(--cream);
+            border-radius: var(--radius);
+            padding: 20px;
+            border-left: 4px solid var(--gold-primary);
+            transition: all 0.3s ease;
+        }
+
+        .step-card .step-content .subject-group:hover {
+            background: var(--light-bg);
+            transform: translateX(4px);
+        }
+
+        .step-card .step-content .subject-group h4 {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            color: var(--navy-dark);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .step-card .step-content .subject-group .sub-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 6px;
+            font-style: italic;
+        }
+
+        .step-card .step-content .subject-group ul {
+            padding-left: 18px;
+        }
+
+        .step-card .step-content .subject-group ul li {
+            font-size: 14px;
+            color: var(--text-dark);
+            padding: 4px 0;
+            line-height: 1.6;
+            list-style: disc;
+        }
+
+        .step-card .step-content .subject-group ul li::marker {
+            color: var(--gold-primary);
+        }
+
+        .step-card .step-content .subject-group .hadith-list {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .step-card .step-content .subject-group .hadith-list li {
+            list-style: none;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .step-card .step-content .subject-group .hadith-list li:last-child {
+            border-bottom: none;
+        }
+
+        .step-card .step-content .subject-group .hadith-list li .hadith-ar {
+            font-family: var(--font-heading);
+            font-size: 16px;
+            color: var(--navy-dark);
+            display: block;
+        }
+
+        .step-card .step-content .subject-group .hadith-list li .hadith-translation {
+            font-size: 14px;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        /* ----- FULL WIDTH CONTENT (enhanced) ----- */
+        .full-width-content {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 32px 28px;
+            margin-bottom: 32px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            transition: all var(--transition);
+        }
+
+        .full-width-content:hover {
+            box-shadow: var(--shadow-lg);
+            border-color: var(--gold-primary);
+            transform: translateY(-4px);
+        }
+
+        .full-width-content h3 {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            color: var(--navy-dark);
+            margin-bottom: 12px;
+        }
+
+        .full-width-content p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .full-width-content .highlight-text {
+            color: var(--gold-primary);
+            font-weight: 600;
+        }
+
+        /* ----- CTA (matching main index) ----- */
+        .cta-section-wrapper {
+            padding: 60px 0 80px;
+            background: var(--navy-dark);
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--navy-dark), var(--navy-medium));
+            border-radius: var(--radius-lg);
+            padding: 56px 48px;
+            text-align: center;
+            border: 1px solid var(--gold-primary);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.05);
+        }
+
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(212, 175, 55, 0.02));
+            transform: rotate(30deg);
+        }
+
+        .cta-box .cta-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.04), transparent 70%);
+            pointer-events: none;
+            animation: ctaGlow 6s ease-in-out infinite;
+        }
+
+        @keyframes ctaGlow {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+            50% { transform: translate(-50%, -50%) scale(1.3); opacity: 1; }
+        }
+
+        .cta-box .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-box h2 {
+            font-family: var(--font-heading);
+            font-size: 38px;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .cta-box h2 .highlight {
+            color: var(--gold-primary);
+        }
+
+        .cta-box p {
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 560px;
+            margin: 0 auto 32px;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .cta-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ----- FOOTER (matching main index) ----- */
+        .site-footer {
+            background: #05101D;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 60px 0 32px;
+            margin-top: 0;
+            border-top: 3px solid var(--gold-primary);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 48px;
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-heading);
+            font-size: 22px;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            max-width: 280px;
+            line-height: 1.8;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .footer-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--white);
+            transition: all 0.3s ease;
+            font-size: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .footer-social a:hover {
+            background: var(--gold-primary);
+            transform: translateY(-3px);
+            border-color: var(--gold-primary);
+            color: var(--navy-dark);
+        }
+
+        .footer-links h4 {
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links ul li a {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            transition: color 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--gold-primary);
+        }
+
+        .footer-contact address {
+            font-style: normal;
+        }
+
+        .footer-contact p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 6px;
+        }
+
+        .footer-contact a {
+            color: rgba(255, 255, 255, 0.5);
+            transition: color 0.3s ease;
+        }
+
+        .footer-contact a:hover {
+            color: var(--gold-primary);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 48px auto 0;
+            padding: 20px 24px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-bottom p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-legal a {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.3);
+            transition: color 0.3s ease;
+        }
+
+        .footer-legal a:hover {
+            color: var(--gold-primary);
+        }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+
+        @media (max-width: 1024px) {
+            .step-card .step-content {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .quran-section .quran-topics {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .surah-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+
+            .main-nav {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                padding: 24px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 16px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+                transform: translateY(-120%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                max-height: calc(100vh - 80px);
+                overflow-y: auto;
+            }
+
+            .main-nav.open {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                gap: 4px;
+                width: 100%;
+            }
+
+            .nav-list>li {
+                width: 100%;
+            }
+
+            .nav-list>li>a {
+                width: 100%;
+                padding: 12px 16px;
+            }
+
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                padding-left: 20px;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                background: var(--light-bg);
+                border-radius: 8px;
+                display: none;
+            }
+
+            .dropdown.open .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-arrow {
+                float: right;
+            }
+
+            .nav-actions {
+                width: 100%;
+                justify-content: center;
+                padding-top: 16px;
+                border-top: 1px solid rgba(0, 0, 0, 0.06);
+                flex-wrap: wrap;
+            }
+
+            .page-hero {
+                padding: 120px 0 60px;
+            }
+
+            .page-hero h1 {
+                font-size: 32px;
+            }
+
+            .page-hero p {
+                font-size: 16px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto 32px;
+            }
+
+            .step-card {
+                padding: 20px 16px;
+            }
+
+            .step-card .step-header {
+                flex-wrap: wrap;
+            }
+
+            .step-card .step-header .step-subtitle {
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .quran-section {
+                padding: 24px 20px;
+            }
+
+            .quran-section .quran-topics {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .surah-list {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            .section-header h2 {
+                font-size: 30px;
+            }
+
+            .programme-title h2 {
+                font-size: 30px;
+            }
+
+            .cta-box {
+                padding: 32px 20px;
+            }
+
+            .cta-box h2 {
+                font-size: 28px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-legal {
+                justify-content: center;
+            }
+
+            .gold-divider::before,
+            .gold-divider::after {
+                max-width: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 {
+                font-size: 26px;
+            }
+
+            .section-header h2 {
+                font-size: 24px;
+            }
+
+            .programme-title h2 {
+                font-size: 26px;
+            }
+
+            .programme-title .goal {
+                font-size: 14px;
+                padding: 12px 16px;
+            }
+
+            .step-card .step-content .subject-group {
+                padding: 16px;
+            }
+
+            .quran-section .quran-topics {
+                grid-template-columns: 1fr;
+            }
+
+            .surah-list {
+                grid-template-columns: 1fr;
+            }
+
+            .surah-list .surah-item .surah-name {
+                font-size: 17px;
+            }
+
+            .cta-box h2 {
+                font-size: 24px;
+            }
+
+            .cta-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-actions .btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+        }
+
+        /* ----- SCROLL REVEAL ----- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../../assets/branding/logo.svg" alt="FIKD" />
+                    <span class="logo-text">FIKD <span></span></span>
+                </a>
+            </div>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../about/">About</a></li>
+                    <li><a href="../../philosophy/">Philosophy</a></li>
+                    <li><a href="../../prospectus.html">Prospectus</a></li>
+                    
+                    <!-- Programmes Dropdown -->
+                    <li class="dropdown">
+                        <a href="../index.html" class="active">Programmes <span class="dropdown-arrow">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <!-- Qaida Programmes -->
+                            <li><a href="../qaida-beginner.html">Qāʿidah – Beginner</a></li>
+                            <li><a href="../qaida-upper.html">Qāʿidah – Upper</a></li>
+                            
+                            <!-- Nazirah section header -->
+                            <li style="padding: 8px 20px; font-size: 12px; font-weight: 700; color: var(--gold-primary); letter-spacing: 1px; text-transform: uppercase; border-top: 1px solid rgba(212, 175, 55, 0.15); margin-top: 4px; padding-top: 12px;">— Nazirah Programme —</li>
+                            <li><a href="index.html">Nazirah Overview</a></li>
+                            <li><a href="quran-level1.html">Qurʾān – Level 1</a></li>
+                            <li><a href="quran-level2.html">Qurʾān – Level 2</a></li>
+                            <li><a href="quran-level3.html" class="active">Qurʾān – Level 3</a></li>
+                            <li><a href="quran-level4a.html">Qurʾān – Level 4A</a></li>
+                            <li><a href="quran-level4b.html">Qurʾān – Level 4B</a></li>
+                            <li><a href="quran-level4c.html">Qurʾān – Level 4C</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Curriculum Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../curriculum/">Curriculum <span class="dropdown-arrow">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../curriculum/aqeedah.html">ʿAqīdah</a></li>
+                            <li><a href="../../curriculum/hadith.html">Ḥadīth</a></li>
+                            <li><a href="../../curriculum/seerah.html">Sīrah</a></li>
+                            <li><a href="../../curriculum/duas.html">Duʿāʾ</a></li>
+                            <li><a href="../../curriculum/worship.html">Worship</a></li>
+                            <li><a href="../../curriculum/manners.html">Manners</a></li>
+                            <li><a href="../../curriculum/islamic-identity.html">Islamic Identity</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../teachers/">Teachers</a></li>
+                    <li><a href="../../admissions/">Admissions</a></li>
+                    <li><a href="../../resources/">Resources</a></li>
+                    <li><a href="../../donate/">Donate</a></li>
+                    <li><a href="../../contact/">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="../../admissions/apply.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    <a href="../../donate/" class="btn btn-gold btn-sm">❤️ Donate</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== MAIN ====== -->
+    <main>
+
+        <!-- ===== PAGE HERO ===== -->
+        <section class="page-hero" aria-labelledby="hero-title">
+            <div class="page-hero-bg">
+                <img src="../../assets/images/programmes/quran-level3-hero.jpg" alt="" aria-hidden="true" />
+            </div>
+            <div class="container page-hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a> / <a href="../index.html">Programmes</a> / <span>Qurʾān – Level 3</span>
+                </nav>
+                <h1 id="hero-title">Qurʾān – <span class="highlight">Level 3</span></h1>
+                <p>An advanced programme with revision of Noorani Qaida, memorisation of 9 Sūrahs, complete Juz ʿAmma with Tajwīd, Islamic beliefs, Hadith, Seerah, and character development.</p>
+                <div class="sub-meta">
+                    <span>📖 Level 3</span>
+                    <span class="intermediate-badge">📈 Intermediate</span>
+                    <span>⏱ Ongoing</span>
+                    <span>🌐 Live Online</span>
+                    <span>🕌 Bilingual</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROGRAMME CONTENT ===== -->
+        <section class="section section-light" aria-labelledby="content-title">
+            <div class="container">
+                <div class="programme-content">
+
+                    <!-- Title -->
+                    <div class="programme-title reveal">
+                        <span class="level-badge">Level 3</span>
+                        <span class="intermediate-badge">📈 Intermediate</span>
+                        <h2 id="content-title">Qurʾān &amp; Curriculum Programme</h2>
+                        <p class="subtitle">Building a strong foundation in Qurʾān, belief, worship, character, and practical life</p>
+                        <p class="goal">"Our Lord! Give us in this world that which is good and in the Hereafter that which is good, and protect us from the torment of the Fire." — Sūrah al-Baqarah: 201</p>
+                    </div>
+
+                    <!-- ===== FEATURE CARDS (matching main index) ===== -->
+                    <div class="feature-grid reveal">
+                        <div class="feature-card">
+                            <div class="feature-arch-wrapper">
+                                <div class="feature-arch-container">
+                                    <span class="arch-icon">📖</span>
+                                </div>
+                            </div>
+                            <span class="feature-number">01</span>
+                            <h4>Qurʾān Recitation</h4>
+                            <p>Complete Juz ʿAmma with fluency and Tajwīd practice.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-arch-wrapper">
+                                <div class="feature-arch-container">
+                                    <span class="arch-icon">📝</span>
+                                </div>
+                            </div>
+                            <span class="feature-number">02</span>
+                            <h4>Memorisation</h4>
+                            <p>9 Sūrahs from Sūrah al-Lahab to Sūrah al-ʿAṣr.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-arch-wrapper">
+                                <div class="feature-arch-container">
+                                    <span class="arch-icon">🕌</span>
+                                </div>
+                            </div>
+                            <span class="feature-number">03</span>
+                            <h4>Islamic Studies</h4>
+                            <p>Comprehensive Aqeedah, Hadith, Seerah, and Islamic knowledge.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-arch-wrapper">
+                                <div class="feature-arch-container">
+                                    <span class="arch-icon">🌟</span>
+                                </div>
+                            </div>
+                            <span class="feature-number">04</span>
+                            <h4>Character Building</h4>
+                            <p>Focus on Akhlāq, Adab, and practical Islamic living.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== QURAN SECTION ===== -->
+                    <div class="quran-section reveal">
+                        <h3>📖 Qurʾān Focus</h3>
+                        <p>
+                            <strong>Revision of Noorani Qaida</strong> — Complete review and reinforcement of all Qaida rules.
+                        </p>
+
+                        <div style="margin-top: 16px;">
+                            <p><strong>Juz ʿAmma (Complete):</strong> Recitation with fluency and practice of all Tajwīd rules.</p>
+                        </div>
+
+                        <div class="quran-topics">
+                            <div class="topic-chip">Noorani Qaida Revision</div>
+                            <div class="topic-chip">Complete Juz ʿAmma</div>
+                            <div class="topic-chip">Tajwīd Practice</div>
+                            <div class="topic-chip">Fluency &amp; Rhythm</div>
+                        </div>
+
+                        <!-- Surah List -->
+                        <div style="margin-top:20px;">
+                            <p style="font-weight:600; color:var(--gold-light); margin-bottom:8px;">Sūrahs for Memorisation:</p>
+                            <div class="surah-list">
+                                <div class="surah-item">
+                                    <span class="surah-name">سورة اللهب</span>
+                                    <span class="surah-number">Sūrah al-Lahab</span>
+                                </div>
+                                <div class="surah-item">
+                                    <span class="surah-name">سورة النصر</span>
+                                    <span class="surah-number">Sūrah al-Naṣr</span>
+                                </div>
+                                <div class="surah-item">
+                                    <span class="surah-name">سورة الكافرون</span>
+                                    <span class="surah-number">Sūrah al-Kāfirūn</span>
+                                </div>
+                                <div class="surah-item">
+                                    <span class="surah-name">سورة الكوثر</span>
+                                    <span class="surah-number">Sūrah al-Kawthar</span>
+                                </div>
+                                <div class="surah-item">
+                                    <span class="surah-name">سورة الماعون</span>
+                                    <span class="surah-number">Sūrah al-Māʿūn</span>
+                                </div>
+                                <div class="surah-item">
+                                    <span class="surah-name">سورة قريش</span>
+                                    <span class="surah-number">Sūrah Quraysh</span>
+                                </div>
+                                <div class="surah-item">
+                                    <span class="surah-name">سورة الفيل</span>
+                                    <span class="surah-number">Sūrah al-Fīl</span>
+                                </div>
+                                <div class="surah-item">
+                                    <span class="surah-name">سورة الهمزة</span>
+                                    <span class="surah-number">Sūrah al-Humazah</span>
+                                </div>
+                                <div class="surah-item">
+                                    <span class="surah-name">سورة العصر</span>
+                                    <span class="surah-number">Sūrah al-ʿAṣr</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 1 ===== -->
+                    <div class="step-card reveal">
+                        <div class="step-header">
+                            <span class="step-number">1</span>
+                            <h3>Step 1</h3>
+                            <span class="step-subtitle">Beliefs, Hadith, Seerah, Islamic Knowledge</span>
+                        </div>
+
+                        <div class="step-content">
+                            <!-- Kalimahs -->
+                            <div class="subject-group">
+                                <h4>Kalimahs</h4>
+                                <span class="sub-label">Revision &amp; New</span>
+                                <ul>
+                                    <li>Revision of previous Kalimahs</li>
+                                    <li>Kalimah Tamjīd &amp; Kalimah Tawḥīd with translation</li>
+                                    <li>Asmā' al-Ḥusnā: "Al-Muṣawwir" to "Al-Ḥasīb"</li>
+                                </ul>
+                            </div>
+
+                            <!-- Aqaid / Beliefs -->
+                            <div class="subject-group">
+                                <h4>Islamic Beliefs (Aqā'id)</h4>
+                                <span class="sub-label">Advanced Topics</span>
+                                <ul>
+                                    <li>Belief in Angels</li>
+                                    <li>Belief in the Heavenly Books</li>
+                                    <li>Pillars of Islam</li>
+                                    <li>Belief in the Prophets</li>
+                                    <li>Finality of Prophethood (Khatm al-Nubuwwah)</li>
+                                </ul>
+                            </div>
+
+                            <!-- 8 Hadith -->
+                            <div class="subject-group" style="grid-column: 1 / -1;">
+                                <h4>Eight Ahadith</h4>
+                                <span class="sub-label">with Translation</span>
+                                <ul class="hadith-list">
+                                    <li>
+                                        <span class="hadith-ar">Revision of previous Ahadith</span>
+                                        <span class="hadith-translation">Revision of previous Ahadith</span>
+                                    </li>
+                                    <li>
+                                        <span class="hadith-ar">"خَاتَمُ النَّبِيِّينَ"</span>
+                                        <span class="hadith-translation">Finality of Prophethood</span>
+                                    </li>
+                                    <li>
+                                        <span class="hadith-ar">"فَضْلُ قِرَاءَةِ الْقُرْآنِ"</span>
+                                        <span class="hadith-translation">The virtue of reciting and teaching the Qurʾān</span>
+                                    </li>
+                                    <li>
+                                        <span class="hadith-ar">"لَا تَبُولَنَّ قَائِمًا"</span>
+                                        <span class="hadith-translation">Prohibition of urinating while standing</span>
+                                    </li>
+                                    <li>
+                                        <span class="hadith-ar">"أَهَمِّيَّةُ الْوُضُوءِ"</span>
+                                        <span class="hadith-translation">The importance of Wudu</span>
+                                    </li>
+                                    <li>
+                                        <span class="hadith-ar">"لَا بُخْلَ"</span>
+                                        <span class="hadith-translation">Prohibition of miserliness</span>
+                                    </li>
+                                    <li>
+                                        <span class="hadith-ar">"لَا نَمِيمَةَ"</span>
+                                        <span class="hadith-translation">Prohibition of tale‑bearing</span>
+                                    </li>
+                                    <li>
+                                        <span class="hadith-ar">"حِفْظُ اللِّسَانِ"</span>
+                                        <span class="hadith-translation">Protecting the tongue</span>
+                                    </li>
+                                    <li>
+                                        <span class="hadith-ar">"سَتْرُ الْعَوْرَةِ"</span>
+                                        <span class="hadith-translation">Commandment to cover the private parts</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Seerah -->
+                            <div class="subject-group">
+                                <h4>Seerah</h4>
+                                <span class="sub-label">The Prophet's Life</span>
+                                <ul>
+                                    <li>Names of the Prophet ﷺ</li>
+                                    <li>Homeland of the Prophet ﷺ</li>
+                                    <li>An incident of the Prophet's ﷺ wise management</li>
+                                    <li>The Prophet's ﷺ marriage</li>
+                                    <li>The Prophet's ﷺ children</li>
+                                    <li>Prophethood (Nubuwwah)</li>
+                                    <li>The beginning of Da'wah (propagation of Islam)</li>
+                                    <li>The call to Islam and the reaction of the Quraysh</li>
+                                </ul>
+                            </div>
+
+                            <!-- Islamic Information -->
+                            <div class="subject-group">
+                                <h4>Islamic Information</h4>
+                                <span class="sub-label">General Knowledge</span>
+                                <ul>
+                                    <li>The arrival of man in this world</li>
+                                    <li>Meaning and information about Revelation (Waḥy)</li>
+                                    <li>Explanation and information about Bayt al-Maqdis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 2 ===== -->
+                    <div class="step-card reveal">
+                        <div class="step-header">
+                            <span class="step-number">2</span>
+                            <h3>Step 2</h3>
+                            <span class="step-subtitle">Purification, Prayer, Duas, Manners</span>
+                        </div>
+
+                        <div class="step-content">
+                            <!-- Taharah -->
+                            <div class="subject-group">
+                                <h4>Purification (Ṭahārah)</h4>
+                                <span class="sub-label">Taharah</span>
+                                <ul>
+                                    <li>Fara'id (obligatory acts) of Wudu</li>
+                                    <li>Nullifiers of Wudu (Nawāqiḍ)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Adhan -->
+                            <div class="subject-group">
+                                <h4>Adhān</h4>
+                                <span class="sub-label">Call to Prayer</span>
+                                <ul>
+                                    <li>Words of Adhān &amp; Iqāmah</li>
+                                </ul>
+                            </div>
+
+                            <!-- Salah -->
+                            <div class="subject-group" style="grid-column: 1 / -1;">
+                                <h4>Prayer (Ṣalāh)</h4>
+                                <span class="sub-label">Advanced Rulings</span>
+                                <ul>
+                                    <li>Method of performing Witr prayer</li>
+                                    <li>Du'ā al-Qunūt</li>
+                                    <li>Chart of Rak'āt in Salah</li>
+                                    <li>Description of Masnūn prayers</li>
+                                    <li>Fara'id (obligatory acts) of Salah</li>
+                                </ul>
+                            </div>
+
+                            <!-- Masnun Duas -->
+                            <div class="subject-group" style="grid-column: 1 / -1;">
+                                <h4>Masnūn Du'ās</h4>
+                                <span class="sub-label">Recommended Supplications</span>
+                                <ul>
+                                    <li>Revision of previous Du'ās</li>
+                                    <li>Du'ā for entering the mosque</li>
+                                    <li>Du'ā for leaving the mosque</li>
+                                    <li>Du'ā for entering the home</li>
+                                    <li>Du'ā for leaving the home</li>
+                                    <li>Du'ā before entering the restroom</li>
+                                    <li>Du'ā after leaving the restroom</li>
+                                    <li>Three Masnūn Du'ās for morning &amp; evening</li>
+                                </ul>
+                            </div>
+
+                            <!-- 24 Hour Actions -->
+                            <div class="subject-group">
+                                <h4>24-Hour Recommended Acts &amp; Manners</h4>
+                                <span class="sub-label">Daily Sunnah</span>
+                                <ul>
+                                    <li>Etiquettes of recitation, mosque, home, sneezing &amp; yawning</li>
+                                    <li>Gratitude and respect for elders</li>
+                                    <li>Etiquettes of the restroom and dressing</li>
+                                </ul>
+                            </div>
+
+                            <!-- Islamic Personalities -->
+                            <div class="subject-group">
+                                <h4>Islamic Personalities</h4>
+                                <span class="sub-label">Prophet Nūḥ</span>
+                                <ul>
+                                    <li>The virtue of knowledge</li>
+                                    <li>Prophet Nūḥ's (peace be upon him) prophethood &amp; da'wah</li>
+                                    <li>Etiquettes of Du'ā</li>
+                                    <li>Two statements: (Faith and its struggle. Salah.)</li>
+                                    <li>Three Qurʾānic Du'ās</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== GOAL SECTION ===== -->
+                    <div class="full-width-content reveal">
+                        <h3>🎯 Our Goal</h3>
+                        <p style="font-size:17px; color:var(--text-dark); font-weight:500; line-height:1.8;">
+                            To build <span class="highlight-text">strong Muslims with correct Aqeedah, beautiful character, proper knowledge of Islam</span> and a strong connection with the Qurʾān.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section class="cta-section-wrapper" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-box reveal">
+                    <div class="cta-glow"></div>
+                    <div class="cta-content">
+                        <h2 id="cta-title">Advance Your Child's <span class="highlight">Qurʾān</span> Journey</h2>
+                        <p>Help your child build a strong foundation in Qurʾān, belief, and character. Enrol in Qurʾān Level 3 today.</p>
+                        <div class="cta-actions">
+                            <a href="../../admissions/apply.html" class="btn btn-gold btn-lg">Apply Now →</a>
+                            <a href="../../contact/" class="btn btn-white btn-lg">Ask a Question</a>
+                            <a href="../../admissions/fees.html" class="btn btn-white btn-lg">View Fees</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../../assets/branding/logo-white.svg" alt="FIKD Foundation" height="48" style="margin-bottom:12px;" />
+                    <h3>FIKD Foundation</h3>
+                    <p>Building Knowledge, Character &amp; Civilization Through Authentic Islamic Education.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../../about/">About</a></li>
+                        <li><a href="../index.html">Programmes</a></li>
+                        <li><a href="../../teachers/">Teachers</a></li>
+                        <li><a href="../../admissions/">Admissions</a></li>
+                        <li><a href="../../resources/">Resources</a></li>
+                        <li><a href="../../donate/">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Curriculum</h4>
+                    <ul>
+                        <li><a href="../../curriculum/aqeedah.html">ʿAqīdah</a></li>
+                        <li><a href="../../curriculum/hadith.html">Ḥadīth</a></li>
+                        <li><a href="../../curriculum/seerah.html">Sīrah</a></li>
+                        <li><a href="../../curriculum/duas.html">Duʿāʾ</a></li>
+                        <li><a href="../../curriculum/worship.html">Worship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>📧 <a href="mailto:fikd.official@gmail.com">fikd.official@gmail.com</a></p>
+                        <p>📞 <a href="tel:+923159993378">+92 315 9993 378</a></p>
+                        <p>📍 FIKD Foundation, Chargulli, Mardan, KPK, Pakistan</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FIKD Foundation. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="../../privacy/">Privacy</a></li>
+                    <li><a href="../../terms/">Terms</a></li>
+                    <li><a href="../../faq/">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== SCRIPTS ====== -->
+    <script>
+        // ===== NAVIGATION =====
+        const navToggle = document.getElementById('navToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        navToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('open');
+            this.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!mainNav.contains(e.target) && !navToggle.contains(e.target)) {
+                mainNav.classList.remove('open');
+                navToggle.classList.remove('active');
+            }
+        });
+
+        // ===== DROPDOWN MOBILE =====
+        document.querySelectorAll('.dropdown > a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        });
+
+        // ===== HEADER SCROLL =====
+        const header = document.querySelector('.site-header');
+        window.addEventListener('scroll', function() {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // ===== SCROLL REVEAL =====
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        console.log('🚀 FIKD Foundation - Quran Level 3 page loaded successfully!');
+    </script>
+
+</body>
+</html>
